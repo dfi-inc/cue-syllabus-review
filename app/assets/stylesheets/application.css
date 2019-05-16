@@ -10,9 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
-
-
-
+ *= require vendors/liquid-icon/liquid-icon.min
+ *= require vendors/font-awesome/css/font-awesome.min
+ *= require css/theme-vendors.min
+ *= require css/theme.min
+ *= require themes/original
  */
