@@ -13,3 +13,8 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+// <script src="./assets/vendors/jquery.min.js"></script>
+// <script src="./assets/js/theme-vendors.js"></script>
+// <script src="./assets/js/theme.min.js"></script>
+// <script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
