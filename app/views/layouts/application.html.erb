@@ -3,15 +3,13 @@
   <head>
     <title>Cue</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
 
   <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
   	<div id="wrap">
       <main id="content" class="content">
         <%= yield %>
+        <%= javascript_include_tag 'application' %>
   		</main><!-- /#content.content -->
     </div><!-- /#wrap -->
   </body>
