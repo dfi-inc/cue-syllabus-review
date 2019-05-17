@@ -1,2 +1,65 @@
-<h1>Step5#2</h1>
-<p>Find me in app/views/step_5/2.html.erb</p>
+<section class="vc_row py-5 d-flex flex-wrap">
+  <div class="container">
+    <div class="row">
+      <div
+        class="lqd-column col-md-10"
+        data-custom-animations="true"
+        data-ca-options='{ "triggerHandler":"inview", "animationTarget":"all-childs", "duration":"1200", "delay":"150", "easing":"easeOutQuint", "direction":"forward", "initValues":{"translateY":60, "translateZ":-160, "rotateX":-84, "opacity":0}, "animations":{"translateY":0, "translateZ":0, "rotateX":0, "opacity":1} }'
+      >
+
+      <h5
+        class="mt-80 mb-20 text-dark-green"
+        data-split-text="true"
+        data-split-options='{"type":"lines"}'
+        data-fittext="true"
+        data-fittext-options='{"compressor": 0.75, "maxFontSize": 20}'>Deeper Understanding
+      </h5>
+      <h3
+          class="mt-0 mb-30 text-light-purple"
+          data-split-text="true"
+          data-split-options='{"type":"lines"}'
+          data-fittext="true"
+          data-fittext-options='{"compressor": 0.75, "maxFontSize": 48}'>HOW SYLLABI SERVE
+        </h3>
+
+      </div><!-- /.col-md-8 col-md-offset-2 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
+
+<section id="features" class="vc_row d-flex flex-wrap">">
+  <div class="container">
+    <div class="row d-flex flex-wrap">
+       <div class="lqd-column col-md-6 pl-md-6 pr-md-7">
+
+         <div class="tabs">
+            <div class="tabs-content">
+            <header class="fancy-title mb-35">
+              <h4 class="mt-0 mb-4 pr-md-5">Purpose & Intentionality</h4>
+            </header>
+            <%= render "step2/s1/survey/1.html" %>
+            <%= render "step2/s1/survey/2.html" %>
+            <%= render "step2/s1/survey/3.html" %>
+            <%= render "step2/s1/survey/4.html" %>
+            </div><!-- /.tabs-content -->
+          </div><!-- /.tabs -->
+
+
+      </div><!-- /.col-md-6 -->
+
+      <div class="lqd-column col-lg-5 col-lg-offset-1">
+        <div class="liquid-img-group-container">
+          <div class="liquid-img-group-inner">
+            <div class="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"translateX":10}' data-parallax-to='{"translateX":0}' data-parallax-options='{"overflowHidden":false,"easing":"linear"}'>
+              <figure>
+                <%= image_tag("graphics/my_syllabus.png") %>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.lqd-column col-lg-5 col-lg-offset-1 -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
