@@ -12,7 +12,9 @@
 //
 // require rails-ujs
 // require turbolinks
+//= require skrollr
 //= require vendors/jquery.min
 //= require js/theme-vendors
 //= require js/theme.min
+//= require js/liquidAjaxContactForm.min
 //= require js/liquidAjaxMailchimp.min
