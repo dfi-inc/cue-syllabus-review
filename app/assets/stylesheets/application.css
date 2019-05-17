@@ -14,5 +14,5 @@
  *= require vendors/font-awesome/css/font-awesome.min
  *= require css/theme-vendors.min
  *= require css/theme.min
- * require css/themes/original
+ *= require css/themes/opus
  */
