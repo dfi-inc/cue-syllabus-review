@@ -16,3 +16,10 @@
  *= require css/theme.min
  *= require css/themes/opus
  */
+
+
+.text-pink {color: #FF33A1;}
+.text-dark-green {color: #00778B;}
+.text-light-purple {color: #B133FF;}
+.text-dark-purple {color: #5930FF;}
+.bg-seafoam {background: #DDFBFF;}

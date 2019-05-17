@@ -13,6 +13,7 @@
 // require rails-ujs
 // require turbolinks
 //= require skrollr
+//= require pace.min
 //= require vendors/jquery.min
 //= require js/theme-vendors
 //= require js/theme.min

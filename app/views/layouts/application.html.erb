@@ -12,10 +12,23 @@
       <main id="content" class="content">
         <%= yield %>
         <%= javascript_include_tag 'application' %>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs4APPDpT3CRGCgk3Cmv9xBvEK5Lq3HGo"></script>
         <script>
           var s = skrollr.init();
+        </script>
+        <script type="text/javascript">
+          window.sr = ScrollReveal();
+          sr.reveal('.reveal');
+          const reveal = {
+            origin : 'left',
+            delay    : 200,
+            distance : '120px',
+            easing   : 'ease-in-out',
+          };
+
         </script>
   		</main><!-- /#content.content -->
     </div><!-- /#wrap -->
   </body>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </html>
