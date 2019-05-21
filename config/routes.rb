@@ -21,19 +21,19 @@ Rails.application.routes.draw do
   get 'step5/inquiry_3'  => 'step5#inquiry_3',  as: :inquiry_3
   get 'step5/inquiry_4'  => 'step5#inquiry_4',  as: :inquiry_4
 
-  get 'step4/home'
+  get 'step4/home'        => 'step_4#home',         as: :concepts_home
   get 'step4/concepts_1'
   get 'step4/concepts_2'
   get 'step4/concepts_3'
-  get 'step4/concepts_4'
+  get 'step4/concepts_4'  
 
-  get 'step3/home'
+  get 'step3/home'        => 'step_3#home',         as: :scope_home
   get 'step3/scope_1'
   get 'step3/scope_2'
   get 'step3/scope_3'
   get 'step3/scope_4'
 
-  get 'step2/home'
+  get 'step2/home'        => 'step_2#home',         as: :context_home
   get 'step2/context_1'
   get 'step2/context_2'
   get 'step2/context_3'
