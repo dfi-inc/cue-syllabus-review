@@ -1,34 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>Cue</title>
-    <%= csrf_meta_tags %>
-    <link rel="stylesheet" href="https://use.typekit.net/qxb8htk.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto%7cRubik:300,400" rel="stylesheet">
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-  </head>
-  <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-  	<div id="wrap">
-      <main id="content" class="content">
-        <%= yield %>
-        <%= javascript_include_tag 'application' %>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs4APPDpT3CRGCgk3Cmv9xBvEK5Lq3HGo"></script>
-        <script>
-          var s = skrollr.init();
-        </script>
-        <script type="text/javascript">
-          window.sr = ScrollReveal();
-          sr.reveal('.reveal');
-          const reveal = {
-            origin : 'left',
-            delay    : 200,
-            distance : '120px',
-            easing   : 'ease-in-out',
-          };
+  	<%= csrf_meta_tags %>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+  	<meta name="apple-mobile-web-app-capable" content="yes" />
 
-        </script>
-  		</main><!-- /#content.content -->
-    </div><!-- /#wrap -->
+  	<title>Home</title>
+  	<!-- Compressed Styles -->
+  	<link href="css/slides.min.css?422331" rel="stylesheet" type="text/css">
+    <!-- jQuery 3.3.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<!-- Compressed Scripts -->
+  	<script src="js/slides.min.js?422331" type="text/javascript"></script>
+    <!-- Fonts and Material Icons -->
+  	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
+  </head>
+  <body class="slides noPreload animated">
+
+    <!-- SVG Library -->
+    <%= render "shared/svg_library" %>
+    <!-- Panel Top #06 -->
+
+    <%= yield %>
+
   </body>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </html>
