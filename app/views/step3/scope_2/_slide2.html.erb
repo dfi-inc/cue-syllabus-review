@@ -1,0 +1,123 @@
+<!-- EXAMPLE: Premade Styles -->
+<!-- 1) copy styles -->
+<style>
+  .slide-8 {
+    color: #6A348E;
+    background-color: #FB73BD
+  }
+  .slide-8 .link {
+    color: #eeff24;
+    position: relative;
+    -webkit-box-shadow: 0 2px rgba(238,255,36,0.5);
+    box-shadow: 0 2px rgba(238,255,36,0.5)
+  }
+  @media (min-width: 1024px) {
+    .slide-8 .image {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -18%;
+      z-index: -1
+    }
+  }
+  .slide-8:not(.animate) .styles-images ul>li .style-imgs {
+    -webkit-transform: translateX(-50%) translateY(100px);
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0
+  }
+  .slide-8 .styles-images ul>li {
+    position: relative
+  }
+  .slide-8 .styles-images ul>li .style-imgs {
+    position: absolute;
+    -webkit-transition: 0.5s .35s;
+    transition: 0.5s .35s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition-timing-function: cubic-bezier(0.38, 1.43, 0.51, 1);
+    transition-timing-function: cubic-bezier(0.38, 1.43, 0.51, 1)
+  }
+  @media (min-width:  1024px) {
+    .slide-8 .styles-images ul>li .image-1 {
+      -webkit-box-shadow: 9px 63px 41px rgba(0,0,0,0.3);
+      box-shadow: 9px 63px 41px rgba(0,0,0,0.3);
+      max-width: none;
+      border-radius: 6px;
+      z-index: 100;
+      margin-top: 50%;
+      -webkit-transition-delay: 0.45s;
+      transition-delay: 0.45s;
+      -webkit-transform: translateX(-50%) rotate(-4deg);
+      transform: translateX(-50%) rotate(-4deg)
+    }
+    .slide-8 .styles-images ul>li .image-2 {
+      max-width: none;
+      margin-top: 100%;
+      z-index: 10;
+      border-radius: 7px;
+      -webkit-box-shadow: 7px 44px 36px rgba(0,0,0,0.3);
+      box-shadow: 7px 44px 36px rgba(0,0,0,0.3);
+      -webkit-transition-delay: 0.55s;
+      transition-delay: 0.55s;
+      -webkit-transform: translateX(-50%) rotate(-2deg);
+      transform: translateX(-50%) rotate(-2deg)
+    }
+    .slide-8 .styles-images ul>li .image-3 {
+      max-width: none;
+      z-index: 1000;
+      border-radius: 8px;
+      -webkit-box-shadow: 9px 123px 71px rgba(0,0,0,0.3);
+      box-shadow: 9px 123px 71px rgba(0,0,0,0.3)
+    }
+    .slide-8 .styles-images ul>li .image-4 {
+      max-width: none;
+      margin-top: 90%;
+      z-index: 10;
+      border-radius: 7px;
+      -webkit-box-shadow: 7px 30px 30px rgba(0,0,0,0.3);
+      box-shadow: 7px 30px 30px rgba(0,0,0,0.3);
+      -webkit-transition-delay: 0.65s;
+      transition-delay: 0.65s;
+      -webkit-transform: translateX(-50%) rotate(2deg);
+      transform: translateX(-50%) rotate(2deg)
+    }
+    .slide-8 .styles-images ul>li .image-5 {
+      -webkit-box-shadow: 9px 83px 71px rgba(0,0,0,0.3);
+      box-shadow: 9px 83px 71px rgba(0,0,0,0.3);
+      max-width: none;
+      border-radius: 6px;
+      z-index: 100;
+      margin-top: 60%;
+      -webkit-transition-delay: 0.55s;
+      transition-delay: 0.55s;
+      -webkit-transform: translateX(-50%) rotate(4deg);
+      transform: translateX(-50%) rotate(4deg)
+    }
+  }
+</style>
+
+
+<!-- 2) copy the code -->
+<section class="slide transparent whiteSlide autoHeight slide-8" data-name="styles" data-title="Styles">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-10-12 styles-images margin-top-4 hideForTablet">
+          <ul class="flex noSpaces">
+            <li class="col-6-10">
+              <%= image_tag("graphics/mind@3x.png", class:"image margin-top-3 ae-3 fadeIn", width:"407")%>
+            </li>
+            <li class="col-2-10">
+              <%= image_tag("graphics/squares/purple/0.png", class: "style-imgs image-2", width:"40")%>
+              <%= image_tag("graphics/squares/blue/0.png", class: "style-imgs image-3", width:"40")%>
+              <%= image_tag("graphics/squares/orange/0.png", class: "style-imgs image-4", width:"40")%>
+            </li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
