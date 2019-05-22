@@ -1,2 +1,49 @@
-<h1>Step3#3</h1>
-<p>Find me in app/views/step_3/3.html.erb</p>
+
+    <style>
+    .slides {
+       -webkit-transition:1s;
+       transition:1s;
+    }
+    /* set background colors for each of your slides */
+    .slides.stage-1 {
+       background:#FEF1EF;
+    }
+    .slides.stage-2 {
+       background:#E7FDFF;
+    }
+    .slides.stage-3 {
+       background:#F2D7FF;
+    }
+    .slides.stage-4 {
+       background:#1D4183;
+    }
+    .slides.stage-5 {
+       background:#489D43;
+    }
+
+    .slide.transparent,
+    .slide.transparent .background {
+       background:transparent !important;
+    }
+
+    .autoHeight {
+       min-height:60vh;
+    }
+
+    /* ignore */
+    .slides.scroll .menuToggle.scrollEffectToggle,
+    .slides:not(.scroll) .menuToggle.slideEffectToggle { background: #fff; color:#303030; padding: 11px 7px; margin: -5px 0 !important; border-radius: 5px; }
+    .slides.scroll .menuToggle.scrollEffectToggle *,
+    .slides:not(.scroll) .menuToggle.slideEffectToggle * { cursor: default !important; opacity:1; pointer-events:none;}}
+    /* ignore */
+    </style>
+
+
+
+
+
+<%= render "step3/panels/panel_top" %>
+<%= render "step3/scope_3/slide1" %>
+<%= render "step3/scope_3/slide2" %>
+<%= render "step3/scope_3/slide3" %>
+<%= render "step3/panels/panel_bottom" %>
