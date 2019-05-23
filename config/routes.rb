@@ -2,12 +2,12 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  get 'pages/index'       => 'pages#index',       as: :home
-  get 'pages/about'       => 'pages#about',       as: :about
-  get 'pages/contact'     => 'pages#contact',     as: :contact
-  get 'pages/faq'         => 'pages#faq',         as: :faq
-  get 'pages/terms'       => 'pages#terms',       as: :terms
-  get 'pages/privacy'     => 'pages#privacy',     as: :privacy
+  get '/index'       => 'pages#index',       as: :home
+  get 'about'       => 'pages#about',       as: :about
+  get 'contact'     => 'pages#contact',     as: :contact
+  get 'faq'         => 'pages#faq',         as: :faq
+  get 'terms'       => 'pages#terms',       as: :terms
+  get 'privacy'     => 'pages#privacy',     as: :privacy
 
   get 'step6/home'       => 'step6#home',       as: :tool_home
   get 'step6/tool_1'     => 'step6#tool_1',     as: :tool_1
@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   get 'step4/concepts_1'
   get 'step4/concepts_2'
   get 'step4/concepts_3'
-  get 'step4/concepts_4'  
+  get 'step4/concepts_4'
 
   get 'step3/home'        => 'step_3#home',         as: :scope_home
   get 'step3/scope_1'
@@ -39,11 +39,12 @@ Rails.application.routes.draw do
   get 'step2/context_3'
   get 'step2/context_4'
 
-  get 'step1/home'          => 'step_1#home',         as: :grounding_home
-  get 'step1/grounding_1'   => 'step_1#grounding_1',  as: :grounding_1
-  get 'step1/grounding_2'   => 'step_1#grounding_2',  as: :grounding_2
-  get 'step1/grounding_3'   => 'step_1#grounding_3',  as: :grounding_3
-  get 'step1/grounding_4'   => 'step_1#grounding_4',  as: :grounding_4
+  get '/one'  => 'step_1#home',  as: :one
+  get '/1a'   => 'step_1#1a',    as: :one_a
+  get '/1b'   => 'step_1#1b',    as: :one_b
+  get '/1c'   => 'step_1#1c',    as: :one_c
+  get '/1d'   => 'step_1#1d',    as: :one_d
+
 
 
 
