@@ -13,7 +13,18 @@
  *= require slides/slides
  */
 
+ .slides.whiteSlide .navigation li:after {
+     background: #3BC0D1;
+     box-shadow: 0 0 1px #fff;
+ }
 
+ .button.actionButton {
+     background: #D95E36;
+     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+ }
+ .white .actionButton svg {
+    fill: #fff !important;
+}
 
  @font-face {
      font-family: 'Futura-Bold';
@@ -21,13 +32,8 @@
      src: font-url('Futura-Bold') format('truetype');
    }
 
+h1, h2, h3, h4, h5, h6 {font-family: 'Futura-Bold';}
 
-h1 {font-family: 'Futura-Bold';}
-
- .button.actionButton {
-     background: rgba(0, 0, 0, 0.7);
-     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
- }
  .panel.black {
    background-color: #151515 !important;
    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
@@ -49,6 +55,25 @@ h1 {font-family: 'Futura-Bold';}
 .text-brightpurple {color: #CA33FF;}
 .text-darkpurple {color: #8133FF;}
 .text-brightpink {color: #FF33A1;}
+.text-lightgrey {color: #B7B7B7;}
+
+.bg-brightorange {background: #FF3333 !important;}
+.bg-brightpurple {background: #CA33FF !important;}
+.bg-darkpurple {background: #8133FF !important;}
+.bg-brightpink {background: #FF33A1 !important;}
+.bg-lightgrey {background: #F3F3F3 !important;}
+
+
+/* Step 3 Colors */
+.title-1 {color: #F07A00;}
+.title-2 {color: #F2593E;}
+.title-3 {color: #EE2020;}
+.title-4 {color: #F82068;}
+.title-5 {color: #E9169B;}
+
+.quote-1 {color: #00778B;}
+.quote-2 {color: #004C59;}
+
 
 body, p {font-family: 'Nunito Sans', 'Helvetica'; font-weight: 600;}
 
