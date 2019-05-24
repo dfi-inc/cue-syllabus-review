@@ -1,16 +1,18 @@
 class Step1Controller < ApplicationController
+  layout "step1"
+
   def home
   end
 
-  def grounding_1
+  def section_1
   end
 
-  def grounding_2
+  def section_2
   end
 
-  def grounding_3
+  def section_3
   end
 
-  def grounding_4
+  def section_4
   end
 end
