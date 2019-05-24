@@ -1,18 +1,18 @@
 class Step2Controller < ApplicationController
   layout "step2"
 
-  def home
-  end
-
-  def section_1
-  end
-
   def section_2
   end
 
-  def section_3
+  def part_2a
   end
 
-  def section_4
+  def part_2b
+  end
+
+  def part_2c
+  end
+
+  def part_2d
   end
 end

@@ -16,11 +16,24 @@
     <!-- Fonts and Material Icons -->
     <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
 
+    <style>
+      .content {
+        background: transparent !important;
+      }
+      h1 {font-size: 75px;}
+      h2 {font-size: 32px;}
+      h5 {font-size: 20px;}
+      p  {font-size: 16px;}
+      body, p {font-family: 'Arial', 'Helvetica'; font-weight: 400;}
+      p {font-size: 16px; line-height: 23px;}
+      .font-size-18 {font-size: 18px; line-height: 27px;}
+    </style>
+
+
   </head>
-  <body class="slides zen animated horizontal slow smooth">
+  <body class="slides zen smooth horizontal animated">
     <%= render "step3/navigation" %>
     <%#= render "shared/svg_library" %>
     <%= yield %>
-
   </body>
 </html>
