@@ -13,6 +13,9 @@
  *= require slides/slides
  */
 
+
+
+
  .slides.whiteSlide .navigation li:after {
      background: #3BC0D1;
      box-shadow: 0 0 1px #fff;
@@ -38,6 +41,8 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Futura-Bold';}
    background-color: #151515 !important;
    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
  }
+
+ .font-size-18 {font-size: 18px;}
 
 .text-pink {color: #FF33A1;}
 .text-dark-green {color: #00778B;}
@@ -75,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Futura-Bold';}
 .quote-2 {color: #004C59;}
 
 
-body, p {font-family: 'Nunito Sans', 'Helvetica'; font-weight: 600;}
+body, p {font-family: 'Arial', 'Helvetica'; font-weight: 400;}
 
 p {font-size: 20px; line-height: 28px;}
 
