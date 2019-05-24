@@ -1,16 +1,18 @@
 class Step3Controller < ApplicationController
+  layout "step3"
+
   def home
   end
 
-  def scope_1
+  def section_1
   end
 
-  def scope_2
+  def section_2
   end
 
-  def scope_3
+  def section_3
   end
 
-  def scope_4
+  def section_4
   end
 end

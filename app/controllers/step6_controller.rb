@@ -1,16 +1,18 @@
 class Step6Controller < ApplicationController
+  layout "step6"
+
   def home
   end
 
-  def tool_1
+  def section_1
   end
 
-  def tool_2
+  def section_2
   end
 
-  def tool_3
+  def section_3
   end
 
-  def tool_4
+  def section_4
   end
 end
