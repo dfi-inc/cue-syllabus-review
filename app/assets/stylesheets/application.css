@@ -13,28 +13,59 @@
  *= require slides/slides
  */
 
+
+
+ @font-face {
+     font-family: 'Futura-Bold';
+     src: font-url('Futura-Bold.ttf');
+     src: font-url('Futura-Bold') format('truetype');
+   }
+
+
+h1 {font-family: 'Futura-Bold';}
+
  .button.actionButton {
      background: rgba(0, 0, 0, 0.7);
      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
  }
-
  .panel.black {
    background-color: #151515 !important;
    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
  }
+
 .text-pink {color: #FF33A1;}
 .text-dark-green {color: #00778B;}
 .text-light-purple {color: #B133FF;}
 .text-dark-purple {color: #5930FF;}
-.bg-seafoam {background: #DDFBFF;}
+.bg-seafoam {background: #DDFBFF !important;}
 .bg-light-purple {background: #9686CA;}
 .bg-bluegreen { background: #3BC0D1;}
 .bg-mudgreen { background: #3E4F51;}
 .bg-softpink { background: #FF698E;}
 .bg-brown { background: #B3533F;}
+.cue-red {color: #D95E36;}
+
+.text-brightorange {color: #FF3333;}
+.text-brightpurple {color: #CA33FF;}
+.text-darkpurple {color: #8133FF;}
+.text-brightpink {color: #FF33A1;}
+
+body, p {font-family: 'Nunito Sans', 'Helvetica'; font-weight: 600;}
+
+p {font-size: 20px; line-height: 28px;}
 
 
 .chat-bubble {
-  padding: 10px 30px; border-radius: 40px; display: inline-block;
-  line-height: 30px; font-size: 1.2em;
+  padding: 15px 30px;
+  border-radius: 40px;
+  display: inline-block;
+  line-height: 30px;
+  font-size: 1.2em;
+  font-family: 'Nunito Sans', 'Helvetica';
+  font-weight: 700;
+}
+
+
+body {
+
 }
