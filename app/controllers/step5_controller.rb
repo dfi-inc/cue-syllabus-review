@@ -1,18 +1,18 @@
 class Step5Controller < ApplicationController
   layout "step5"
 
-  def home
+  def section_5
   end
 
-  def section_1
+  def part_5a
   end
 
-  def section_2
+  def part_5b
   end
 
-  def section_3
+  def part_5c
   end
 
-  def section_4
+  def part_5d
   end
 end
