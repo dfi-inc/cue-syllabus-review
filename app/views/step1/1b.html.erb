@@ -1,41 +1,141 @@
-<!-- Slide #1 -->
-<section class="slide fade-6 kenBurns">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-8-12">
-      		<h1 class="huge thin ae-2">1a</h1>
-      		<!-- <p class="hero ae-1">Please tell us a little bit about yourself before we get started.</p> -->
-        </div>
+<body class="slides chain animated">
 
-        <!-- <ul class="grid fixedSpaces center margin-top-10" style="position: absolute; bottom: 0; width: 85%;">
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
-           <h3>Step One</h3>
-           <p class="tiny opacity-6">How do you feel?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromLeft">
-           <h3>Step Two</h3>
-           <p class="tiny opacity-6">Why Syllabi?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromLeft">
-           <h3>Step Three</h3>
-           <p class="tiny opacity-6">What is EQMD?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-7 fromLeft">
-           <h3>Step Four</h3>
-           <p class="tiny opacity-6">EQMD Concepts</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromLeft">
-           <h3>Step Five</h3>
-           <p class="tiny opacity-6">Why Syllabi Serve?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-7 fromLeft">
-           <h3>Step Six</h3>
-           <p class="tiny opacity-6">Analysis</p>
-          </li>
-        </ul> -->
+<!-- 1) Copy styles -->
+<style>
+/* scroll effect support */
+.scroll .slide.split,
+.scroll .slide.split .container {
+  min-height: 100vh;
+}
+
+.slide.split .wrap {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .slide.split .container,
+  .slide.split .wrap {
+    width: 100% !important;
+    min-height: 50vh;
+  }
+
+  .slide.split .container {
+    display: block;
+    height: auto;
+  }
+
+  .slide.split .wrap {
+    display: table;
+    background-attachment: inherit;
+  }
+
+  .slide.split .wrap .mobile-wrap {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+}
+</style>
+
+<script>
+  $(function(){
+    window.autoplayInterval = setInterval(function(){
+      window.changeSlide('increase');
+    },4000);
+
+    $(document).on('click mousewheel', function(){
+      clearInterval(window.autoplayInterval);
+    });
+  });
+</script>
+
+
+
+<section class="slide autoHeight pink split bg-light-purple">
+  <div class="content" style="background: transparent;">
+    <div class="container">
+      <div class="wrap" style="background-image: url(<%= image_url("backgrounds/purple.png")%>);">
+      </div>
+      <div class="wrap left">
+        <div class="mobile-wrap left">
+          <h4 class="ae-2">Common thoughts and feelings… </h4>
+          <br/>
+          <div class="ae-1 fromBottomLeft"><p class="shadow opaque white chat-bubble fade-6 hideOnScroll">I'm afraid that I'll be called a racist if I talk about race.</p></div>
+          <div class="ae-3 fromBottomLeft"><p class="shadow opaque white chat-bubble">I will soon be up for tenure and will need to focus my attention on other initiatives.</p></div>
+          <div class="ae-5 fromBottomLeft"><p class="shadow opaque white chat-bubble">I'm unsure if my institution will make equity a priority.</p></div>
+          <div class="ae-7 fromBottomLeft"><p class="shadow opaque white chat-bubble">My institution just isn’t capable of being a welcoming place for African American and Latinx students right now.</p></div>
+          <div class="opacity-8 ae-10 fromBottomRight"><p class="shadow opaque blue chat-bubble">  ...   </p></div>
         </div>
       </div>
     </div>
-  <div class="background" style="background-image:url('<%= image_url("istock/1.jpg")%>');"></div>
+  </div>
+  <div class="background customBackground ae-1 fromTopLeft" style="background-image:url('<%= image_url("graphics/emojis/afraid-emoji@3x.png", class: "wide ")%>'); background-position: 20% center;"></div>
 </section>
+
+
+
+<section class="slide autoHeight pink split bg-light-purple">
+  <div class="content">
+    <div class="container">
+      <div class="wrap" style="background-image: url(<%= image_url("backgrounds/purple.png")%>);">
+        <%#= image_tag("graphics/emojis/afraid-emoji@3x.png", class: "wide ")%>
+      </div>
+      <div class="wrap left">
+        <div class="mobile-wrap left">
+          <div class="ae-1 fromBottomRight"><p class="shadow blue chat-bubble">Thank you for exploring the emotions you feel when conversations about racial equity emerge.</p></div>
+          <div class="ae-3 fromBottomRight"><p class="shadow blue chat-bubble">Don't worry!</p></div>
+          <div class="ae-5 fromBottomRight"><p class="shadow blue chat-bubble">The goal of this platform is to help you feel comfortable and confident when talking about racial equity and the ways in which race and racism exist in our day-to-day lives and the lives of students.</p></div>
+          <div class="ae-7 fromBottomRight"><p class="shadow blue chat-bubble">So, we're about to provide you with language and tools that will help you make sense of your classroom dynamics in a race-conscious way.</p></div>
+          <div class="opacity-8 ae-10 fromBottomRight"><p class="shadow opaque blue chat-bubble">  ...   </p></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Slide #17 -->
+<section class="slide pink">
+  <div class="content" style="background: transparent;">
+    <div class="container">
+      <div class="wrap padding-top-phablet-5">
+        <div class="fix-12-12">
+          <ul class="grid later equal left">
+            <li class="image-96 col-4-12 padding-bottom-phablet-3 center">
+              <h1 class="ae-2 fromCenter">Worried</h1>
+              <div class="ae-1 fromCenter" data-popup-id="17">
+                <%= image_tag("graphics/emojis/afraid-emoji@3x.png", class: "wide ")%>
+                <!-- data-action="zoom" -->
+              </div>
+            </li>
+            <li class="col-7-12 padding-left-5 padding-phablet-0">
+              <h4 class="ae-2">Common thoughts and feelings… </h4>
+
+
+            </li>
+          </ul>
+
+
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="background" style="background-image:url('<%= image_url("backgrounds/purple.png")%>'); backgroud-position: contain;"></div>
+</section>
+
+
+
+<style>
+  .slide .background.customBackground {
+    background-size: 15%;
+    background-repeat: no-repeat;
+  }
+</style>
