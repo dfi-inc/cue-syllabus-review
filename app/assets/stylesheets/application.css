@@ -23,6 +23,12 @@
   opacity: .05;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 1023px) {
+.eqmd-bg {
+    font-size: 140px;
+  }
 }
 .eqmd-logo {
   font-family: 'Nunito', inherit;
@@ -37,8 +43,7 @@
   font-size: 80px;
   letter-spacing: 4px;
   font-weight: bold;
-
-  margin-top: -100px;
+  margin-top: -80px;
 }
 .sub-header-1 {
   font-family: 'Nunito', inherit;
@@ -52,6 +57,12 @@ p.hero {
   line-height: 32px;
   letter-spacing: -0.5px;
 }
+p.micro, .p.micro, blockquote.micro {
+    font-size: 14px;
+    line-height: 1.5714;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
 
 /* Button **********************************/
 
@@ -63,7 +74,14 @@ p.hero {
     padding: 15px 35px;
 }
 
+/* Form + Form Typography **********************************/
 
+.slides-form label, .slides-form .label {
+    display: block;
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
 
 
 

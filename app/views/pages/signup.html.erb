@@ -8,7 +8,10 @@
         <div class="form-42 margin-top-3 center">
           <div class="pad shadow selected left ae-3">
             <form class="slides-form wide" action="#" autocomplete="off">
-              <div class="label ae-3 cropTop"><label class="left cropTop opacity-5" for="email42">Start with email address</label></div>
+              <input class="wide ae-4" id="full_name" type="text" name="text" placeholder="Full Name" required/>
+
+              <input class="wide ae-4" id="Tile" type="text" name="text" placeholder="Tile" required/>
+              <input class="wide ae-4" id="full_name" type="text" name="text" placeholder="Academic Institution" required/>
               <input class="wide ae-4" id="email42" type="email" name="email" placeholder="Email address" required/>
               <ul class="grid noSpaces margin-top-1">
                 <li class="col-6-12 form-42-input-1">
@@ -21,7 +24,7 @@
                 </li>
               </ul>
               <p class="center ae-7 margin-top-2 micro"><span class="opacity-5">By clicking <a href="#">Create Account</a>, I agree to the Terms of Service and <a href="#">Privacy&nbsp;Policy</a>.</span></p>
-              <button type="submit" class="button green gradient wide ae-8" name="button">Create Account</button>
+              <%= link_to "Create Account", overview_path, class: "button green gradient wide ae-8" %>
 
             </form>
           </div>
