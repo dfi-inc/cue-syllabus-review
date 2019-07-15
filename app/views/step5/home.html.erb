@@ -1,63 +1,30 @@
-		<section class="vc_row py-5 d-flex flex-wrap">
-			<div class="container">
-				<div class="row">
-					<div
-						class="lqd-column col-md-10"
-						data-custom-animations="true"
-						data-ca-options='{ "triggerHandler":"inview", "animationTarget":"all-childs", "duration":"1200", "delay":"150", "easing":"easeOutQuint", "direction":"forward", "initValues":{"translateY":60, "translateZ":-160, "rotateX":-84, "opacity":0}, "animations":{"translateY":0, "translateZ":0, "rotateX":0, "opacity":1} }'
-					>
 
-          <h5
-            class="mt-80 mb-20 text-dark-green"
-            data-split-text="true"
-            data-split-options='{"type":"lines"}'
-            data-fittext="true"
-            data-fittext-options='{"compressor": 0.75, "maxFontSize": 20}'>Get Reaqcuainted
-          </h5>
-          <h3
-							class="mt-0 mb-30 text-pink"
-							data-split-text="true"
-							data-split-options='{"type":"lines"}'
-							data-fittext="true"
-							data-fittext-options='{"compressor": 0.75, "maxFontSize": 48}'>HOW WELL DO YOU <br> <span class="px-4">KNOW YOUR SYLLABUS?</span>
-						</h3>
+<section class="slide fade-6  kenBurns">
+<div class="content" style="background:">
+<div class="container">
+<div class="wrap">
 
-					</div><!-- /.col-md-8 col-md-offset-2 -->
+  <div class="fix-10-12">
+		<h1 class="huge thin ae-2 cue-red">Part 5</h1>
+		<h1 class="huge thin ae-2">Center for Urban Education Syllabus Review Tool</h1>
+		<!-- <p class="hero ae-1">Please tell us a little bit about yourself before we get started.</p> -->
+  </div>
+	<div class="margin-top-2">
+		<form class="slides-form" action="step_1.html">
+			<!-- <input type="text" class="input-8 ae-4 fromCenter" name="user-name" placeholder="Full Name" val=""/>
+			<input type="text" class="input-8 ae-4 fromCenter" name="user-school" placeholder="School" val=""/>
+			<input type="text" class="input-8 ae-4 fromCenter" name="user-title" placeholder="Title" val=""/>
+			<input type="email" class="input-8 ae-4 fromCenter" name="user-email" placeholder="Email" val=""/> -->
 
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</section>
+      <%= link_to "Let's Get Started", section_1_path, class: "button blue gradient ae-7 fromCenter" %>
 
-		<section id="features" class="vc_row d-flex flex-wrap">">
-      <div class="container">
-				<div class="row d-flex flex-wrap">
-				   <div class="lqd-column col-md-6 pl-md-6 pr-md-7">
+		</form>
+	</div>
 
-             <div class="tabs">
-								<div class="tabs-content">
-                <header class="fancy-title mb-35">
-                  <h4 class="mt-0 mb-4 pr-md-5">Purpose & Intentionality</h4>
-                </header>
-                <%= render "step2/s1/survey/1.html" %>
-                <%= render "step2/s1/survey/2.html" %>
-                <%= render "step2/s1/survey/3.html" %>
-                <%= render "step2/s1/survey/4.html" %>
-								</div><!-- /.tabs-content -->
-							</div><!-- /.tabs -->
-					</div><!-- /.col-md-6 -->
+</div>
+</div>
+</div>
+<div class="background" style="background-image:url(<%= image_url("istock/1.jpg")%>)"></div>
+</section>
 
-          <div class="lqd-column col-lg-5 col-lg-offset-1">
-						<div class="liquid-img-group-container">
-							<div class="liquid-img-group-inner">
-								<div class="liquid-img-container-inner" data-parallax="true" data-parallax-from='{"translateX":10}' data-parallax-to='{"translateX":0}' data-parallax-options='{"overflowHidden":false,"easing":"linear"}'>
-									<figure>
-										<%= image_tag("graphics/my_syllabus.png") %>
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.lqd-column col-lg-5 col-lg-offset-1 -->
-
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</section>
+<%= render "shared/navigation" %>

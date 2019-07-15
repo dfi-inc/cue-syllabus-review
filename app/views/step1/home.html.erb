@@ -1,41 +1,30 @@
-<!-- Slide #1 -->
-<section class="slide fade-6 kenBurns">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-8-12">
-      		<h1 class="huge thin ae-2">Center for Urban Education Syllabus Review Tool</h1>
-      		<!-- <p class="hero ae-1">Please tell us a little bit about yourself before we get started.</p> -->
-        </div>
-	      <%= link_to "Begin Section", one_a_path %>
-        <!-- <ul class="grid fixedSpaces center margin-top-10" style="position: absolute; bottom: 0; width: 85%;">
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
-           <h3>Step One</h3>
-           <p class="tiny opacity-6">How do you feel?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromLeft">
-           <h3>Step Two</h3>
-           <p class="tiny opacity-6">Why Syllabi?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromLeft">
-           <h3>Step Three</h3>
-           <p class="tiny opacity-6">What is EQMD?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-7 fromLeft">
-           <h3>Step Four</h3>
-           <p class="tiny opacity-6">EQMD Concepts</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromLeft">
-           <h3>Step Five</h3>
-           <p class="tiny opacity-6">Why Syllabi Serve?</p>
-          </li>
-          <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-7 fromLeft">
-           <h3>Step Six</h3>
-           <p class="tiny opacity-6">Analysis</p>
-          </li>
-        </ul> -->
-        </div>
-      </div>
-    </div>
-  <div class="background" style="background-image:url('<%= image_url("istock/1.jpg")%>');"></div>
+
+<section class="slide fade-6  kenBurns">
+<div class="content" style="background:">
+<div class="container">
+<div class="wrap">
+
+  <div class="fix-10-12">
+    <h1 class="huge thin ae-2 cue-red">Part 1</h1>
+		<h1 class="huge thin ae-2">Center for Urban Education Syllabus Review Tool</h1>
+		<!-- <p class="hero ae-1">Please tell us a little bit about yourself before we get started.</p> -->
+  </div>
+	<div class="margin-top-2">
+		<form class="slides-form" action="step_1.html">
+			<!-- <input type="text" class="input-8 ae-4 fromCenter" name="user-name" placeholder="Full Name" val=""/>
+			<input type="text" class="input-8 ae-4 fromCenter" name="user-school" placeholder="School" val=""/>
+			<input type="text" class="input-8 ae-4 fromCenter" name="user-title" placeholder="Title" val=""/>
+			<input type="email" class="input-8 ae-4 fromCenter" name="user-email" placeholder="Email" val=""/> -->
+
+      <%= link_to "Let's Get Started", part_1a_path, class: "button blue gradient ae-7 fromCenter" %>
+
+		</form>
+	</div>
+
+</div>
+</div>
+</div>
+<div class="background" style="background-image:url(<%= image_url("istock/1.jpg")%>)"></div>
 </section>
+
+<%= render "shared/navigation" %>

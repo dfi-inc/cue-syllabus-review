@@ -1,138 +1,212 @@
-<!-- Slide #68 -->
-<section class="slide bg-seafoam">
+<body class="slides chain animated">
+
+<!-- 1) Copy styles -->
+<style>
+/* scroll effect support */
+.scroll .slide.split,
+.scroll .slide.split .container {
+  min-height: 100vh;
+}
+
+.slide.split .wrap {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .slide.split .container,
+  .slide.split .wrap {
+    width: 100% !important;
+    min-height: 50vh;
+  }
+
+  .slide.split .container {
+    display: block;
+    height: auto;
+  }
+
+  .slide.split .wrap {
+    display: table;
+    background-attachment: inherit;
+  }
+
+  .slide.split .wrap .mobile-wrap {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+}
+</style>
+
+<script>
+  $(function(){
+    window.autoplayInterval = setInterval(function(){
+      window.changeSlide('increase');
+    },4000);
+
+    $(document).on('click mousewheel', function(){
+      clearInterval(window.autoplayInterval);
+    });
+  });
+</script>
+
+
+<style>
+  .slide .background.customBackground {
+    background-size: 15%;
+    background-repeat: no-repeat;
+  }
+</style>
+
+<%= render "shared/panel_top" %>
+
+
+
+<!-- Slide #17 -->
+<section class="slide autoHeight split bg-seafoam">
   <div class="content" style="background: transparent;">
     <div class="container">
-      <div class="wrap">
+      <div class="wrap padding-top-phablet-5">
 
-        <div class="fix-9-12 toCenter">
-          <h1 class="huge ae-1">HOW DOES IT MAKE YOU FEEL</h1>
-          <h2 class="ae-1">TO TALK ABOUT RACIAL EQUITY?</h2>
-          <!-- <p class="ae-2"><span class="opacity-8">Design is all around us, in our homes, in buildings, architecture, landscaping, products, movies, television, and much more.</span></p> -->
 
-          <!-- remove class tintLogos class to disable color change of the logo images -->
-          <ul class="flex grid-68 tintLogos equal equalMobile">
-            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-3">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/disinterested-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-4">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/interested-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-4">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/uncomfortable-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-4">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/worried-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-4">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/annoyed-emoji.png")%>
-                </a>
-                </div>
-              </div>
+        <div class="fix-12-12">
+          <h6 class="ae-1 left" style="font-family: 'Nunito Sans'; font-size: 22px; line-height: 30px; color: #00778B; ">But First...</h6>
+          <h1 class="huge ae-2 cue-red left" style="margin-bottom: 10px;">HOW DOES IT MAKE YOU FEEL</h1>
+          <h2 class="ae-2" style="font-family: 'Nunito Sans'; font-size: 40px; line-height: 65px; color: #00778B; text-align: right; margin-right: 120px; ">TO TALK ABOUT RACIAL EQUITY?</h2>
+
+          <ul class="grid later equal left margin-top-8">
+            <li class="col-12-12 padding-left-5 padding-phablet-0">
+              <ul class="flex grid-68 tintLogos equal equalMobile">
+
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-3">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/disinterested-emoji.png", class:" align-right", style: "height: 85px; width: 85px;")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-4">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/interested-emoji.png", style: "height: 117px; width: 117px;")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-4">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/uncomfortable-emoji.png", style: "height: 130px; width: 130px;")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-4">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/worried-emoji.png", style: "height: 110px; width: 110px;")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-4">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/annoyed-emoji.png", style: "height: 85px; width: 85px;")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="flex grid-68 tintLogos equal equalMobile">
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-5">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/frustrated-emoji.png")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-6">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/mad-emoji.png")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-7">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/neutral-emoji.png")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-8">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/love-it-emoji.png")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-3">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/bored-emoji.png")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="flex grid-68 tintLogos equal equalMobile">
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-5">
+                    <div class="cell">
+                      <a href="#">
+                        <%= image_tag("graphics/emojis/small/disappointed-emoji.png" , style: "height: 90px; width: 90px;")%>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-6">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/nervous-emoji.png", style: "height: 130px; width: 130px;")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-3-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-7">
+                    <div class="cell"><a href="#">
+                      <%= image_tag("graphics/emojis/small/confused-Emoji.png" , style: "height: 130px; width: 130px;")%>
+                    </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
+                  <div class="table wide equalElement ae-8">
+                      <%= image_tag("graphics/emojis/small/afraid-emoji.png" , style: "height: 90px; width: 90px;")%>
+                  </div>
+                </li>
+              </ul>
+
+
+
             </li>
           </ul>
 
-          <ul class="flex grid-68 tintLogos equal equalMobile">
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-5">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/frustrated-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-6">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/mad-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-7">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/neutral-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-8">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/love-it-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-3">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/bored-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-
-          <ul class="flex grid-68 tintLogos equal equalMobile">
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-5">
-                <div class="cell">
-                  <a href="#">
-                    <%= image_tag("graphics/emojis/small/disappointed-emoji.png")%>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-4-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-6">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/nervous-emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-4-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-7">
-                <div class="cell"><a href="#">
-                  <%= image_tag("graphics/emojis/small/confused-Emoji.png")%>
-                </a>
-                </div>
-              </div>
-            </li>
-            <li class="col-2-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2">
-              <div class="table wide equalElement ae-8">
-                  <%= image_tag("graphics/emojis/small/afraid-emoji.png")%>
-              </div>
-            </li>
-          </ul>
-        </div>
 
       </div>
+      </div>
+
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img-68.jpg)"></div>
+  <div class="background" style="background-image:url('<%= image_url("backgrounds/purple.png")%>'); backgroud-position: contain;"></div>
 </section>
