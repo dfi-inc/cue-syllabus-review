@@ -14,16 +14,34 @@
  */
 
 
-/* Typography */
+/* Typography **********************************/
 
+.eqmd-bg {
+  font-family: 'Nunito', inherit;
+  font-size: 175px;
+  line-height: 227px;
+  opacity: .05;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.eqmd-logo {
+  font-family: 'Nunito', inherit;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #D95E36;
+}
 .header-1 {
-  font-family: 'Future', inherit;
+  font-family: 'Nunito', inherit;
   font-size: 80px;
   letter-spacing: 4px;
   font-weight: bold;
+
+  margin-top: -100px;
 }
 .sub-header-1 {
-  font-family: 'Future', inherit;
+  font-family: 'Nunito', inherit;
   font-size: 50px;
   letter-spacing: 2.5px;
   font-weight: bold;
@@ -33,6 +51,16 @@ p.hero {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.5px;
+}
+
+/* Button **********************************/
+
+.button.circle {
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    padding: 15px 35px;
 }
 
 

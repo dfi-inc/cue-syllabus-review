@@ -22,6 +22,30 @@
     <%= render "shared/svg_library" %>
     <!-- Panel Top #06 -->
 
+    <!-- Panel Top #12 -->
+    <nav class="panel top">
+      <!-- desktop version -->
+      <div class="sections desktop">
+        <div class="left">
+          <%= link_to ("https://cue.usc.edu/"), class:"button hollow", target: "blank" do %>
+            <%= image_tag("graphics/cue-logo@3x.png", width: "auto", width:"80", style: "border-radius: 6px; margin: 10px;")%>
+          <% end %>
+        </div>
+        <div class="center">
+          <%= link_to root_path, class:"button hollow" do %>
+            <h2 class="eqmd-logo">EQMD</h2>
+          <% end %>
+        </div>
+        <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+      </div>
+      <!-- compact version -->
+      <div class="sections compact hidden">
+        <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
+        <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+      </div>
+    </nav>
+    <!-- Pane
+
     <%= yield %>
 
   </body>
