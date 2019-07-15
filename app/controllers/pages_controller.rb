@@ -16,4 +16,10 @@ class PagesController < ApplicationController
 
   def privacy
   end
+
+  def signup
+  end
+
+  def login
+  end
 end

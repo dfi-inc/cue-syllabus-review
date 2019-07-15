@@ -13,6 +13,37 @@
  *= require slides/slides
  */
 
+
+/* Typography */
+
+.header-1 {
+  font-family: 'Future', inherit;
+  font-size: 80px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.sub-header-1 {
+  font-family: 'Future', inherit;
+  font-size: 50px;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+}
+p.hero {
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+}
+
+
+
+
+
+
+
+
+
+
 .menu h3 {
   margin-bottom: 5px;
   font-family: 'Nunito Sans';
