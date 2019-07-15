@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/privacy' => 'pages#privacy',   as: :privacy
   get '/login'   => 'pages#login',     as: :login
   get '/signup'  => 'pages#signup',    as: :signup
+  get '/overview'=> 'pages#overview',  as: :overview
 
   get '/6'       => 'step6#home',     as: :section_6
   get '/6a'      => 'step6#6a',       as: :part_6a
