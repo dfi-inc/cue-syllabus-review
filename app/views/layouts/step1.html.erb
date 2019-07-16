@@ -16,9 +16,12 @@
     <!-- Fonts and Material Icons -->
   	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <%= render "shared/svg_library" %>
+    <%= render "step1/css" %>
+    <%= render "step1/js" %>
   </head>
-  <%= render "shared/svg_library" %>
-  <%#= render "step1/navigation" %>
+
+  <%= render "shared/panel_top" %>
   <%= yield %>
 
 </html>
