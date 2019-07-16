@@ -50,6 +50,9 @@ Rails.application.routes.draw do
   get 'section/2/intro'   => 'step2#intro',   as: :intro_2
   get 'section/2/s2_1'    => 'step2#s2_1',    as: :s2_1
   get 'section/2/s2_2'    => 'step2#s2_2',    as: :s2_2
+  get 'section/2/s2_3'    => 'step2#s2_3',    as: :s2_3
+  get 'section/2/s2_4'    => 'step2#s2_4',    as: :s2_4
+  get 'section/2/s2_5'    => 'step2#s2_5',    as: :s2_5
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
