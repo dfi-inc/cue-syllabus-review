@@ -1,18 +1,13 @@
 class Step1Controller < ApplicationController
   layout "step1"
 
-  def section_1
+  def title
   end
 
-  def part_1a
+  def intro
   end
 
-  def part_1b
+  def slides
   end
-
-  def part_1c
-  end
-
-  def part_1d
-  end
+  
 end
