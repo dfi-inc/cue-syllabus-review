@@ -1,19 +1,15 @@
 class Step3Controller < ApplicationController
 
-  layout "step3"
-
-  def section_3
+  def title
   end
 
-  def part_3a
+  def intro
   end
 
-  def part_3b
+  def s3_1
   end
 
-  def part_3c
+  def s3_2
   end
 
-  def part_3d
-  end
 end
