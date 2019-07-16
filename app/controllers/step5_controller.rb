@@ -13,4 +13,10 @@ class Step5Controller < ApplicationController
   def s5_2
   end
 
+  def s5_3
+  end
+
+  def s5_4
+  end
+
 end

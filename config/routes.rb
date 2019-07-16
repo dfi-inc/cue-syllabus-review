@@ -37,7 +37,9 @@ Rails.application.routes.draw do
   get 'section/5/title'   => 'step5#title',   as: :title_5
   get 'section/5/intro'   => 'step5#intro',   as: :intro_5
   get 'section/5/s5_1'    => 'step5#s5_1',    as: :s5_1
-  get 'section/6/s5_2'    => 'step5#s5_2',    as: :s5_2
+  get 'section/5/s5_2'    => 'step5#s5_2',    as: :s5_2
+  get 'section/5/s5_3'    => 'step5#s5_3',    as: :s5_3
+  get 'section/5/s5_4'    => 'step5#s5_4',    as: :s5_4
 
   get 'section/6/title'   => 'step6#title',   as: :title_6
   get 'section/6/intro'   => 'step6#intro',   as: :intro_6
