@@ -1,18 +1,16 @@
 class Step6Controller < ApplicationController
   layout "step6"
 
-  def section_6
+  def title
   end
 
-  def part_6a
+  def intro
   end
 
-  def part_6b
+  def s6_1
   end
 
-  def part_6c
+  def s6_2
   end
 
-  def part_6d
-  end
 end

@@ -1,18 +1,16 @@
 class Step4Controller < ApplicationController
   layout "step4"
 
-  def section_4
+  def title
   end
 
-  def part_4a
+  def intro
   end
 
-  def part_4b
+  def s4_1
   end
 
-  def part_4c
+  def s4_2
   end
 
-  def part_4d
-  end
 end
