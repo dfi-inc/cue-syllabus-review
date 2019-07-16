@@ -15,4 +15,16 @@ class Step2Controller < ApplicationController
 
   def part_2d
   end
+
+  def title
+  end
+
+  def intro
+  end
+
+  def s2_1
+  end
+
+  def s2_2
+  end
 end

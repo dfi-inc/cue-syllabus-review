@@ -1,0 +1,61 @@
+<body class="slides zoom horizontal noPreload animated ">
+  <%= render "step1/navigation/nav" %>
+
+  <!-- Slide 1 (#78) -->
+  <section class="slide fade-6 kenBurns slideWhite" style="background: purple;">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+
+          <div class="fix-9-12">
+            <div class="fix-3-12">
+              <svg height="77" class="wide ae-1 fromCenter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
+            </div>
+            <div class="ae-2 margin-top-2">
+              <p class="hero"><span class="opacity-8">Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take&nbsp;away.</span></p>
+            </div>
+            <%= link_to "Begin Section 1", intro_1_path, class: "button blue gradient ae-3 circle"%>
+            <div class="ae-10 fromRight margin-top-1">
+              <p class="tiny"><span class="opacity-6">Also, we have a version for</span>
+                <a class="bold opacity-8" href="#">Mac</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="background" style="background-image:url()"></div>
+  </section>
+
+  <section class="slide fade-6  kenBurns">
+    <div class="content" style="background:">
+    <div class="container">
+    <div class="wrap">
+
+      <div class="fix-10-12">
+        <h1 class="huge thin ae-2 cue-red">Part 2</h1>
+    		<h1 class="huge thin ae-2">Center for Urban Education Syllabus Review Tool</h1>
+    		<!-- <p class="hero ae-1">Please tell us a little bit about yourself before we get started.</p> -->
+      </div>
+    	<div class="margin-top-2">
+    		<form class="slides-form" action="step_1.html">
+    			<!-- <input type="text" class="input-8 ae-4 fromCenter" name="user-name" placeholder="Full Name" val=""/>
+    			<input type="text" class="input-8 ae-4 fromCenter" name="user-school" placeholder="School" val=""/>
+    			<input type="text" class="input-8 ae-4 fromCenter" name="user-title" placeholder="Title" val=""/>
+    			<input type="email" class="input-8 ae-4 fromCenter" name="user-email" placeholder="Email" val=""/> -->
+
+          <%= link_to "Let's Get Started", part_2a_path, class: "button blue gradient ae-7 fromCenter" %>
+
+    		</form>
+    	</div>
+
+    </div>
+    </div>
+    </div>
+    <div class="background" style="background-image:url(<%= image_url("istock/1.jpg")%>)"></div>
+  </section>
+
+  <%#= render "shared/navigation" %>
+
+
+</body>
