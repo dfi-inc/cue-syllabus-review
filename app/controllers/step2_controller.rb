@@ -1,21 +1,6 @@
 class Step2Controller < ApplicationController
   layout "step2"
 
-  def section_2
-  end
-
-  def part_2a
-  end
-
-  def part_2b
-  end
-
-  def part_2c
-  end
-
-  def part_2d
-  end
-
   def title
   end
 
@@ -26,5 +11,17 @@ class Step2Controller < ApplicationController
   end
 
   def s2_2
+  end
+
+  def s2_3
+  end
+
+  def s2_4
+  end
+
+  def s2_5
+  end
+
+  def s2_6
   end
 end
