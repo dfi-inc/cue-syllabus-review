@@ -1,4 +1,5 @@
-<!-- EXAMPLE: Fullscreen Toggle -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+<!-- Fullscreen Toggle -->
 <!-- 1) add plugin -->
 <script src="https://cdn.rawgit.com/kayahr/jquery-fullscreen-plugin/9438016e/jquery.fullscreen-min.js"></script>
 
@@ -34,12 +35,6 @@
 </script>
 
 
-
-
-
-
-
-
 <%= render "shared/panel_top" %>
 
 <body class="slides zoom horizontal noPreload animated ">
@@ -55,253 +50,10 @@
   </div>
 </nav>
 
-<!-- Slide 1 (#78) -->
-<section class="slide fade-6 kenBurns slideWhite" style="background: purple;">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
 
-        <div class="fix-9-12">
-          <div class="fix-3-12">
-            <svg height="77" class="wide ae-1 fromCenter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
-          </div>
-          <div class="ae-2 margin-top-2">
-            <p class="hero"><span class="opacity-8">Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take&nbsp;away.</span></p>
-          </div>
-          <a href="#" class="button blue gradient ae-3">Start free trial</a><a href="#" class="button white ae-4">Learn more</a>
-          <div class="ae-10 fromRight margin-top-1">
-            <p class="tiny"><span class="opacity-6">Also, we have a version for</span> <a class="bold opacity-8" href="#">Mac</a></p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-image:url()"></div>
-</section>
-
-
+<%= render "step1/sections/section_title" %>
 <%= render "step1/sections/intro" %>
-
-
-<!-- Slide #90 -->
-<section class="slide fade-6 kenBurns bg-softpink">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-
-        <div class="fix-10-12 toCenter">
-          <p class="margin-bottom-2 ae-1"><span class="opacity-6">Case study</span></p>
-          <h1 class="ae-1">Create your own visual style</h1>
-        </div>
-        <div class="fix-10-12 margin-top-4 toCenter center">
-          <ul class="flex fixedSpaces later center">
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <div class="button rounded empty margin-bottom-2 videoThumbnail noShadow popupTrigger ae-3" data-popup-id="90">
-                <%= image_tag("emoji/neutral-emoji.png", class: "wide")%>
-              </div>
-              <h3 class="ae-4">Neutral</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-4">
-                <%= image_tag("emoji/uncomfortable-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-5">Uncomfortable</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-5">
-                <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-6">Disinterested</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/frustrated-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Frustrated</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-5">
-                <%= image_tag("emoji/disappointed-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-6">Disappointed</h3>
-            </li>
-          </ul>
-          <ul class="flex fixedSpaces later left">
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/mad-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Angry</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-5">
-                <%= image_tag("emoji/annoyed-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-6">Annoyed</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/excited-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Excited</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/mad-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Angry</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-5">
-                <%= image_tag("emoji/love-it-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-6">Happy</h3>
-            </li>
-          </ul>
-          <ul class="flex fixedSpaces later left">
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/afraid-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Afraid</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/confused-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Confused</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-5">
-                <%= image_tag("emoji/worried-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-6">Worried</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/interested-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Interested</h3>
-            </li>
-            <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
-                <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
-              </a>
-              <h3 class="ae-7">Disinterested</h3>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-image:url()"></div>
-</section>
-
-<!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="90">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe src="https://www.youtube.com/embed/g8yBqxTiHSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Slide 4 (#76) -->
- <section class="slide fade-6 kenBurns">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-
-        <div class="fix-12-12">
-          <ul class="flex reverse verticalCenter">
-            <li class="col-4-12 left ae-1 fromAbove">
-              <img class="iphone-76" src='<%= image_url("graphics/emojis/bored-emoji.png", class: "wide ")%>' alt="iPhone Image" data-action="zoom"/>
-            </li>
-            <li class="col-6-12 left">
-              <h1 class="huge ae-1 margin-bottom-2">Simple elegance</h1>
-              <p class="hero ae-2"><span class="opacity-8">Design is an integ­rat­ive pro­cess that seeks res­ol­u­tion (not com­prom­ise) through cross-disciplinary team­work. Design is&nbsp;inten­tional.</span></p>
-              <div class="popupTrigger ae-3 fromRight relative margin-top-3" data-popup-id="76-3">
-                <span class="button play white button-76 absolute">
-                  <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
-                </span>
-                <div class="text-76"><h6 class="uppercase">Watch video</h6><p class="tiny opacity-6">See Slides Framework in action (2:00)</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
-</section>
-<!-- Slide 2 (#79) -->
-<section class="slide fade-6 kenBurns">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-
-        <div class="fix-9-12">
-          <div class="quote-79 ae-1">“</div>
-          <h1 class="ae-2">Design is the contrast of the core of limitations therefore there are no boundaries. It is simply an interpretation of creativity.</h1>
-
-          <div class="ae-3 author-79 left margin-top-3">
-            <img src="assets/img/icon-16.png" width="64" class="avatar-79 round">
-            <h3>Paul Rand</h3>
-            <p class="tiny opacity-6">Graphic designer, Art director</p>
-          </div>
-
-          <ul class="grid grid-79 margin-top-6 later left">
-            <li class="col-6-12 ae-4">
-              <i class="material-icons">near_me</i>
-              <h3>Location</h3>
-              <p class="tiny opacity-6">The best stories of the week, delivered right to your inbox. No spam, we promise.</p>
-            </li>
-            <li class="col-6-12 ae-5">
-              <i class="material-icons">layers</i>
-              <h3>Layers</h3>
-              <p class="tiny opacity-6">Less time shopping means more time Doing Things, so we created Slides Framework. It’s built to impress!</p>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-image:url(assets/img/background/img-79.jpg)"></div>
-</section>
-
-
-<!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="86-2">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe src="https://www.youtube.com/embed/g8yBqxTiHSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
+<%= render "step1/sections/feelings" %>
 <%= render "step1/sections/frustration" %>
 <%= render "step1/sections/worried" %>
 <%= render "step1/sections/disappointed" %>
@@ -314,32 +66,6 @@
 <%= render "step1/sections/uncomfortable" %>
 <%= render "step1/sections/neutral" %>
 <%= render "step1/sections/disinterested" %>
-
-
-
-
-<!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="76-3">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe src="https://www.youtube.com/embed/g8yBqxTiHSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
-
-
-
-
-
-
 
 
 
