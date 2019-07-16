@@ -41,9 +41,10 @@ Rails.application.routes.draw do
   get '/2c'      => 'step2#2c',       as: :part_2c
   get '/2d'      => 'step2#2d',       as: :part_2d
 
-  get 'section/1/title'   => 'step1#title',     as: :title_1
-  get 'section/1//intro'  => 'step1#intro',     as: :intro_1
-  get 'section/1//slides' => 'step1#slides',    as: :slides_1
+  get 'section/1/title'   => 'step1#title',   as: :title_1
+  get 'section/1//intro'  => 'step1#intro',   as: :intro_1
+  get 'section/1/s1_1'    => 'step1#s1_1',    as: :s1_1
+  get 'section/1/s1_2'    => 'step1#s1_2',    as: :s1_2
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

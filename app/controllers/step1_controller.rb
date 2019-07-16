@@ -7,7 +7,10 @@ class Step1Controller < ApplicationController
   def intro
   end
 
-  def slides
+  def s1_1
   end
-  
+
+  def s1_2
+  end
+
 end
