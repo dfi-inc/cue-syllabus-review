@@ -117,7 +117,7 @@
 
 
 <!-- Slide #17 -->
-<section class="slide fade-6 kenBurns" style="background: rgba(255, 90, 154, 5)">
+<section class="slide fade-6 kenBurns ">
   <div class="content">
     <div class="container">
       <div class="wrap padding-top-phablet-5">
@@ -134,10 +134,14 @@
 
                 <li class="col-12-12 col-tablet-1-4 col-phablet-1-3 col-phone-1-2" style="margin-left: 40px;">
                   <div class="ae-4" style="float: left;">
-                  <%= image_tag("graphics/emojis/small/disinterested-emoji.png", class:" align-right", style:" float: left; height: 85px; width: 85px;")%>
+                    <%= link_to part_1b_path do %>
+                      <%= image_tag("graphics/emojis/small/disinterested-emoji.png", class:" align-right", style:" float: left; height: 85px; width: 85px;")%>
+                    <% end %>
                   </div>
                   <div class="ae-4" style="float: left; margin-top: -40px;">
-                  <%= image_tag("graphics/emojis/small/interested-emoji.png", class:" align-right", style: "height: 117px; width: 117px;")%>
+                    <%= link_to part_1b_path do %>
+                      <%= image_tag("graphics/emojis/small/interested-emoji.png", class:" align-right", style: "height: 117px; width: 117px;")%>
+                    <% end %>
                   </div>
                   <div class="ae-4" style="float: left; margin-top: -65px;">
                   <%= image_tag("graphics/emojis/small/uncomfortable-emoji.png", class:" align-right", style: "height: 130px; width: 130px;")%>
