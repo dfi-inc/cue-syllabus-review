@@ -23,17 +23,17 @@ h1, .h1 {
 	letter-spacing: -0.036em;
 
 	&.big {
-		font-size: 58px;
+		font-size: 72px;
 		line-height: 1;
 		font-weight: 100;
 	}
 
 	&.huge {
-		font-size: 64px;
+		font-size: 80px;
 		line-height: 1.218751;
-		letter-spacing: -0.04em;
+		letter-spacing: -0em;
 		margin-bottom: 40px;
-		font-weight: 100;
+		font-weight: 500;
 	}
 
 	&.small {
@@ -147,10 +147,11 @@ blockquote {
 	}
 
 	&.micro {
-		font-size: 14px;
-		line-height: 1.5714;
+		font-size: 12px;
+		line-height: 1.4;
 		margin-bottom: 20px;
 		margin-top: 2px;
+		word-spacing: -1px;
 	}
 }
 
@@ -265,11 +266,11 @@ h5, h5 {
 // .typography {
 
 // 	// HEADINGS
-// 	.h1, h1, 
-// 	.h2, h2, 
-// 	.h3, h3, 
-// 	.h4, h4, 
-// 	.h5, h5, 
+// 	.h1, h1,
+// 	.h2, h2,
+// 	.h3, h3,
+// 	.h4, h4,
+// 	.h5, h5,
 // 	.h6, h6 {
 // 		font-style: normal;
 // 		letter-spacing: normal;
@@ -539,14 +540,14 @@ h5, h5 {
 // 	& ul li {
 // 		list-style: disc;
 // 	}
-	
+
 // 	& ol li {
 // 		list-style: decimal;
 // 	}
-	
+
 // 	// BLOCKQUOTE
 // 	& blockquote {
-		
+
 // 		@include plumber(
 // 			$font-size: 3.2,
 // 			$line-height: 4,
@@ -560,10 +561,10 @@ h5, h5 {
 // 		opacity: 0.9;
 // 		border-left: 5px solid #EEE;
 // 	}
-	
+
 // 	// Quote
 // 	& q {
-		
+
 // 		@include plumber(
 // 			$font-size: 3.2,
 // 			$line-height: 4,
@@ -608,4 +609,3 @@ h5, h5 {
 // 	}
 
 // }
-

@@ -1,6 +1,16 @@
-<!-- Slide #33 -->
-<section class="slide fade-6 kenBurns" style="background: rgba(200, 100, 154, 5)">
+<style media="screen">
+
+.fade-7 .content {
+  background: rgba(33, 101, 131, .95) !important;
+}
+
+</style>
+
+
+<!-- Slide #42 -->
+<section class="slide fade-7 kenBurns" style="background: #216583;" data-name="afraid" data-title="Afraid">
   <div class="content">
+
     <div class="container">
       <div class="wrap">
 
@@ -31,19 +41,22 @@
               </ul>
               <br/><br/>
               <p>
-                <%= link_to "Let's Get Started", part_1a_path, class: "button circle blue gradient ae-3 margin-right-1" %>
+                <%= link_to "Let's Get Started", title_1_path, class: "button circle cueRed gradient ae-3 margin-right-1" %>
               </p>
             </li>
             <li class="col-6-12 left ae-4 fromRight">
               <ul class="slider animated" data-slider-id="31">
-                <li class="selected fromRight">
-                  <img class="ipad-33"  data-action="zoom" width="1200" src="assets/img/ipad-33.png"/>
+                <li class="fromRight selected" data-action="zoom">
+                  <img class="ipad-33"  data-action="zoom" width="500" src="<%= image_url("emoji/worried-emoji.png")%>">
+                </li>
+                <li class=" fromRight">
+                  <img class="ipad-33"  data-action="zoom" width="800" src="<%= image_url("graphics/my_syllabus.svg")%>">
                 </li>
                 <li class="fromRight" data-action="zoom">
-                  <img class="ipad-33" data-action="zoom" width="1200" src="assets/img/ipad-32.png"/>
+                  <img class="ipad-33"  data-action="zoom" width="800" src="<%= image_url("emoji/worried-emoji.png")%>">
                 </li>
                 <li class="fromRight" data-action="zoom">
-                  <img class="ipad-33" data-action="zoom" width="1200" src="assets/img/ipad-31.png"/>
+                  <img class="ipad-33"  data-action="zoom" width="800" src="<%= image_url("graphics/syllabus-2.svg")%>"/>
                 </li>
               </ul>
             </li>

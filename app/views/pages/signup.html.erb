@@ -1,41 +1,50 @@
+<style media="screen">
+
+.fade-7 .content {
+  background: rgba(33, 101, 131, .95) !important;
+}
+
+</style>
+
+
 <!-- Slide #42 -->
-<section class="slide fade-6 kenBurns" style="background: rgba(200, 0, 54, 5)">
+<section class="slide fade-7 kenBurns" style="background: #216583;" data-name="afraid" data-title="Afraid">
   <div class="content">
     <div class="container">
       <div class="wrap">
+        <h1 class="huge ae-1">Data Matters.</h1>
+        <p class="hero ae-2">
+          Please help us accurately capture
+          <a href="#"><u>annoynmous</u></a> <br/> details about who is
+          using our tools.</p>
+        <div class="form-42 margin-top-5 center">
+          <div class="selected left ae-4">
+            <form class="slides-form center text-left" action="#" autocomplete="off">
+              <input class=" ae-4" id="full_name" type="text" name="text" placeholder="Full Name" required/>
+              <input class=" ae-4" id="Tile" type="text" name="text" placeholder="Tile" required/>
+              <input class=" ae-4" id="full_name" type="text" name="text" placeholder="Academic Institution" required/>
+              <input class=" ae-4" id="email42" type="email" name="email" placeholder="Email address" required/>
+              <p class="center ae-7 margin-top-2 micro">
+                <span class="opacity-5">By clicking
+                  <a href="#">Create Account</a>
+                  , I agree to the<br/>
+                  <u><%= link_to "Terms of Servce", login_path, class: "opacity-8 bold" %></u> and
+                  <u><%= link_to "Privacy & Policy", login_path, class: "opacity-8 bold" %></u>
+                </span>
+                </p>
+              <%= link_to "Create Account", overview_path, class: "button cueRed gradient ae-8" %>
 
-        <h1 class="ae-1">Create Account</h1>
-        <div class="form-42 margin-top-3 center">
-          <div class="pad shadow selected left ae-3">
-            <form class="slides-form wide" action="#" autocomplete="off">
-              <input class="wide ae-4" id="full_name" type="text" name="text" placeholder="Full Name" required/>
-
-              <input class="wide ae-4" id="Tile" type="text" name="text" placeholder="Tile" required/>
-              <input class="wide ae-4" id="full_name" type="text" name="text" placeholder="Academic Institution" required/>
-              <input class="wide ae-4" id="email42" type="email" name="email" placeholder="Email address" required/>
-              <ul class="grid noSpaces margin-top-1">
-                <li class="col-6-12 form-42-input-1">
-                  <div class="label ae-5"><label class="left opacity-5" for="password42">Create Password</label></div>
-                  <input class="ae-6" id="password42" type="password" name="password" placeholder="Password" required/>
-                </li>
-                <li class="col-6-12 form-42-input-2">
-                  <div class="label ae-5"><label class="left opacity-5" for="password42confirm">Confirm Password</label></div>
-                  <input class="ae-6" id="password42confirm" type="password" name="password" placeholder="Repeat" required/>
-                </li>
-              </ul>
-              <p class="center ae-7 margin-top-2 micro"><span class="opacity-5">By clicking <a href="#">Create Account</a>, I agree to the Terms of Service and <a href="#">Privacy&nbsp;Policy</a>.</span></p>
-              <%= link_to "Create Account", overview_path, class: "button green gradient wide ae-8" %>
 
             </form>
           </div>
-          <p class="micro margin-top-3 ae-10">
-            <span class="opacity-6">Already have an invite code?</span>
-            <%= link_to "Login", login_path, class: "opacity-8 bold" %>
-          </p>
         </div>
 
       </div>
     </div>
   </div>
-  <!-- <div class="background" style="background-image:url(assets/img/background/img-42.jpg)"></div> -->
+  <div
+  class="background"
+  style="background-image:url(<%= image_url("icons/1/PNG/15.png")%>);
+    ">
+  </div>
 </section>
