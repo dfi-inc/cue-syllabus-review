@@ -1,0 +1,36 @@
+<script src="https://cdn.rawgit.com/mattboldt/typed.js/548c6ade/dist/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+<!-- Fullscreen Toggle -->
+<!-- 1) add plugin -->
+<script src="https://cdn.rawgit.com/kayahr/jquery-fullscreen-plugin/9438016e/jquery.fullscreen-min.js"></script>
+
+<!-- 2) add script -->
+<script>
+  $(function(){
+    //HANDLE FULLSCREEN
+    $('.fullscreenToggle').click(function(){
+      $("body").toggleFullScreen();
+    });
+
+    //CONTROL WITH JAVSCRIPT (OPTIONAL)
+    $(document).bind("fullscreenchange", function() {
+      //control with css, example below
+      $html.removeClassByPrefix('fullscreen-').addClass('fullscreen-' + ($(document).fullScreen() ? "on" : "off"));
+
+      //control with JS
+      if ($(document).fullScreen()) {
+        //your function
+      }
+    });
+
+    //GO FULLSCREEN ON [F] KEY (OPTIONAL)
+    $(document).keyup(function (e) {
+      if (e.target.nodeName.toLowerCase() == 'input' || e.target.nodeName.toLowerCase() == 'textarea') {
+        return;
+      }
+      if (e.keyCode == 70) {
+        $("body").toggleFullScreen();
+      }
+    });
+  });
+</script>
