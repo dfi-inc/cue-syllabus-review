@@ -1,13 +1,110 @@
+    <style>
+
+      section[data-name="frustrated"] {background: indigo;}
+      section[data-name="worried"] {background: #db4800;}
+      section[data-name="disappointed"] {background: #0E6251;}
+      section[data-name="excited"] {background: blue;}
+      section[data-name="happy"] {background: #ff284d;}
+      section[data-name="interested"] {background: #39A64D;}
+      section[data-name="scared"] {background: #8f0019;}
+      section[data-name="confused"] {background: purple;}
+      section[data-name="angry"] {background: #E74C3C;}
+      section[data-name="annoyed"] {background: #008080;}
+      section[data-name="uncomfortable"] {background: #EC7063;}
+      section[data-name="neutral"] {background: teal;}
+      section[data-name="disinterested"] {background: blue;}
+
+      /* Colors by Google Meterial Design (C) */
+      /* @include generateColors("red", $red);
+      @include generateColors("pink", $pink);
+      @include generateColors("purple", $purple);
+      @include generateColors("deepPurple", $deepPurple);
+      @include generateColors("indigo", $indigo);
+      @include generateColors("blue", $blue);
+      @include generateColors("cyan", $cyan);
+      @include generateColors("teal", $teal);
+      @include generateColors("green", $green);
+      @include generateColors("lightGreen", $lightGreen);
+      @include generateColors("lime", $lime);
+      @include generateColors("yellow", $yellow, $default-button-color);
+      @include generateColors("amber", $amber);
+      @include generateColors("orange", $orange);
+      @include generateColors("deepOrange", $deepOrange);
+      @include generateColors("brown", $brown);
+      @include generateColors("gray", $gray);
+      @include generateColors("blueGray", $blueGray);
+      @include generateColors("cueRed", $cueRed); */
+
+      .slides {
+         -webkit-transition:1s;
+         transition:1s;
+      }
+      /* set background colors for each of your slides */
+      .slides.stage-1 {
+         background: 000;
+      }
+      .slides.stage-2 {
+         background: #db4800;
+      }
+      .slides.stage-3 {
+         background: lightgray;
+      }
+      .slides.stage-4 {
+         background: yellow;
+      }
+      .slides.stage-5 {
+         background:#489D43;
+      }
+
+      .slide.transparent,
+      .slide.transparent .background {
+         background:transparent !important;
+      }
+
+      .autoHeight {
+         min-height:60vh;
+      }
+
+      /* ignore */
+      .slides.scroll .menuToggle.scrollEffectToggle,
+      .slides:not(.scroll) .menuToggle.slideEffectToggle { background: #fff; color:#303030; padding: 11px 7px; margin: -5px 0 !important; border-radius: 5px; }
+      .slides.scroll .menuToggle.scrollEffectToggle *,
+      .slides:not(.scroll) .menuToggle.slideEffectToggle * { cursor: default !important; opacity:1; pointer-events:none;}}
+      /* ignore */
+    </style>
 
 
+    <nav class="panel top">
+      <!-- desktop version -->
+      <div class="sections desktop">
+        <div class="left">
+          <span class="button actionButton fullscreenToggle white"><i class="material-icons">fullscreen</i></span>
+        </div>
+        <div class="center">
+          <ul class="menu">
+            <li>
+              <%= link_to "eqmd", title_1_path, class: "eqmd-logo "%>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span>
+        </div>
+      </div>
+    </nav>
 
-<body class="slides zoom horizontal noPreload animated ">
+
+<body class="slides plain horizontal noPreload animated ">
 
 
   <!-- Panel Bottom #03 -->
   <nav class="panel bottom forceMobileView">
     <div class="sections desktop">
-      <div class="left"><span class="opacity-8">Build with <a href="#" title="Slides Framework"><svg style="width:52px;height:21px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></span></div>
+      <div class="left">
+        <span class="opacity-8">
+          <!-- Build with <a href="#" title="Slides Framework"><svg style="width:52px;height:21px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a> -->
+        </span>
+      </div>
       <<div class="center">
         <ul class="menu uppercase">
           <li>
@@ -42,8 +139,6 @@
     </ul>
   </div>
 
-
-
   <!-- Navigation Arrows -->
   <nav class="side left">
     <div class="navigation">
@@ -63,10 +158,16 @@
   <nav class="side">
     <div class="navigation">
       <div class="cell">
-        <span class="nextSlide"><svg class="sideArrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
+        <span class="nextSlide">
+          <svg class="sideArrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg>
+        </span>
       </div>
     </div>
   </nav>
+
+
+
+
   <%= render "step1/sections/frustration" %>
   <%= render "step1/sections/worried" %>
   <%= render "step1/sections/disappointed" %>
@@ -76,6 +177,7 @@
   <%= render "step1/sections/scared" %>
   <%= render "step1/sections/confused" %>
   <%= render "step1/sections/angry" %>
+  <%= render "step1/sections/annoyed" %>
   <%= render "step1/sections/uncomfortable" %>
   <%= render "step1/sections/neutral" %>
   <%= render "step1/sections/disinterested" %>
