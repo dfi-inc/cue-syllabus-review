@@ -1015,13 +1015,13 @@ svg {
 	.wrap {
 		display: table-cell;
 		text-align: center;
-		vertical-align: middle;
+		// vertical-align: middle;
 		overflow:  hidden;
 
 		&:not(.noSpaces),
 		&.spaceWrap,
 		.spaceWrap {
-			padding: 120px calc(8% + 15px);
+			padding: 120px calc(7.5% + 15px);
 		}
 
 		.overflowHidden {
