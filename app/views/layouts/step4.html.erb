@@ -5,24 +5,20 @@
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
   	<meta name="apple-mobile-web-app-capable" content="yes" />
-
     <title>Step 4</title>
-    <!-- Compressed Styles -->
+
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <!-- jQuery 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Compressed Scripts -->
-    <%= javascript_include_tag 'application', media: 'all' %>
-    <%= render "shared/fonts" %>
-
-  </head>
-  <body class="slides noPreload animated">
-    <%#= render "shared/navigation" %>
-    <!-- SVG Library -->
     <%= render "shared/svg_library" %>
-    <!-- Panel Top #06 -->
+    <%= render "shared/js" %>
 
+    <%= render "shared/fonts" %>
+  </head>
+
+  <body class="slides noPreload animated">
+
+    <%= render "shared/svg_library" %>
     <%= yield %>
+    <%= javascript_include_tag 'application', media: 'all' %>
 
   </body>
 </html>

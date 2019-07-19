@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
   	<meta name="apple-mobile-web-app-capable" content="yes" />
-
   	<title>Step 1</title>
-  	<%= stylesheet_link_tag 'application', media: 'all' %>
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<%= javascript_include_tag 'application', media: 'all' %>
-    <%= render "shared/fonts" %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= render "shared/svg_library" %>
-    <%= render "step1/css/css" %>
-    <%= render "step1/js/js" %>
+    <%= render "shared/js" %>
+    <%= render "shared/css" %>
+
+    <%= render "step1/js" %>
+    <%= render "step1/css" %>
   </head>
-  
-  <%= render "shared/panel_top" %>
-  <%= yield %>
+
+  <body class="slides zoom horizontal noPreload animated ">
+    <%= render "shared/panel_top" %>
+    <%= yield %>
+    <%= javascript_include_tag 'application', media: 'all' %>
+  </body>
 
 </html>

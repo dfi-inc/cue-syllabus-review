@@ -5,29 +5,17 @@
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
   	<meta name="apple-mobile-web-app-capable" content="yes" />
-
   	<title>Step 2</title>
-  	<!-- Compressed Styles -->
+
     <%= stylesheet_link_tag 'application', media: 'all' %>
-  	<!-- jQuery 3.3.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<!-- Compressed Scripts -->
-  	<%= javascript_include_tag 'application', media: 'all' %>
-    <%= render "shared/fonts" %>
-
-    <!-- Template #02 -->
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-    <style>
-      .quicksand { font-family: 'Quicksand', sans-serif !important; }
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-
+    <%= render "shared/svg_library" %>
+    <%= render "shared/js" %>
+    <%= render "shared/css" %>
 
   </head>
-    <%= render "shared/svg_library" %>
-    <%#= render "step2/navigation" %>
-      <%= render "shared/panel_top" %>
-    <%= yield %>
 
+    <%= render "shared/panel_top" %>
+    <%= yield %>
+    <%= javascript_include_tag 'application', media: 'all' %>
 
 </html>
