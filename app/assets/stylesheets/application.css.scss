@@ -18,14 +18,24 @@
 // Section 1 emoji;
 
 .emoji-bg {
- width: 500px;
- height: 1000px;
+ width: 650px;
+ height: 650px;
  opacity: .2;
  position: absolute;
  right: 10%;
- bottom: 20%;
- opacity: 1;
+ bottom: 7.5%;
+ opacity: 0;
  background-size: contain;
+}
+
+.emoji-bg .title {
+ position: absolute;
+ top: 5%;
+ left: 40%;
+ text-transform: uppercase;
+ font-family: 'Nunito';
+ margin-bottom: 50px;
+
 }
 
 
