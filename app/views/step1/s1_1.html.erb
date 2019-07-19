@@ -1,3 +1,22 @@
+<style media="screen">
+
+li:hover >  .emoji-bg {
+  opacity: 1 !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
 <nav class="panel top">
   <!-- desktop version -->
   <div class="sections desktop margin-bottom-7">
@@ -26,22 +45,24 @@
       <div class="container">
         <div class="wrap middle">
 
-          <div class="section-title left" style="border-bottom: 1px solid rgba(255, 255, 255, .10);">
+
+          <div class="section-title left margin-bottom-8" style="border-bottom: 1px solid rgba(255, 255, 255, .10);">
             <h5> Section 2</h5>
             <h2> How do you feel?</h2>
           </div>
 
+          <div class="eqmd-bg">eqmd</div>
+
           <div class="12-12 toCenter center">
-            <h2 class="huge ae-1  margin-bottom-7">Are you feeling... <span class="typed"></span>?</h2>
-              <ul class="flex fixedSpaces later center middle">
-                <li>
-                  <li class="col-8-12 col-tablet-1-2 col-phone-1-1">
+              <ul class="flex fixedSpaces later center middle emojis">
+                <li class="col-6-12 col-tablet-1-2 col-phone-1-1">
                   <ul class="flex fixedSpaces later center middle">
                     <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
                       <a href="/section/1/s1_2#neutral" class="button rounded empty margin-bottom-2 ae-4">
                         <%= image_tag("emoji/neutral-emoji.png", class: "wide")%>
                       </a>
-                      <h3 class="ae-4">Neutral</h3>
+                      <div class="emoji-bg" style="background-image:url(<%= image_url("https://media1.giphy.com/media/ItLceamnRtfUI/giphy.gif")%>)">
+                      </div>
                     </li>
                     <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
                       <a href="/section/1/s1_2#uncomfortable" class="button rounded empty margin-bottom-2 ae-4">
