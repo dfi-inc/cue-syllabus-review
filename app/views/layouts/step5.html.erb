@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
   	<meta name="apple-mobile-web-app-capable" content="yes" />
-
     <title>Step 5</title>
+
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <%= javascript_include_tag 'application', media: 'all' %>
-    <%= render "shared/fonts" %>
+    <%= render "shared/svg_library" %>
+    <%= render "shared/js" %>
+    <%= render "shared/css" %>
 
   </head>
-  <%#= render "shared/navigation" %>
-    <!-- SVG Library -->
+  
     <%= render "shared/svg_library" %>
-    <!-- Panel Top #06 -->
-
     <%= yield %>
+    <%= javascript_include_tag 'application', media: 'all' %>
+
 </html>
