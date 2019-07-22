@@ -1,39 +1,69 @@
 <style media="screen">
-
-.fade-7 .content {
-  background: rgba(128, 0, 128, .95) !important;
+.fade-1 .content {
+  background: rgba(233, 30, 99, .5) !important;
 }
-
 </style>
 
-  <%= render "shared/panels/top/nav_1" %>
 
-  <section class="slide fade-7 kenBurns slideWhite purple verticalCenter">
+
+<body class="slides zoom horizontal noPreload animated ">
+
+  <section class="slide fade-1 kenBurns slideWhite blue" data-name="s6_title" data-title="Title">
     <div class="content">
       <div class="container">
         <div class="wrap">
-          <!-- <div class="eqmd-bg">eqmd</div> -->
-
-          <div class="fix-9-12">
-            <h5 class="ae-2 fromLeft type-nunito margin-bottom-4" style="border-bottom: 1px solid #333; padding-bottom: 15px;; text-transform: uppercase; letter-spacing: 2px;">section 2</h5>
-            <h1 class="big margin-bottom-2 ae-3 fromLeft">What is the rationale for doing syllabus review?</h1>
-            <br/>
-            <p class="hero margin-bottom-2 ae-4 fromLeft type-nunito">
-              [Teaching	is	a	core	practice	of	college	self-reflection	are	<br/>rarely	routine
-              and	often	occur	in	an	unstructured	manner.]
-            </p>
-            <br/>
-            <!-- <h1 class="big ae-1 header-1">Section 1</h1> -->
-           <%= link_to "Begin Section", intro_1_path, class: "button blue gradient ae-3 circle"%>
+          <div class="fix-11-12">
+            <h5 class="ae-2 fromLeft type-nunito margin-bottom-4" style="border-bottom: 1px solid rgba(255, 255, 255, .15); padding-bottom: 15px;; text-transform: uppercase; letter-spacing: 2px;">section 3</h5>
+            <h1 class="big margin-bottom-2 ae-3 fromLeft" style="border-bottom: 1px solid rgba(255, 255, 255, .15);">
+              What is the rationale for doing syllabus review?
+            </h1>
           </div>
+          <div class="fix-11-12">
+            <ul class="grid margin-top-6 later left">
+              <li class="col-4-12 ae-4">
+                <i class="material-icons">lightbulb</i>
+                <h3 class="type-nunito">Insight</h3>
+                <p class="">The primary insight that you'll get from this section.</p>
+                <ul>
+                  <li>Insight</li>
+                  <li>Insight</li>
+                  <li>Insight</li>
+                </ul>
+              </li>
+              <li class="col-4-12 ae-5">
+                <i class="material-icons">map</i>
+                <h3 class="type-nunito">Goals</h3>
+                <p class="">This is the primary insight that you'll get from this section.</p>
+                <ul>
+                  <li>Insight</li>
+                  <li>Insight</li>
+                  <li>Insight</li>
+                </ul>
+              </li>
+              <li class="col-4-12 ae-5">
+                <i class="material-icons">check</i>
+                <h3 class="type-nunito">Outcomes</h3>
+                <p class="">Outcomes you will demonstrate after completing this section.</p>
+                <ul>
+                  <li>Insight</li>
+                  <li>Insight</li>
+                  <li>Insight</li>
+                </ul>
+              </li>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+           <%= link_to intro_1_path, class: "button blue gradient ae-3 circle margin-top-4" do %>
+              <span class="h3 micro">Let's Get Started <i class="margin-left-1 fas fa-arrow-circle-right"></i></span>
+           <% end %>
+          </div>
+
         </div>
       </div>
     </div>
-    <div
-    class="background"
-    style="background-image:url(<%= image_url("http://static1.squarespace.com/static/528fa414e4b0e2f77a6f63a0/t/59724b7129687fd90688b87a/1500662646918/?format=1500w")%>);
-    background-size: cover;">
-  </div>
+    <div class="background" style="background-image:url(https://www.sccpre.cat/mypng/full/145-1456885_moderate-red-curve-gradient-graphics-background-graphic.png);"></div>
+
   </section>
 
 </body>
