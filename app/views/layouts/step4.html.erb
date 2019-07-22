@@ -10,13 +10,11 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= render "shared/svg_library" %>
     <%= render "shared/js" %>
-
     <%= render "shared/fonts" %>
   </head>
 
   <body class="slides noPreload animated">
-
-    <%= render "shared/svg_library" %>
+    <%= render "shared/sidebar" %>
     <%= yield %>
     <%= javascript_include_tag 'application', media: 'all' %>
 

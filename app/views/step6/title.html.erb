@@ -1,34 +1,39 @@
-<body class="slides zoom horizontal noPreload animated ">
-  <%= render "step1/navigation/nav" %>
+<style media="screen">
 
-  <!-- Slide 1 (#78) -->
-  <section class="slide fade-6 kenBurns slideWhite" style="background: purple;">
+.fade-7 .content {
+  background: rgba(128, 0, 128, .95) !important;
+}
+
+</style>
+
+  <%= render "shared/panels/top/nav_1" %>
+
+  <section class="slide fade-7 kenBurns slideWhite purple verticalCenter">
     <div class="content">
       <div class="container">
         <div class="wrap">
-          <div class="eqmd-bg">eqmd</div>
+          <!-- <div class="eqmd-bg">eqmd</div> -->
 
-          <div class="fix-10-12">
-            <h1 class="big ae-1 header-1">EQUITY-MINDEDNESS</h1>
-            <h3 class="big ae-1 sub-header-1">IN THE CLASSROOM</h3>
-            <br/><br/>
-            <p class="hero ae-2">
-              <span class="opacity-8">
-                Here, we'll take a deep dive into Equity Mindedness, figure out<br/>
-                 what it's all about, and how it can change your classroom forever.
-             </span>
-             <br/><br/>
-           </p>
-            <%= link_to "Begin Section 6", intro_5_path, class: "button blue gradient ae-3 circle"%>
-            <div class="ae-10 fromRight margin-top-1">
-              <p class="tiny"><span class="opacity-6">Also, we have a version for</span>
-                <a class="bold opacity-8" href="#">Mac</a></p>
-            </div>
+          <div class="fix-9-12">
+            <h5 class="ae-2 fromLeft type-nunito margin-bottom-4" style="border-bottom: 1px solid #333; padding-bottom: 15px;; text-transform: uppercase; letter-spacing: 2px;">section 6</h5>
+            <h1 class="big margin-bottom-2 ae-3 fromLeft">Does my syllabus demonstrate equity for racially/ethnically minoritized students?</h1>
+            <br/>
+            <p class="hero margin-bottom-2 ae-4 fromLeft type-nunito">
+              [As	noted	in	Part	1,	an	equity-minded	syllabus	intentionally	seeks	to	support	students	from
+racially/ethnically	minoritized	groups	by incorporating	the	following	six	equity-minded	practices:]
+            </p>
+            <br/>
+            <!-- <h1 class="big ae-1 header-1">Section 1</h1> -->
+           <%= link_to "Begin Section", intro_6_path, class: "button blue gradient ae-3 circle"%>
           </div>
-
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url()"></div>
+    <div
+    class="background"
+    style="background-image:url(<%= image_url("http://static1.squarespace.com/static/528fa414e4b0e2f77a6f63a0/t/59724b7129687fd90688b87a/1500662646918/?format=1500w")%>);
+    background-size: cover;">
+  </div>
   </section>
+
 </body>
