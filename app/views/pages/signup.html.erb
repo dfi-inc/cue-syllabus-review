@@ -1,45 +1,63 @@
 <style media="screen">
-
-.fade-7 .content {
-  background: rgba(33, 101, 131, .95) !important;
+.fade-1 .content {
+  background: rgba(0, 188, 212, .35) !important;
 }
-
 </style>
 
 
-<section class="slide fade-7 kenBurns" style="background: #216583;">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <h1 class="huge ae-1">Data Matters.</h1>
-        <p class="hero ae-2">
-          Please help us accurately capture
-          <a href="#"><u>anoynmous</u></a> <br/> details about who is
-          using our tools.</p>
-        <div class="form-42 margin-top-5 center">
-          <div class="selected left ae-4">
-            <form class="slides-form center text-left" action="#" autocomplete="off">
-              <input class=" ae-4" id="full_name" type="text" name="text" placeholder="Full Name" required/>
-              <input class=" ae-4" id="Tile" type="text" name="text" placeholder="Tile" required/>
-              <input class=" ae-4" id="full_name" type="text" name="text" placeholder="Academic Institution" required/>
-              <input class=" ae-4" id="email42" type="email" name="email" placeholder="Email address" required/>
-              <p class="center ae-7 margin-top-2 micro">
-                <span class="opacity-5">By clicking
-                  <a href="#">Create Account</a>
-                  , I agree to the<br/>
-                  <u><%= link_to "Terms of Servce", login_path, class: "opacity-8 bold" %></u> and
-                  <u><%= link_to "Privacy & Policy", login_path, class: "opacity-8 bold" %></u>
-                </span>
-                </p>
-              <%= link_to "Create Account", overview_path, class: "button cueRed gradient ae-8" %>
 
 
-            </form>
-          </div>
-        </div>
-
-      </div>
+<!-- Panel Bottom #04 -->
+<nav class="panel bottom">
+  <div class="sections">
+    <div class="center">
+      <p class="opacity-4 bold micro">
+        <a href="#">
+          COPYRIGHT 2019 CUE
+        </a>
+      </p>
     </div>
   </div>
-  <div class="background" style="background-image:url(<%= image_url("icons/1/PNG/15.png")%>);"></div>
-</section>
+</nav>
+
+<body class="slides zoom horizontal noPreload animated">
+  <section class="slide fade-1 kenBurns slideWhite">
+    <div class="content">
+      <div class="container">
+        <div class="wrap ">
+          <!-- <div class="eqmd-bg" style="z-index:">eqmd</div> -->
+          <ul class="fix-12-12">
+            <h1 class="huge ae-1">Data Matters.</h1>
+            <p class="hero ae-2">
+              Please help us accurately capture
+              <a href="#"><u>anoynmous</u></a> <br/> details about who is
+              using our tools.
+            </p>
+            <div class="form-42 margin-top-5">
+              <div class="selected left ae-4">
+                <form class="slides-form center left" action="#" autocomplete="off">
+                  <input class="left ae-4" id="full_name" type="text" name="text" placeholder="Full Name" required/>
+                  <input class="left ae-4" id="Tile" type="text" name="text" placeholder="Tile" required/>
+                  <input class="left ae-4" id="full_name" type="text" name="text" placeholder="Academic Institution" required/>
+                  <input class="left ae-4" id="email42" type="email" name="email" placeholder="Email address" required/>
+                  <p class="center ae-7 margin-top-2 micro">
+                    <span class="opacity-5">By clicking
+                      <a href="#">Create Account</a>
+                      , I agree to the<br/>
+                      <u><%= link_to "Terms of Servce", login_path, class: "opacity-8 bold" %></u> and
+                      <u><%= link_to "Privacy & Policy", login_path, class: "opacity-8 bold" %></u>
+                    </span>
+                  </p>
+                  <%= link_to "Create Account", overview_path, class: "button circle cueRed gradient ae-3 margin-right-1" %>
+                </form>
+              </div>
+            </div>
+          </ul>
+          <br/>
+          <br/>
+        </div>
+      </div>
+    </div>
+    <div class="background" style="background-image:url(https://www.sccpre.cat/mypng/full/145-1456885_moderate-red-curve-gradient-graphics-background-graphic.png);"></div>
+  </section>
+</body>
