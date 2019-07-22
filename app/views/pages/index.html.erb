@@ -1,3 +1,12 @@
+<style media="screen">
+.fade-1 .content {
+  background: rgba(0, 188, 212, .35) !important;
+}
+</style>
+
+
+
+
 <!-- Panel Bottom #04 -->
 <nav class="panel bottom">
   <div class="sections">
@@ -12,26 +21,30 @@
 </nav>
 
 <body class="slides zoom horizontal noPreload animated">
-  <section class="slide fade-6 kenBurns slideWhite">
+  <section class="slide fade-1 kenBurns slideWhite">
     <div class="content"  style="background: #216583;">
       <div class="container">
         <div class="wrap ">
-          <div class="eqmd-bg ">eqmd</div>
+          <!-- <div class="eqmd-bg" style="z-index:">eqmd</div> -->
           <ul class="fix-12-12">
             <li class="fix-2-12 margin-bottom-12">
               <%= image_tag("graphics/cue-logo@3x.png", class: "ae-1 wide ae-1 fromCenter")%>
             </li>
             <li class="ae-2 fix-12-12">
-              <h1 class="huge ae-2 header-1">Syllabus Review Tool</h1>
-              <!-- <p class="hero"><span class="opacity-8">
-                An academic Resource
-              </span></p> -->
+              <h1 class="huge ae-2 header-1" style="border-bottom: 1px solid rgba(255, 255, 255, .25); padding-bottom: 15px;">Syllabus Review Tool</h1>
+              <p class="hero"><span class="opacity-8">
+                An	inquiry	tool	for	promoting	racial/ethnic<br/>
+                equity	and	equity-minded	practice.
+                </span>
+              </p>
             </li>
           </ul>
+          <br/>
+          <br/>
           <%= link_to "Let's Get Started", signup_path, class: "button circle cueRed gradient ae-3 margin-right-1" %>
         </div>
       </div>
     </div>
-    <!-- <div class="background" style="background-image:url(<%#= image_url("bg/2.jpg")%>)"></div> -->
+    <div class="background" style="background-image:url(https://www.sccpre.cat/mypng/full/145-1456885_moderate-red-curve-gradient-graphics-background-graphic.png);"></div>
   </section>
 </body>
