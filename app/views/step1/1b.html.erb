@@ -1,0 +1,69 @@
+<body class="slides chain animated">
+
+<!-- 1) Copy styles -->
+<style>
+/* scroll effect support */
+.scroll .slide.split,
+.scroll .slide.split .container {
+  min-height: 100vh;
+}
+
+.slide.split .wrap {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .slide.split .container,
+  .slide.split .wrap {
+    width: 100% !important;
+    min-height: 50vh;
+  }
+
+  .slide.split .container {
+    display: block;
+    height: auto;
+  }
+
+  .slide.split .wrap {
+    display: table;
+    background-attachment: inherit;
+  }
+
+  .slide.split .wrap .mobile-wrap {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+}
+</style>
+
+<script>
+  $(function(){
+    window.autoplayInterval = setInterval(function(){
+      window.changeSlide('increase');
+    },4000);
+
+    $(document).on('click mousewheel', function(){
+      clearInterval(window.autoplayInterval);
+    });
+  });
+</script>
+
+
+
+<%= render "step1/sections/worried" %>
+<%= render "step1/sections/bored" %>
+<%= render "step1/sections/excited" %>
+<%= render "step1/sections/annoyed" %>
+
+
+
+<style>
+  .slide .background.customBackground {
+    background-size: 15%;
+    background-repeat: no-repeat;
+  }
+</style>

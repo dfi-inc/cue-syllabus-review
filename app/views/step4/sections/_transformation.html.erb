@@ -1,27 +1,99 @@
+<style>
+
+.reveal-1:hover > .hover-reveal {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.reveal-1:hover h1,
+.reveal-section:hover .reveal-trigger {
+  border-bottom: 5px solid #fff;
+  padding-bottom: 5px;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.reveal-1  > .hover-reveal,
+.reveal-2  > .hover-reveal,
+.reveal
+{
+  opacity: 0;
+}
+
+.reveal-section:hover .reveal {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+
+
+</style>
 
 
 <section class="slide kenBurns" data-name="transformation" data-title="transformation">
   <div class="content">
     <div class="container">
-      <div class="wrap left bottom">
-
-        <h1 class="crop">CSS Gradient</h1>
-        <div class="mobile-wrap">
-          <h1 class="small ae-1">A million apps just for iPad</h1>
-          <p class="ae-2">Your iPad comes with powerful apps for the things you do every day. The App Store has a million more apps specifically designed for the big, beautiful Retina display of your iPad. Whatever you love to do, there’s an iPad app to help you do it.</p>
-          <a class="text-blue ae-3">Visit the App Store</a>
+      <div class="wrap">
+        <div class=" text-gray left">
+          <h3 class="">Fairness</h3>
+          <h3 class="">Care</h3>
         </div>
-
+        <ul class="flex reveal-1 left">
+          <li class="col-6-12">
+            <ul class=" ">
+              <h1>Transformation</h1>
+            </ul>
+          </li>
+          <li class="col-6-12 hover-reveal">
+            <p class="left hero text-black">
+              Every student has the right to self-respect in educational settings to feel cared for
+               by college practitioners, to have their experiences (personal, cultural, and otherwisee)
+                affirmed, and to be acknowledged as producers of knowledge.
+            </p>
+          </li>
+        </ul>
       </div>
-      <div class="wrap center">
-        <div class="mobile-wrap">
-          <h1 class="ae-1">Swift Playgrounds</h1>
-          <p class="ae-2">Learn serious code on your iPad. In a seriously fun way.</p>
-          <a class="text-blue ae-3">Visit the App Store</a>
+      <div class="wrap">
+        <div class=" text-gray right">
+          <h3 class="">Demystifying</h3>
+          <h3 class="">Welcoming</h3>
+          <h3 class="">Creating a Partnership</h3>
+          <h3 class="">Validating</h3>
         </div>
+
+        <br/><br/>
+        <ul class="flex reveal-section">
+          <li class="col-7-12">
+            <p class=" hero text-black right reveal">
+              Syllabi can welcome them into a classroom where they will be cared for.
+            </p>
+          </li>
+          <li class="col-5-12 left">
+            <h3 class="reveal-trigger">Representing</h3>
+          </li>
+        </ul>
+
+
+        <ul class="flex reveal-section">
+          <li class="col-7-12">
+            <p class="left hero text-black right reveal">
+              Sending the message that while students need to work hard in college, faculty are there to support and work in partnership with them.
+            </p>
+          </li>
+          <li class="col-5-12 left">
+            <h3 class="reveal-trigger">Deconstructing</h3>
+          </li>
+        </ul>
+
+        <%= link_to "Done", recap_4_path, class: "button blue gradient ae-3 circle margin-top-4" %>
+
 
       </div>
     </div>
   </div>
-  <div class="background gradient-2"></div>
+  <div class="background gradient-3"></div>
 </section>
