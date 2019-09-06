@@ -1,3 +1,4 @@
+
 <style media="screen">
 .fade-1 .content {
   background: rgba(33, 101, 131, .25) !important;
@@ -8,36 +9,46 @@
 
 <body class="slides zoom horizontal noPreload animated ">
 
-  <section class="slide fade-1 kenBurns slideWhite blue" data-name="intro" data-title="Intro">
+  <section class="slide fade-1 kenBurns slideWhite red" data-name="intro" data-title="Intro">
     <div class="content">
       <div class="container">
         <div class="wrap">
-
           <div class="fix-12-12 left">
-            <ul class="flex reverse verticalCenter">
-              <li class="col-12-12 left toRight section-header">
-                <h5 class=" ae-2 fromLeft subtitle underline">in this section</h5>
-                <ul class="grid">
-                  <li class="col-7-12 left ae-4 fromAbove toLeft align-left ">
-                    <h1 class=" margin-bottom-2 ae-2 fromLeft">What reactions do you have when we say we’re going to talk about racial equity?</h1>
-                    <br/>
-                    <h3 class="margin-bottom-2 ae-2 fromLeft text-yellow ">
-                      <i class="far fa-clock margin-right-1"></i>  10 min exercise
-                    </h3>
-                    <br/>
-                    <%= link_to "Let's Explore", s3_1_path, class: "button cueRed gradient ae-3 circle"%>
-                  </li>
-                  <li class="col-5-12 ae-4 fromAbove ">
-                    <h4 class=" ae-2 fromLeft highlight text-yellow">Insight</h4>
-                    <p class="ae-3 left">
-                      This section encourages you to reflect on your initial reactions to conversations focusing on race and racism.
-                    </p>
-                    <h4 class=" ae-2 fromLeft text-yellow">Outcomes</h4>
-                    <p class="ae-3 left">
-                      A greater understanding of and comfort with the emotions initially provoked by conversations about race and racism.
-                    </p>
-                  </li>
-                </ul>
+            <div class="float-right ae-4 margin-top-2">
+              <%= link_to title_3_path, class: "margin-right-1" do %>
+                <i class="far fa-home h1"></i>
+              <% end %>
+              <%= link_to recap_3_path, class: "" do %>
+                <i class="fal fa-list-ol h1"></i>
+              <% end %>
+            </div>
+            <h3 class="small font-weight-bold ae-2 fromLeft section-title ">Section III</h3>
+            <h5 class="subtitle underline ae-2 fromLeft type-nunito">section overview</h5>
+            <h3 class=" margin-bottom-2 ae-2 fromLeft">
+               What are the important learning outcomes for this section?
+            </h3>
+
+            <ul class="flex  margin-top-4 ae-3" style="border: 1px solid #fff; padding: 30px 0 20px 0px;">
+              <li class="col-3-12">
+                <h3 class="subtitle font-weight-heavy text-yellow ae-4 right">learning outcome</h3></li>
+              <li>
+              <li class="col-9-12">
+                <p class="hero ae-5 left margin-top-1">
+                  A greater understanding of equity-mindedness, equity-minded practice, and practices that—through their lack of equity-mindedness—impede racial equity.
+                </p>
+              </li>
+            </ul>
+
+            <ul class="flex margin-top-10 ae-7">
+              <li class="col-6-12">
+                <h3 class="micro margin-bottom-2 fromLeft text-yellow right type-nunito margin-top-1">
+                  <i class="far fa-clock margin-right-1"></i> Appox. 10 minute
+                </h3>
+              <li>
+              <li class="col-6-12">
+                <%= link_to s3_1_path, class: "button blue gradient ae-3 circle left" do %>
+                  Let's Begin <i class="far fa-long-arrow-alt-right margin-left-1"></i>
+                <% end %>
               </li>
             </ul>
           </div>
