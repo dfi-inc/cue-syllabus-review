@@ -4,9 +4,19 @@
 
       <div class="wrap">
 
-        <div class="section-title left top" style="border-bottom: 1px solid rgba(255, 255, 255, .10);">
-          <h5> Section 2</h5>
-          <h2> How do you feel?</h2>
+        <div class="section-title left top underline">
+          <div class="float-right margin-top-3">
+            <%= link_to s1_1_path, class: "trigger ae-4 right margin-right-1" do %>
+                <i class="far fa-home h1"></i>
+              <% end %>
+              <%= link_to recap_1_path, class: "trigger ae-4 right" do %>
+                <i class="fas fa-check-circle h1"></i>
+            <% end %>
+          </div>
+          <div class="">
+            <h5> Section 1</h5>
+            <h2> How do you feel?</h2>
+          </div>
         </div>
 
         <div class="12-12 margin-top-5">
