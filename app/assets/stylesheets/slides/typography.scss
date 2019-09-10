@@ -13,7 +13,7 @@
 }
 
 
-.type-nunito {font-family: 'Nunito Sans' !important;}
+.type-nunito {font-family: 'Roboto' !important; font-weight: 400;}
 .page-title {font-size: 4em; font-weight: 400;}
 .eqmd-logo {
     font-family: 'Righteous', cursive;
@@ -124,6 +124,7 @@ h3,
 
 	&.small {
 		font-size: 28px;
+		line-height: 1.4em;
 	}
 
 	&.micro {
