@@ -6,16 +6,13 @@
   	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
   	<meta name="apple-mobile-web-app-capable" content="yes" />
     <title>EQMD</title>
-
-        <%= stylesheet_link_tag 'application', media: 'all' %>
-        <%= render "shared/svg_library" %>
-        <%= render "shared/js" %>
-        <%= render "shared/css" %>
-
-
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= render "shared/svg_library" %>
+    <%= render "shared/js" %>
+    <%= render "shared/css" %>
   </head>
   <body class="slides plain noPreload animated">
-    <%= render "shared/panels/top/nav_1" %>
+    <%= render "shared/panels/top/nav_0" %>
     <%= render "shared/sidebar" %>
     <%= yield %>
     <%= javascript_include_tag 'application', media: 'all' %>

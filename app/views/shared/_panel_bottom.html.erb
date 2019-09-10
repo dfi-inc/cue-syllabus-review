@@ -6,42 +6,48 @@
         <%= image_tag("https://cue.usc.edu/files/2018/01/Informal_Horizontal_USC-Rossier-Center_for_Urban_Education_CardOnWhite.jpg", style: "width:150px;")%>
       </a>
     </div>
-    <div class="center">
-			<ul class="menu grid box-87 equal equalMobile">
+    <div class="left">
+			<ul class="menu text-uppercase grid type-roboto-condensed equal equalMobile padding-bottom-2">
+        <li class="">
+         	<%= link_to overview_title_path do %>
+				 		<h3>Intro</h3>
+       			<span class="tiny">Introduction</span>
+					<% end %>
+        </li>
         <li class="">
          	<%= link_to title_1_path do %>
-				 		<h3>One</h3>
-       			<p class="tiny">How do you feel?</p>
+				 		<h3>step One</h3>
+       			<span class="tiny">How Do you Feel</span>
 					<% end %>
         </li>
         <li class="">
 					<%= link_to title_2_path do %>
- 					 <h3>Two</h3>
- 					 <p class="tiny">Why Syllabi?</p>
+ 					 <h3>step Two</h3>
+ 					 <span class="tiny">Why Syllabi?</span>
  				 <% end %>
         </li>
         <li class="">
 					<%= link_to title_3_path do %>
- 					 <h3>Three</h3>
- 					 <p class="tiny">What is EQMD?</p>
+ 					 <h3>step Three</h3>
+ 					 <span class="tiny">What is EQMD?</span>
  				 <% end %>
         </li>
         <li class="">
          <%= link_to title_4_path do %>
-					 <h3>Four</h3>
-					 <p class="tiny">EQMD Concepts</p>
+					 <h3>step Four</h3>
+					 <span class="tiny">EQMD Concepts</span>
 				 <% end %>
         </li>
 				<li class="">
 				 <%= link_to title_5_path do %>
-					 <h3>Five</h3>
-					 <p class="tiny">Who Syllabi Serve?</p>
+					 <h3>step Five</h3>
+					 <span class="tiny">Who Syllabi Serve?</span>
 				 <% end %>
 				</li>
 				<li class="">
 				 <%= link_to title_6_path do %>
-					 <h3>Six</h3>
-					 <p class="tiny">Analysis</p>
+					 <h3>step Six</h3>
+					 <span class="tiny">Analysis</span>
 				 <% end %>
 				</li>
       </ul>

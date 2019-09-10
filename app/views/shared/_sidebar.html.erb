@@ -4,21 +4,23 @@
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
     <a href="#" class="logo"><svg width="37" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-icon"></use></svg></a>
-    <ul class="mainMenu margin-top-3">
-      <li><a href="#">About</a></li>
-      <li><a href="#">The Team</a></li>
-      <li><a href="#">Downloads</a></li>
-      <li><a href="#">CUE Toolkit</a></li>
-    </ul>
+
     <ul class="mainMenu margin-top-3">
       <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Overview", overview_path %></li>
+      <li><%= link_to "Overview", overview_title_path %></li>
       <li><%= link_to "Section 1", title_1_path %></li>
       <li><%= link_to "Section 2", title_2_path %></li>
       <li><%= link_to "Section 3", title_3_path %></li>
       <li><%= link_to "Section 4", title_4_path %></li>
       <li><%= link_to "Section 5", title_5_path %></li>
       <li><%= link_to "Section 6", title_6_path %></li>
+    </ul>
+
+    <ul class="mainMenu margin-top-3">
+      <li><a href="#">About</a></li>
+      <li><a href="#">The Team</a></li>
+      <li><a href="#">Downloads</a></li>
+      <li><a href="#">CUE Toolkit</a></li>
     </ul>
     <ul class="subMenu small opacity-8">
       <li><a href="#">Help & FAQ</a></li>
