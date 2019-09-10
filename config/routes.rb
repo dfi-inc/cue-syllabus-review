@@ -11,6 +11,13 @@ Rails.application.routes.draw do
   get '/signup'  => 'pages#signup',    as: :signup
   get '/overview'=> 'pages#overview',  as: :overview
 
+  get '/overview'   => 'overview#title',    as: :overview_title
+  get '/overview'   => 'overview#intro',    as: :overview_intro
+  get '/overview'   => 'overview#recap',    as: :overview_recap
+  get '/overview'   => 'overview#s0_1',     as: :s0_1
+  get '/overview'   => 'overview#s0_2',     as: :s0_2
+  get '/overview'   => 'overview#s0_3',     as: :s0_3
+
   get 'section/1/title'   => 'step1#title',   as: :title_1
   get 'section/1/intro'   => 'step1#intro',   as: :intro_1
   get 'section/1/recap'   => 'step1#recap',   as: :recap_1
