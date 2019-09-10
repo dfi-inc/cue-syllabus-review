@@ -13,6 +13,66 @@
  *= require slides/slides
  */
 
+
+// TYPOGRAPHY *************************************************************
+
+.section-title h5 {
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+ h1, h2, h3, h4, h5, h5 {
+   font-family: 'Prata', serif;
+   font-family: 'futura-bold', serif;
+
+ }
+
+p  {
+  font-weight: 400;
+  line-height: 24px;
+  // letter-spacing: 1px;
+  // word-spacing: 1px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+ .slide.whiteSlide {
+     color: #555;
+     background: #fff;
+ }
+
+// BUTTONS *************************************************************
+
+.button.with_icon_right i {
+  margin-left: 12px;
+  font-size: 30px;
+  float: right;
+}
+
+.button.circle {
+  border-radius: 30px;
+  padding: 12px 30px;
+}
+
+.button {
+  font-size: 20px;
+}
+
+.btn-primary {
+  background: #3BC0D1;
+  font-weight: 600;
+  font-family: 'Nunito';
+}
 // Menus *************************************************************
 // Hamburger button
 
@@ -200,26 +260,6 @@
  /* Typography **********************************/
 
 
-.section-title h5 {
-  text-transform: uppercase;
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
-
-
- h1, h2, h3, h4, h5, h5 {
-   font-family: 'Prata', serif;
- }
-
-p  {
-  font-weight: 400;
-  line-height: 24px;
-  // letter-spacing: 1px;
-  // word-spacing: 1px;
-  font-size: 30px;
-}
-
 .slides {
   color: #fff;
   fill: #fff;
@@ -278,16 +318,6 @@ p.hero {
   font-size: 26px;
   line-height: 32px;
   letter-spacing: -0.25px;
-}
-
-/* Button **********************************/
-
-.button.circle {
-    border-radius: 30px;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -1px;
-    padding: 15px 35px;
 }
 
 /* Form + Form Typography **********************************/
