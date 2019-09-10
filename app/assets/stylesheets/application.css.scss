@@ -20,10 +20,10 @@
     fill: #D95E36;
 }
 
-.button.actionButton {
-  background: #fff;
-}
-
+// .button.actionButton {
+//   background: #fff;
+// }
+//
 
 
 // Fonts *************************************************************
@@ -131,8 +131,8 @@
    font-style: normal;
  }
 
-.hero-header h1 {font-size: 80px; line-height: 3em; font-family: 'futura-heavy'; text-transform: uppercase;}
-.hero-header h2 {font-size: 50px; line-height: 1.1em; font-family: 'futura-heavy'; text-transform: uppercase;}
+.hero-header h1 {font-size: 80px; line-height: 3em; font-family: 'futura-bold'; text-transform: uppercase; letter-spacing: 5px;}
+.hero-header h2 {font-size: 50px; line-height: 1.1em; font-family: 'futura-bold'; text-transform: uppercase; letter-spacing: 5px;}
 
 .font-weight-heavy {font-weight: 800;}
 .font-weight-bold {font-weight: 600;}
@@ -231,14 +231,15 @@ p  {
 
   .eqmd-bg {
     font-family: 'futura-heavy', cursive;
-    font-size: 300px;
-    line-height: 400px;
+    font-size: 200px;
+    line-height: 90px;
+    letter-spacing: 2px;
     opacity: .1;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     position: absolute;
-    left: 26%;
+    left: 34%;
     color: #00758A;
     }
 @media (max-width: 1023px) {
