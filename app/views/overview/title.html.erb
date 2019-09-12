@@ -1,20 +1,13 @@
-<style media="screen">
-.fade-1 .content {
-  background: rgba(233, 30, 99, .5) !important;
-}
-</style>
-
-
-
 <body class="slides zoom horizontal noPreload animated ">
-
-  <section class="slide fade-1 kenBurns slideWhite blue" data-name="title" data-title="title">
-    <div class="content">
+  <section class="slide fade-1 kenBurns">
+    <div class="content" style="background: #D95E36;">
       <div class="container">
         <div class="wrap">
           <div class="fix-10-12 margin-bottom-3">
-            <h5 class="ae-2 fromLeft margin-bottom-4 subtitle underline">Overview</h5>
-            <h1 class="big margin-bottom-2 ae-3 fromLeft underline">What is a Syllabus Review?</h1>
+            <div class="title-header margin-top">
+              <h5 class="ae-2 fromLeft margin-bottom-4 subtitle underline">Overview</h5>
+              <h1 class="margin-bottom-2 ae-3 fromLeft underline">What is a Syllabus Review?</h1>
+            </div>
             <ul class="flex margin-top-7">
               <li class="col-3-12">
                 <h3 class="subtitle font-weight-heavy text-yellow ae-4 right">
@@ -30,19 +23,18 @@
             </ul>
           </div>
           <div class="fix-11-12">
-           <%= link_to overview_intro_path, class: "button blue gradient ae-3 circle margin-top-4" do %>
-              <span class="h3 micro">Let's Get Started <i class="margin-left-1 fas fa-arrow-circle-right"></i></span>
-           <% end %>
+            <%= link_to intro_1_path, class: "button blue gradient ae-3 circle margin-top-4" do %>
+               <span class="h3 micro">Let's Get Started <i class="margin-left-1 fas fa-arrow-circle-right"></i></span>
+            <% end %>
           </div>
 
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(https://www.sccpre.cat/mypng/full/145-1456885_moderate-red-curve-gradient-graphics-background-graphic.png);"></div>
+    <div class="background" style="background-image:url();"></div>
 
   </section>
 
 </body>
 
-
-  <%= render "step1/navigation/nav" %>
+<%= render "step1/navigation/nav" %>
