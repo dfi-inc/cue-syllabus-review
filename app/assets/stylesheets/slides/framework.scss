@@ -1021,7 +1021,7 @@ svg {
 		&:not(.noSpaces),
 		&.spaceWrap,
 		.spaceWrap {
-			padding: 120px calc(7.5% + 15px);
+			padding: 120px calc(8% + 15px);
 		}
 
 		.overflowHidden {
@@ -3247,7 +3247,7 @@ html.mobile .showForMobileInline {
 	transition-duration: 0.6s;
 }
 .slides.animated.slow .panel,
-.slides.animateOnEvent .panel {
+.slides.animateOnEvent.slow .panel {
 	transition-duration: 1s;
 }
 
