@@ -1,46 +1,3 @@
-.subtitle {
-	font-family: 'Nunito Sans';
-	letter-spacing: 2px;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-
-	&.underline {
-		border-bottom: 1px solid rgba(255, 255, 255, .25);
-		padding-bottom: 15px;
-		margin-bottom: 50px;
-	}
-
-}
-
-.type-roboto-condensed > p {
-  font-family: 'Roboto Condensed' !important;
-}
-.type-nunito {font-family: 'Roboto' !important; font-weight: 400;}
-.page-title {font-size: 4em; font-weight: 400;}
-.eqmd-logo {
-    font-family: 'Righteous', cursive;
-    font-family: 'Fredoka One', cursive;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 0.5px;
-}
-.eqmd-bg {
-    font-family: 'Righteous', cursive;
-    font-family: 'Fredoka One', cursive;
-    font-size: 405px;
-    line-height: 227px;
-    opacity: .02;
-    font-weight: 100;
-    text-transform: uppercase;
-    text-align: center;
-    position: absolute;
-    left: 20%;
-}
-
-
 /* typography */
 a {
 	cursor: pointer;
@@ -66,15 +23,17 @@ h1, .h1 {
 	letter-spacing: -0.036em;
 
 	&.big {
-		font-size: 72px;
-		line-height: 1.15;
+		font-size: 58px;
+		line-height: 1;
+		font-weight: 100;
 	}
 
 	&.huge {
-		font-size: 80px;
+		font-size: 64px;
 		line-height: 1.218751;
-		letter-spacing: -0em;
+		letter-spacing: -0.04em;
 		margin-bottom: 40px;
+		font-weight: 100;
 	}
 
 	&.small {
@@ -112,25 +71,24 @@ h2,
 
 h3,
 .h3 {
-	font-size: 32px;
+	font-size: 20px;
 	margin-bottom: 12px;
 	font-weight:  400;
 
 	&.large {
-		font-size: 38px;
+		font-size: 32px;
 	}
 
 	&.big {
-		font-size: 42px;
+		font-size: 24px;
 	}
 
 	&.small {
-		font-size: 28px;
-		line-height: 1.4em;
+		font-size: 20px;
 	}
 
 	&.micro {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	+ h1,
@@ -189,11 +147,10 @@ blockquote {
 	}
 
 	&.micro {
-		font-size: 12px;
-		line-height: 1.4;
+		font-size: 14px;
+		line-height: 1.5714;
 		margin-bottom: 20px;
 		margin-top: 2px;
-		word-spacing: -1px;
 	}
 }
 
@@ -272,9 +229,6 @@ h5, h5 {
 }
 
 
-
-
-
 // *** Variables ***
 // @import "plumber";
 
@@ -311,11 +265,11 @@ h5, h5 {
 // .typography {
 
 // 	// HEADINGS
-// 	.h1, h1,
-// 	.h2, h2,
-// 	.h3, h3,
-// 	.h4, h4,
-// 	.h5, h5,
+// 	.h1, h1, 
+// 	.h2, h2, 
+// 	.h3, h3, 
+// 	.h4, h4, 
+// 	.h5, h5, 
 // 	.h6, h6 {
 // 		font-style: normal;
 // 		letter-spacing: normal;
@@ -585,14 +539,14 @@ h5, h5 {
 // 	& ul li {
 // 		list-style: disc;
 // 	}
-
+	
 // 	& ol li {
 // 		list-style: decimal;
 // 	}
-
+	
 // 	// BLOCKQUOTE
 // 	& blockquote {
-
+		
 // 		@include plumber(
 // 			$font-size: 3.2,
 // 			$line-height: 4,
@@ -606,10 +560,10 @@ h5, h5 {
 // 		opacity: 0.9;
 // 		border-left: 5px solid #EEE;
 // 	}
-
+	
 // 	// Quote
 // 	& q {
-
+		
 // 		@include plumber(
 // 			$font-size: 3.2,
 // 			$line-height: 4,
@@ -654,3 +608,4 @@ h5, h5 {
 // 	}
 
 // }
+
