@@ -1,0 +1,76 @@
+<script>
+$(function(){
+	var numberOfItemsToShow = 6;
+
+	$('.showMore').click(function() {
+
+		if (window.isScroll) {
+			$('html, body').animate({ scrollTop: $(".showMore").offset().top }, 500);
+		} else {
+			$('.content').animate({ scrollTop: $(".showMore").position().top }, 500);
+		}
+
+		if ($('.items-container li.hidden').length <= numberOfItemsToShow){
+			$('.showMore').remove();
+		}
+
+		$('.items-container li.hidden:lt('+numberOfItemsToShow+')').removeClass('hidden').find('.done').removeClass('done');
+	});
+});
+</script>
+
+<style>
+	.items-container li.hidden {
+		display: none;
+	}
+</style>
+
+<section class="slide zoom whiteSlide" data-name="p2" data-title="p2">
+  <div class="content" style="background: ;">
+    <div class="container">
+      <div class="wrap top">
+
+        <div class="fix-12-12">
+          <div class="left">
+            <h3 class="text-cueRED ae-1 font-weight-bold">Get Reaqcuainted</h3>
+            <h1 class="huge ae-2 fromLeft text-pink bold">How well do you know your syllabus?</h1>
+          </div>
+          <ul class="flex fixedSpaces reverse">
+            <li class="col-6-12 left">
+              <ul class="flex">
+                <li class="col-1-10 left">
+                  <i class="fas fa-check-circle h1 text-green ae-4"></i>
+                </li>
+                <li class="col-9-10 left">
+                  <h3 class="big bold ae-3 text-teal">Purpose & Intentionality</h3>
+                  <p class="small ae-4 text-gray">1. What are three words or phrases that come to mind when you hear the word "syllabus"?</p>
+                  <h4 class="ae-5 text-gray">
+                    <span class="badge white text-teal">Strict</span>
+                    <span class="badge white text-teal">Helpful</span>
+                    <span class="badge white text-teal">Helpful</span>
+                  </h4>
+                  <div class="margin-top-6">
+                    <ol>
+                      <li>
+                        <form class="slides-form wide" action="#" autocomplete="off">
+                          <p class="lead ae-6">2. Is the Syllabus important to me as an instructor??</p>
+                          <p class="ae-7">
+                            <a href="#" class="button white text-teal">Yes</a>
+                            <a href="#" class="button white text-teal">No</a>
+                          </p>
+                            <textarea class="wide ae-8" rows="6"></textarea>
+                        </form>
+                      </li>
+                    </ol>
+                  </div>
+                </li>
+              </ul>
+              <li class="col-6-12">
+              <img class="ae-4" width="600" src="<%= image_url("graphics/syllabus.svg") %>"/>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

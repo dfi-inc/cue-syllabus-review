@@ -55,10 +55,11 @@ Rails.application.routes.draw do
   get 'section/6/title'   => 'step6#title',   as: :title_6
   get 'section/6/intro'   => 'step6#intro',   as: :intro_6
   get 'section/6/recap'   => 'step6#recap',   as: :recap_6
+  get 'section/6/s6_0'    => 'step6#s6_0',    as: :s6_0
   get 'section/6/s6_1'    => 'step6#s6_1',    as: :s6_1
   get 'section/6/s6_2'    => 'step6#s6_2',    as: :s6_2
   get 'section/6/s6_3'    => 'step6#s6_3',    as: :s6_3
-  get 'section/6/s6_3'    => 'step6#s6_4',    as: :s6_4
+  get 'section/6/s6_4'    => 'step6#s6_4',    as: :s6_4
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

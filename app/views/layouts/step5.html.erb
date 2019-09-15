@@ -14,10 +14,13 @@
 
   </head>
 
+  <body class="slides plain animated ">
+
     <%= render "shared/sidebar" %>
-    <%= render "shared/panels/top/nav_1" %>
-    <%= render "shared/navigation" %>
+    <%#= render "shared/panels/top/nav_1" %>
+    <%#= render "shared/navigation" %>
     <%= yield %>
     <%= javascript_include_tag 'application', media: 'all' %>
 
+</body>
 </html>
