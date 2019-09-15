@@ -1,0 +1,172 @@
+  <section class="slide fade-6 kenBurns bg-softpink">
+    <div class="content">
+      <div class="container">
+        <div class="wrap middle top">
+
+          <h6 class="subtitle left ae-1"> Section 2</h6>
+
+          <div class="section-title left margin-bottom-8 ae-2" style="border-bottom: 1px solid rgba(255, 255, 255, .10);">
+            <h2 class=""> How do you feel?</h2>
+          </div>
+
+          <div class="eqmd-bg">eqmd</div>
+
+          <div class="12-12 toCenter center">
+            <ul class="flex fixedSpaces later center middle emojis">
+              <li class="col-6-12 col-tablet-1-2 col-phone-1-1">
+                <ul class="flex fixedSpaces later center middle">
+
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#neutral" class="trigger margin-bottom-2 ae-4">
+                      <%= image_tag("emoji/neutral-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
+                      <h3 class="title type-nunito">neutral</h3>
+                    </div>
+                  </li>
+
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#uncomfortable" class="trigger margin-bottom-2 ae-4">
+                      <%= image_tag("emoji/uncomfortable-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
+                      <h3 class="title type-nunito">uncomfortable</h3>
+                    </div>
+                  </li>
+
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#disinterested" class="trigger margin-bottom-2 ae-5">
+                      <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
+                      <h3 class="title type-nunito">disinterested</h3>
+                    </div>
+                  </li>
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#frustrated" class="trigger margin-bottom-2 ae-6">
+                      <%= image_tag("emoji/frustrated-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/frustrated.gif")%>)">
+                      <h3 class="title type-nunito">frustrated</h3>
+                    </div>
+                  </li>
+
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#disinterested" class="trigger margin-bottom-2 ae-5">
+                      <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
+                      <h3 class="title type-nunito">disinterested</h3>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="flex fixedSpaces later left reveal-section">
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1">
+                    <a href="/section/1/s1_2#angry" class="trigger margin-bottom-2 ae-6">
+                      <%= image_tag("emoji/mad-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/angry.gif")%>)">
+                      <h3 class="title type-nunito">angry</h3>
+                    </div>
+                  </li>
+
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#annoyed" class="trigger margin-bottom-2 ae-5">
+                      <%= image_tag("emoji/annoyed-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/annoyed.gif")%>)">
+                      <h3 class="title type-nunito">annoyed</h3>
+                    </div>
+                  </li>
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#excited" class="trigger margin-bottom-2 ae-6">
+                      <%= image_tag("emoji/excited-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/excited.gif")%>)">
+                      <h3 class="title type-nunito">excited</h3>
+                    </div>
+                  </li>
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1 reveal-section">
+                    <a href="/section/1/s1_2#happy" class="trigger margin-bottom-2 ae-5">
+                      <%= image_tag("emoji/love-it-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="emoji-bg" style="background-image:url(<%= image_url("emoji/animations/happy.gif")%>)">
+                      <h3 class="title type-nunito">happy</h3>
+                    </div>
+                  </li>
+                  <li class="col-2-12 col-tablet-1-2 col-phone-1-1reveal-section">
+                    <a href="/section/1/s1_2#afraid" class="trigger margin-bottom-2 ae-6">
+                      <%= image_tag("emoji/afraid-emoji.png", class: "wide")%>
+                    </a>
+                    <div class="emoji-bg" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
+                      <h3 class="title type-nunito">afraid</h3>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="flex fixedSpaces later left">
+
+
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div id="cover"class="background" style="background-image:url()"></div>
+  </section>
+<!-- </body> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <style media="screen">
+
+.reveal-section > .reveal {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+  }
+
+.reveal-section:hover > .reveal {
+  opacity: 1 !important;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+
+</style> -->
+
+<nav class="panel top">
+  <!-- desktop version -->
+  <div class="sections desktop margin-bottom-7">
+    <div class="left">
+      <span class="button actionButton fullscreenToggle white"><i class="material-icons">fullscreen</i></span>
+    </div>
+    <div class="center">
+      <ul class="menu">
+        <li>
+          <%= link_to "eqmd", title_1_path, class: "eqmd-logo "%>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span>
+    </div>
+  </div>
+</nav>
