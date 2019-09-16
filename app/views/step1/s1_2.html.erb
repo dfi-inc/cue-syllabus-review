@@ -1,98 +1,24 @@
 
 <%= render "step1/css/s1_2" %>
 
-
 <body class="slides plain horizontal noPreload animated ">
 
-
-  <!-- Panel Bottom #03 -->
-  <nav class="panel white bottom forceMobileView dark">
-    <div class="sections desktop ">
-      <div class="left">
-        <span data-dropdown-id="2" class="white button actionButton">
-          <%= link_to s1_1_path do %>
-            <i class="far fa-home h4"></i>
-          <% end %>
-        </span>
-      </div>
-      <div class="center">
-        <ul class="fix-10-10 margin-bottom emoji-menu">
-          <li class="col-1-10">
-            <a href="/section/1/s1_2#frustrated" class="">
-              <%= image_tag("emoji/animations/frustrated.gif")%>
-            </a>
-            <a href="/section/1/s1_2#worried" class="">
-              <%= image_tag("emoji/animations/worried.gif")%>
-            </a>
-            <a href="/section/1/s1_2#disappointed" class="">
-              <%= image_tag("emoji/animations/disappointed.gif")%>
-            </a>
-            <a href="/section/1/s1_2#excited" class="">
-              <%= image_tag("emoji/animations/excited.gif")%>
-            </a>
-            <a href="/section/1/s1_2#happy" class="">
-              <%= image_tag("emoji/animations/happy.gif")%>
-            </a>
-            <a href="/section/1/s1_2#interested" class="">
-              <%= image_tag("emoji/animations/interested.gif")%>
-            </a>
-            <a href="/section/1/s1_2#scared" class="">
-              <%= image_tag("emoji/animations/scared.gif")%>
-            </a>
-            <a href="/section/1/s1_2#confused" class="">
-              <%= image_tag("emoji/animations/confused.gif")%>
-            </a>
-            <a href="/section/1/s1_2#angry" class="">
-              <%= image_tag("emoji/animations/angry.gif")%>
-            </a>
-            <a href="/section/1/s1_2#tired" class="">
-              <%= image_tag("emoji/animations/tired.gif")%>
-            </a>
-            <a href="/section/1/s1_2#uncomfortable" class="">
-              <%= image_tag("emoji/animations/uncomfortable.gif")%>
-            </a>
-            <a href="/section/1/s1_2#neutral" class="">
-              <%= image_tag("emoji/animations/neutral.gif")%>
-            </a>
-            <a href="/section/1/s1_2#disinterested" class="">
-              <%= image_tag("emoji/animations/disinterested.gif")%>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="right">
-        <span data-dropdown-id="2" class="white button actionButton">
-          <%= link_to recap_1_path do %>
-            <i class="fal fa-arrow-circle-right h3"></i>
-          <% end %>
-        </span>
+  <!-- Navigation Arrows -->
+  <nav class="side left">
+    <div class="navigation">
+      <div class="cell">
+        <span class="prevSlide"><svg class="sideArrow     "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
       </div>
     </div>
   </nav>
 
-
-
-
-
-
-  <!-- Share Window -->
-  <div class="dropdown share bottom right" data-dropdown-id="2" data-text="Take a look at this" data-url="https://designmodo.com" data-pinterest-image="https://designmodo.com/wp-content/uploads/2015/10/Presentation.jpg">
-    <div class="center">
-      <ul class="menu uppercase">
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Upgrade</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Explore</a></li>
-      </ul>
+  <nav class="side">
+    <div class="navigation">
+      <div class="cell">
+        <span class="nextSlide"><svg class="sideArrow     "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
+      </div>
     </div>
-    <ul>
-      <li class="social-facebook"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb-like"></use></svg></li>
-      <li class="social-twitter"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></li>
-      <li class="social-googlePlus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></li>
-      <li class="social-linkedin"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></li>
-      <li class="mail" data-subject="Subject" data-body="Body">share by email</li>
-    </ul>
-  </div>
+  </nav>
 
 
   <%= render "step1/sections/frustration" %>
@@ -110,4 +36,18 @@
   <%= render "step1/sections/disinterested" %>
 
 
+  <div class="dialogContainer bottom">
+
+    <div class="dialog hidden" data-dialog-id="dialog" data-dialog-delay="1000" data-dialog-hide-delay="20000">
+      <div class="dialogContent" data-dialog-action="close">
+        <img width="50" class="avatar" src="https://cdn0.iconfinder.com/data/icons/feather/96/591277-arrow-left-512.png" alt="Avatar">
+        <div class="text">
+          <strong>Explore!</strong> Click on an emoji or use LEFT or RIGHT arrow keys to navigate this section.
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <%= render "step1/navigation/section_panel" %>
 </body>

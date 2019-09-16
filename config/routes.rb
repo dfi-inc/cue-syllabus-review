@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'section/1/recap'   => 'step1#recap',   as: :recap_1
   get 'section/1/s1_1'    => 'step1#s1_1',    as: :s1_1
   get 'section/1/s1_2'    => 'step1#s1_2',    as: :s1_2
+  get 'section/1/s1_3'    => 'step1#s1_3',    as: :s1_3
 
   get 'section/2/title'   => 'step2#title',   as: :title_2
   get 'section/2/intro'   => 'step2#intro',   as: :intro_2
