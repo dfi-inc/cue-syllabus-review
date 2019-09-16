@@ -31,92 +31,71 @@
             <h2 class=""> How do you feel?</h2>
           </div>
 
-          <ul class="flex 12-12">
-            <li class="col-7-12">
-              <ul class="flex 10-10 toCenter middle emojis">
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#neutral" class="trigger margin-bottom-2 ae-4">
-                    <%= image_tag("emoji/neutral-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
-                    <h3 class="center subtitle">neutral</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#uncomfortable" class="trigger margin-bottom-2 ae-4">
-                    <%= image_tag("emoji/uncomfortable-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/worried.gif")%>)">
-                    <h3 class="center subtitle type-nunito">uncomfortable</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#disinterested" class="trigger margin-bottom-2 ae-5">
-                    <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/uninterested.gif")%>)">
-                    <h3 class="center subtitle type-nunito">disinterested</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#frustrated" class="trigger margin-bottom-2 ae-6">
-                    <%= image_tag("emoji/frustrated-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="reveal emoji-bg" style="background-image:url(<%= image_url("emoji/animations/frustrated.gif")%>)">
-                    <h3 class="center subtitle type-nunito">frustrated</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#disinterested" class="trigger margin-bottom-2 ae-5">
-                    <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
-                    <h3 class="center subtitle">disinterested</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#angry" class="trigger margin-bottom-2 ae-6">
-                    <%= image_tag("emoji/mad-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/angry.gif")%>)">
-                    <h3 class="center subtitle type-nunito">angry</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#annoyed" class="trigger margin-bottom-2 ae-5">
-                    <%= image_tag("emoji/annoyed-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/annoyed.gif")%>)">
-                    <h3 class="center subtitle type-nunito">annoyed</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#excited" class="trigger margin-bottom-2 ae-6">
-                    <%= image_tag("emoji/excited-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/excited.gif")%>)">
-                    <h3 class="center subtitle type-nunito">excited</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#happy" class="trigger margin-bottom-2 ae-5">
-                    <%= image_tag("emoji/love-it-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/happy.gif")%>)">
-                    <h3 class="center subtitle type-nunito">happy</h3>
-                  </div>
-                </li>
-                <li class="col-2-10 col-tablet-1-2 col-phone-1-1 reveal-section">
-                  <a href="/section/1/s1_2#afraid" class="trigger margin-bottom-2 ae-6">
-                    <%= image_tag("emoji/afraid-emoji.png", class: "wide")%>
-                  </a>
-                  <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
-                    <h3 class="center subtitle type-nunito">afraid</h3>
-                  </div>
-                </li>
-              </ul>
+          <ul class="flex fix-11-12 toLeft">
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#frustrated" class="">
+                <%= image_tag("emoji/animations/frustrated.gif")%>
+              </a>
             </li>
-            <li class="col-6-12">
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#worried" class="">
+                <%= image_tag("emoji/animations/worried.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#disappointed" class="">
+                <%= image_tag("emoji/animations/disappointed.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#excited" class="">
+                <%= image_tag("emoji/animations/excited.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#happy" class="">
+                <%= image_tag("emoji/animations/happy.gif")%>
+              </a>
+            </li>
+            <li class="col-3-10">
+              <a href="/section/1/s1_2#interested" class="">
+                <%= image_tag("emoji/animations/interested.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#scared" class="">
+                <%= image_tag("emoji/animations/scared.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#confused" class="">
+                <%= image_tag("emoji/animations/confused.gif")%>
+              </a>
+            </li>
+            <li class="col-3-10">
+              <a href="/section/1/s1_2#angry" class="">
+                <%= image_tag("emoji/animations/angry.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#tired" class="">
+                <%= image_tag("emoji/animations/tired.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#uncomfortable" class="">
+                <%= image_tag("emoji/animations/uncomfortable.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#neutral" class="">
+                <%= image_tag("emoji/animations/neutral.gif")%>
+              </a>
+            </li>
+            <li class="col-2-10">
+              <a href="/section/1/s1_2#disinterested" class="">
+                <%= image_tag("emoji/animations/disinterested.gif")%>
+              </a>
             </li>
           </ul>
         </div>
