@@ -42,3 +42,24 @@ hr {border-top: 1px solid #ddd; margin: 30px 0;}
  font-family: 'Nunito Sans', 'Helvetica';
  font-weight: 700;
 }
+
+.emoji-bg {
+ width: 650px;
+ height: 650px;
+ opacity: .2;
+ position: absolute;
+ right: 10%;
+ bottom: 7.5%;
+ opacity: 0;
+ background-size: contain;
+}
+
+.emoji-bg .title {
+ position: absolute;
+ top: 5%;
+ left: 40%;
+ text-transform: uppercase;
+ font-family: 'Nunito';
+ margin-bottom: 50px;
+
+}

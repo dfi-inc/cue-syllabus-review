@@ -1,5 +1,25 @@
 <style media="screen">
 
+
+  .emoji-bg {
+   width: 650px;
+   height: 650px;
+   opacity: 0;
+   position: absolute;
+   right: 10%;
+   bottom: 7.5%;
+   background-size: contain;
+  }
+
+  .emoji-bg .title {
+   position: absolute;
+   top: 5%;
+   left: 40%;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+
+  }
+
 .reveal-section > .reveal {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -15,12 +35,11 @@
 }
 
 
+
+
 </style>
 
 <body class="slides zoom horizontal noPreload animated">
-
-
-
   <section class="slide kenBurns teal">
     <div class="content">
       <div class="container">
@@ -31,16 +50,22 @@
             <h2 class=""> How do you feel?</h2>
           </div>
 
-          <ul class="flex fix-11-12 toLeft">
-            <li class="col-2-10">
+          <ul class="flex fix-10-12 toLeft">
+            <li class="col-2-10 reveal-section">
               <a href="/section/1/s1_2#frustrated" class="">
                 <%= image_tag("emoji/animations/frustrated.gif")%>
               </a>
+              <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/frustrated.gif")%>)">
+                <h3 class="center subtitle">frustrated</h3>
+              </div>
             </li>
-            <li class="col-2-10">
+            <li class="col-2-10 reveal-section">
               <a href="/section/1/s1_2#worried" class="">
                 <%= image_tag("emoji/animations/worried.gif")%>
               </a>
+              <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/worried.gif")%>)">
+                <h3 class="center subtitle">worried</h3>
+              </div>
             </li>
             <li class="col-2-10">
               <a href="/section/1/s1_2#disappointed" class="">
