@@ -1,52 +1,124 @@
-<ul class="flex toCenter">
+<style media="screen">
+span[data-tooltip] {
+      position: relative;
+      cursor: pointer;
+      border-bottom: none;
+  }
+</style>
+
+<ul class="fix-10-10 margin-bottom emoji-menu">
   <li class="col-1-10">
-    <a href="/section/1/s1_2#neutral" class="trigger margin-bottom-2 ae-4">
-      <%= image_tag("emoji/neutral-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#frustrated" class="">
+      <span class="onTop" data-tooltip="frustrated">
+        <%= image_tag("emoji/animations/frustrated.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#uncomfortable" class="trigger margin-bottom-2 ae-4">
-      <%= image_tag("emoji/uncomfortable-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#worried" class="">
+      <span class="onTop" data-tooltip="worried">
+        <%= image_tag("emoji/animations/worried.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#disinterested" class="trigger margin-bottom-2 ae-5">
-      <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#disappointed" class="">
+      <span class="onTop" data-tooltip="disappointed">
+        <%= image_tag("emoji/animations/disappointed.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#frustrated" class="trigger margin-bottom-2 ae-6">
-      <%= image_tag("emoji/frustrated-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#excited" class="">
+      <span class="onTop" data-tooltip="excited">
+        <%= image_tag("emoji/animations/excited.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#disinterested" class="trigger margin-bottom-2 ae-5">
-      <%= image_tag("emoji/disinterested-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#happy" class="">
+      <span class="onTop" data-tooltip="happy">
+        <%= image_tag("emoji/animations/happy.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#angry" class="trigger margin-bottom-2 ae-6">
-      <%= image_tag("emoji/mad-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#interested" class="">
+      <span class="onTop" data-tooltip="interested">
+        <%= image_tag("emoji/animations/interested.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#annoyed" class="trigger margin-bottom-2 ae-5">
-      <%= image_tag("emoji/annoyed-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#scared" class="">
+      <span class="onTop" data-tooltip="scared">
+        <%= image_tag("emoji/animations/scared.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#excited" class="trigger margin-bottom-2 ae-6">
-      <%= image_tag("emoji/excited-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#confused" class="">
+      <span class="onTop" data-tooltip="confused">
+        <%= image_tag("emoji/animations/confused.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#happy" class="trigger margin-bottom-2 ae-5">
-      <%= image_tag("emoji/love-it-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#angry" class="">
+      <span class="onTop" data-tooltip="angry">
+        <%= image_tag("emoji/animations/angry.gif")%>
+      </span>
     </a>
-  </li>
-  <li class="col-1-10">
-    <a href="/section/1/s1_2#afraid" class="trigger margin-bottom-2 ae-6">
-      <%= image_tag("emoji/afraid-emoji.png", class: "wide")%>
+    <a href="/section/1/s1_2#tired" class="">
+      <span class="onTop" data-tooltip="tired">
+        <%= image_tag("emoji/animations/tired.gif")%>
+      </span>
+    </a>
+    <a href="/section/1/s1_2#uncomfortable" class="">
+      <span class="onTop" data-tooltip="uncomfortable">
+        <%= image_tag("emoji/animations/uncomfortable.gif")%>
+      </span>
+    </a>
+    <a href="/section/1/s1_2#neutral" class="">
+      <span class="onTop" data-tooltip="neutral">
+        <%= image_tag("emoji/animations/neutral.gif")%>
+      </span>
+    </a>
+    <a href="/section/1/s1_2#disinterested" class="">
+      <span class="onTop" data-tooltip="disinterested">
+        <%= image_tag("emoji/animations/disinterested.gif")%>
+      </span>
     </a>
   </li>
 </ul>
+
+<!-- EXAMPLE: Tooltip -->
+<style>
+[data-tooltip] {
+	position:relative;
+	cursor:pointer;
+	border-bottom: 1px dotted;
+}
+[data-tooltip]:before {
+	content: attr(data-tooltip);
+	position: absolute;
+	background: rgba(40,40,40,0.7);
+	color: #fff;
+	font-size: 15px;
+	border-radius: 4px;
+	padding: 2px 11px;
+	visibility: hidden;
+	white-space: nowrap;
+	letter-spacing: .01em;
+	-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,0.1);
+	box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
+	-webkit-transform: translateY(50%) translateX(-50%) scale(0);
+	transform: translateY(50%) translateX(-50%) scale(0);
+	left: 50%;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+	max-width: 300px;
+}
+[data-tooltip].onTop:before {
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0);
+	transform: translateY(-50%) translateX(-50%) scale(0);
+}
+[data-tooltip]:hover:before {
+	-webkit-transform: translateY(100%) translateX(-50%) scale(1);
+	transform: translateY(100%) translateX(-50%) scale(1);
+	opacity:1;
+	visibility: visible;
+}
+[data-tooltip].onTop:hover:before {
+	-webkit-transform: translateY(100%) translateX(-50%) scale(1);
+	transform: translateY(-100%) translateX(-50%) scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+</style>
