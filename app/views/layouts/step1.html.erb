@@ -11,15 +11,13 @@
     <%= render "shared/svg_library" %>
     <%= render "shared/js" %>
     <%= render "shared/css" %>
-
     <%= render "step1/js" %>
-    <%= render "step1/css" %>
   </head>
 
   <body class="slides zoom horizontal noPreload animated ">
     <%= render "shared/panels/top/nav_1" %>
     <%= render "shared/sidebar" %>
-    <%= render "shared/navigation" %>
+    <%#= render "shared/navigation" %>
     <%= yield %>
     <%= javascript_include_tag 'application', media: 'all' %>
   </body>

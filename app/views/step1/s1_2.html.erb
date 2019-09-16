@@ -1,51 +1,64 @@
 
 <%= render "step1/css/s1_2" %>
 
-    <nav class="panel top">
-      <!-- desktop version -->
-      <div class="sections desktop">
-        <div class="left">
-          <span class="button actionButton fullscreenToggle white"><i class="material-icons">fullscreen</i></span>
-        </div>
-        <div class="center">
-          <ul class="menu">
-            <li>
-              <%= link_to "eqmd", title_1_path, class: "eqmd-logo "%>
-            </li>
-          </ul>
-        </div>
-        <div class="right">
-          <span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span>
-        </div>
-      </div>
-    </nav>
-
 
 <body class="slides plain horizontal noPreload animated ">
 
 
   <!-- Panel Bottom #03 -->
-  <nav class="panel bottom forceMobileView">
-    <div class="sections desktop">
+  <nav class="panel white bottom forceMobileView dark">
+    <div class="sections desktop ">
       <div class="left">
-        <span class="opacity-8">
-          <!-- Build with <a href="#" title="Slides Framework"><svg style="width:52px;height:21px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a> -->
+        <span data-dropdown-id="2" class="white button actionButton">
+          <%= link_to s1_1_path do %>
+            <i class="far fa-home h4"></i>
+          <% end %>
         </span>
       </div>
-      <<div class="center">
-        <ul class="menu uppercase">
-          <li>
-            <%= link_to "Section 2", title_2_path %>
+      <div class="center">
+        <ul class="fix-10-10 margin-bottom emoji-menu">
+          <li class="col-1-10">
+            <a href="/section/1/s1_2#neutral" class="">
+              <%= image_tag("emoji/neutral-emoji.png")%>
+            </a>
+            <a href="/section/1/s1_2#uncomfortable" class="">
+              <%= image_tag("emoji/uncomfortable-emoji.png")%>
+            </a>
+            <a href="/section/1/s1_2#disinterested" class="">
+              <%= image_tag("emoji/disinterested-emoji.png")%>
+            </a>
+            <a href="/section/1/s1_2#frustrated" class="">
+              <%= image_tag("emoji/frustrated-emoji.png")%>
+            </a>
+            <a href="/section/1/s1_2#neutral" class="">
+              <%= image_tag("emoji/neutral-emoji.png")%>
+            </a>
+            <a href="/section/1/s1_2#excited" class="">
+              <%= image_tag("emoji/excited-emoji.png")%>
+            </a>
+            <a href="/section/1/s1_2#annoyed" class="">
+              <%= image_tag("emoji/annoyed-emoji.png")%>
+            </a>
+            <a href="/section/1/s1_2#angry" class="">
+              <%= image_tag("emoji/mad-emoji.png")%>
+            </a>
           </li>
         </ul>
       </div>
-      <div class="right"><span data-dropdown-id="2" class="button actionButton dropdownTrigger"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use></svg></span></div>
-    </div>
-    <div class="sections compact hidden">
-      <div class="left">Build with <a href="#" title="Slides Framework"><svg style="width:58px;height:16px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
-      <div class="right"><span data-dropdown-id="2" class="button actionButton dropdownTrigger"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use></svg></span></div>
+      <div class="right">
+        <span data-dropdown-id="2" class="white button actionButton">
+          <%= link_to recap_1_path do %>
+            <i class="fal fa-arrow-circle-right h3"></i>
+          <% end %>
+        </span>
+      </div>
     </div>
   </nav>
+
+
+
+
+
 
   <!-- Share Window -->
   <div class="dropdown share bottom right" data-dropdown-id="2" data-text="Take a look at this" data-url="https://designmodo.com" data-pinterest-image="https://designmodo.com/wp-content/uploads/2015/10/Presentation.jpg">
@@ -65,34 +78,6 @@
       <li class="mail" data-subject="Subject" data-body="Body">share by email</li>
     </ul>
   </div>
-
-  <!-- Navigation Arrows -->
-  <nav class="side left">
-    <div class="navigation">
-      <div class="cell">
-        <span class="prevSlide"><svg class="sideArrow     "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
-      </div>
-    </div>
-  </nav>
-
-  <nav class="side">
-    <div class="navigation">
-      <div class="cell">
-        <span class="nextSlide"><svg class="sideArrow     "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
-      </div>
-    </div>
-  </nav>
-  <nav class="side">
-    <div class="navigation">
-      <div class="cell">
-        <span class="nextSlide">
-          <svg class="sideArrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg>
-        </span>
-      </div>
-    </div>
-  </nav>
-
-
 
 
   <%= render "step1/sections/frustration" %>
