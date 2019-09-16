@@ -1,5 +1,5 @@
 
-<section class="slide " data-name="page-1-purple-citation" data-title="page-1-purple-citation">
+<section class="slide " data-name="page-1-purple-citation" data-title="citation">
   <div class="content" style="background: #5DA5B1;">
     <div class="container">
       <div class="wrap">
@@ -27,14 +27,11 @@
               <a href="#page-1-purple-tag">
                 <img class="ae-1" style="" data-action="" src="<%= image_url("graphics/sections/6/page_1/insight/3c.png")%>" alt="iPad Image"/>
               </a>
-              <!-- <h6 class=" medium right ae-10 margin-bottom-1 uppercase micro">
-                Finished?
-              </h6> -->
-              <%= link_to s6_3_path do %>
-                <h2 class=" medium right ae-10 margin-right-10">
-                  Next Section <span class="margin-left-1"><i class="fal fa-arrow-circle-right"></i></span>
-                </h2>
-              <% end %>
+              <div class="fix-12-12 fromLeft center right">
+                <%= link_to s6_2_path, class: "right button white big round gradient ae-3 circle" do %>
+                  Next Section <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                <% end %>
+              </div>
             </li>
           </ul>
         </div>
