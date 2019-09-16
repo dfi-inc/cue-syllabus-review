@@ -24,7 +24,7 @@ hr {border-top: 1px solid #ddd; margin: 30px 0;}
 .lightGrey {background: #f5f5f5 !important;}
 .border-rounded {border-radius: 4px;}
 .box-shadow {box-shadow: 1px 1px 1px #ccc; border-left: 1px solid #ddd;}
-
+.border-top {border-top: 1px solid #ddd;}
 
 // STEP 1 *****************************************
 
@@ -42,7 +42,7 @@ hr {border-top: 1px solid #ddd; margin: 30px 0;}
  font-weight: 700;
 }
 
-// STEP 3 *****************************************
+// STEP 2 *****************************************
 
 .s1-bg {background: #FF3333;}
 .s2-bg {background: #FF33A1;}
@@ -53,3 +53,18 @@ hr {border-top: 1px solid #ddd; margin: 30px 0;}
 .s2-color {color: #FF33A1;}
 .s3-color {color: #CA33FF;}
 .s4-color {color: #8133FF;}
+
+// STEP 3 *****************************************
+
+.p1-color {color: #F07A00;}
+.p2-color {color: #F2593E;}
+.p3-color {color: #EE2020;}
+.p4-color {color: #F82068;}
+.p5-color {color: #E9169B;}
+
+
+.p1-bg {background: rgba(240, 122, 0, .5);}
+.p2-bg {background: rgba(242, 89, 62, .5);}
+.p3-bg {background: rgba(238, 32, 32, .5);}
+.p4-bg {background: rgba(248, 32, 104, .5);}
+.p5-bg {background: rgba(233, 32, 155, .5);}

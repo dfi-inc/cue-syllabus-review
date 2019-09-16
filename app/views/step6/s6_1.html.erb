@@ -4,3 +4,29 @@
 <%= render "step6/sections/page_1/p2" %>
 <%= render "step6/sections/page_1/p3" %>
 <%= render "step6/sections/page_1/p3c" %>
+
+
+<!-- Panel Bottom #06 -->
+<nav class="panel bottom">
+  <div class="sections desktop">
+    <div class="left">
+      <span class="onTop" data-tooltip="Section Home">
+        <span class="white button actionButton">
+          <%= link_to intro_6_path do %>
+            <i class="far fa-home h4"></i>
+          <% end %>
+        </span>
+      </span>
+    </div>
+    <div class="center"><nav class="medium"><div class="navigation"><ul></ul></div></nav></div>
+    <div class="right">
+      <span class="onTop" data-tooltip="Next Section">
+        <span class="white button actionButton">
+          <%= link_to s6_2_path do %>
+            <i class="fal fa-arrow-circle-right h3"></i>
+          <% end %>
+        </span>
+      </span>
+    </div>
+  </div>
+</nav>
