@@ -1,24 +1,27 @@
 <style media="screen">
 
+.arrow {
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  background-size: contain;
+  opacity: .25;
+  z-index: -999;
+ }
 
-  .emoji-bg {
-   width: 650px;
-   height: 650px;
-   opacity: 0;
-   position: absolute;
-   right: 10%;
-   bottom: 7.5%;
-   background-size: contain;
-  }
-
-  .emoji-bg .title {
-   position: absolute;
-   top: 5%;
-   left: 40%;
-   text-transform: uppercase;
-   margin-bottom: 50px;
-
-  }
+.emoji-bg {
+ width: 650px;
+ height: 650px;
+ opacity: 0;
+ position: absolute;
+ right: 10%;
+ bottom: 10%;
+ background-size: contain;
+ backgroud: #fff;
+ z-idex: 9999;
+}
 
 .reveal-section > .reveal {
     opacity: 0;
@@ -40,139 +43,58 @@
 </style>
 
 <body class="slides zoom horizontal noPreload animated">
+
+  <nav class="panel top fixed">
+    <!-- desktop version -->
+    <div class="sections">
+      <div class="left">
+        <span class="onTop" data-tooltip="Section Home">
+          <span class="white button actionButton">
+            <%= link_to title_1_path do %>
+              <i class="far fa-home h3"></i>
+            <% end %>
+          </span>
+        </span>
+      </div>
+      <div class="center">
+        <ul class="menu">
+          <li>
+            <%#= link_to "EQMD", title_1_path, class: "bold" %>
+          </li>
+        </ul>
+      </div>
+      <div class="right"><span class="button actionButton white sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+    </div>
+  </nav>
+
   <section class="slide kenBurns whiteSlide">
-    <div class="content"  style="background: #DDFBFF;">
+    <div class="content"  style="background: #fff;">
       <div class="container">
-        <div class="wrap">
-
-          <!-- <h1 class="left big margin-bottom-8 ae-2 bold text-cueRed"> How does it feel to talk about racial equity?</h1> -->
-          <h1 class="big ae-1 left normal" style="
-          text-decoration: underline; text-decoration-color: #3BC0D1;">
+        <div class="wrap center ">
+          <h1 class="big ae-1 left normal" style="text-decoration: underline; text-decoration-color: #3BC0D1;">
             How does it make you feel<br/>to talk about racial equity?</h1>
-          <ul class="flex fix-12-12 toLeft grid noSpaces margin-top-10">
-            <li class="col-10-10 left">
-              <div class="margin-left-3">
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#disinterested" class="">
-                    <%= image_tag("emoji/animations/disinterested.gif", style: "height: 95px; margin-bottom: -50px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/disinterested.gif")%>)">
-                    <h1 class="center subtitle">Disinterested</h1>
-                  </div>
-                </span>
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#interested" class="">
-                    <%= image_tag("emoji/animations/interested.gif", style: "height: 130px; margin-bottom: -50px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/interested.gif")%>)">
-                    <h1 class="center subtitle">Interested</h1>
-                  </div>
-                </span>
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#uncomfortable" class="">
-                    <%= image_tag("emoji/animations/uncomfortable.gif", style: "height: 140px; margin-bottom: -40px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/uncomfortable.gif")%>)">
-                    <h1 class="center subtitle">Uncomfortable</h1>
-                  </div>
-                </span>
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#worried" class="">
-                    <%= image_tag("emoji/animations/worried.gif", style: "height: 120px; margin-bottom: -30px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/worried.gif")%>)">
-                    <h1 class="center subtitle">Worried</h1>
-                  </div>
-                </span>
-              </div>
-
-              <div class="">
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#frustrated" class="">
-                    <%= image_tag("emoji/animations/frustrated.gif", style: "height: 90px;")%>
-                  </a>
-                  <div class="emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/frustrated.gif")%>)">
-                    <h1 class="center subtitle">Frustrated</h1>
-                  </div>
-                </span>
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#angry" class="">
-                    <%= image_tag("emoji/animations/angry.gif", style: "height: 115px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/angry.gif")%>)">
-                    <h1 class="center subtitle">Angry</h1>
-                  </div>
-                </span>
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#excited" class="">
-                    <%= image_tag("emoji/animations/excited.gif", style: "height: 150px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/excited.gif")%>)">
-                    <h1 class="center subtitle">Excited</h1>
-                  </div>
-                </span>
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#neutral" class="">
-                    <%= image_tag("emoji/animations/neutral.gif", style: "height: 150px; margin-left: -20px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/neutral.gif")%>)">
-                    <h1 class="center subtitle">Neutral</h1>
-                  </div>
-                </span>
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#disappointed" class="">
-                    <%= image_tag("emoji/animations/disappointed.gif", style: "height: 120px; margin-left: -20px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/disappointed.gif")%>)">
-                    <h1 class="center subtitle">Disappointed</h1>
-                  </div>
-                </span>
-              </div>
-
-              <div class="margin-left-5">
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#tired" class="">
-                    <%= image_tag("emoji/animations/tired.gif", style: "height: 90px; margin-top: -10px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/tired.gif")%>)">
-                    <h1 class="center subtitle">Tired</h1>
-                  </div>
-                </span>
-
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#scared" class="">
-                    <%= image_tag("emoji/animations/scared.gif", style: "height: 125px; margin-top: -150px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/scared.gif")%>)">
-                    <h1 class="center subtitle">Scared</h1>
-                  </div>
-                </span>
-
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#confused" class="">
-                    <%= image_tag("emoji/animations/confused.gif", style: "height: 126px; margin-top: -50px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/confused.gif")%>)">
-                    <h1 class="center subtitle">Confused</h1>
-                  </div>
-                </span>
-
-                <span class="reveal-section">
-                  <a href="/section/1/s1_2#happy" class="">
-                    <%= image_tag("emoji/animations/happy.gif", style: "height: 145px; margin-top: -40px;")%>
-                  </a>
-                  <div class=" emoji-bg reveal" style="background-image:url(<%= image_url("emoji/animations/happy.gif")%>)">
-                    <h1 class="center subtitle">Happy</h1>
-                  </div>
-                </span>
-              </div>
-            </li>
-          </ul>
+          <%= render "step1/emoji_cluster" %>
         </div>
       </div>
     </div>
     <div class="background" style="background-image:url('<%= image_url("backgrounds/purple.png")%>'); backgroud-position: contain;"></div>
 
   </section>
+
+
+  <div class="dialogContainer bottom">
+    <div class="dialog hidden" style="max-width: 1200px; height: 500px;"  data-dialog-id="dialog" data-dialog-delay="500" data-dialog-hide-delay="20000">
+      <div class="dialogContent" data-dialog-action="close">
+
+  		<div class="dialogContent">
+  			<img style="height: 90px; width: auto; margin-top: 8px;" class="avatar float-left" src="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-05-512.png">
+  			<div class="text opacity-6">
+          <h1 class="margin-left-2">Select an emoji to begin.<h1>
+          <hr/>
+        </div>
+
+  		</div>
+  	</div>
+  </div>
 
 </body>
