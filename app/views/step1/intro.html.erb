@@ -1,62 +1,105 @@
-<style media="screen">
-.fade-1 .content {
-  background: rgba(33, 101, 131, .25) !important;
-}
-</style>
+<script>
+  $(function(){
+    window.autoplayInterval = setInterval(function(){
+      window.changeSlide('increase');
+    },4000);
+
+    $(document).on('click mousewheel', function(){
+      clearInterval(window.autoplayInterval);
+    });
+  });
+</script>
 
 
+<body class="slides horizontal noPreload animated ">
+  <%= render "shared/panels/top/nav_1" %>
 
-<body class="slides zoom horizontal noPreload animated ">
 
-  <section class="slide fade-1 kenBurns slideWhite red" data-name="intro" data-title="Intro">
+  <section class="slide horizontal fade-6 kenBurns">
     <div class="content">
       <div class="container">
-        <div class="wrap">
-          <div class="fix-12-12 left">
-            <div class="float-right ae-4 margin-top-2">
-              <%= link_to title_1_path, class: "margin-right-2" do %>
-                <i class="far fa-home h1"></i>
-              <% end %>
-              <%= link_to recap_1_path, class: "" do %>
-                <i class="fal fa-list-ol h1"></i>
-              <% end %>
-            </div>
-            <h3 class="small font-weight-bold ae-2 fromLeft section-title ">Section I</h3>
-            <h5 class="subtitle underline ae-2 fromLeft type-nunito">section overview</h5>
-            <h3 class=" margin-bottom-2 ae-2 fromLeft">
-               What are the important learning outcomes for this section?
-            </h3>
+        <div class="wrap center">
 
-            <ul class="flex  margin-top-4 ae-3" style="border: 1px solid #fff; padding: 30px 0 20px 0px;">
-              <li class="col-3-12">
-                <h3 class="subtitle font-weight-heavy text-yellow ae-4 right">learning outcome</h3></li>
-              <li>
-              <li class="col-9-12">
-                <p class="hero ae-5 left margin-top-1">
-                  A greater understanding of and comfort with the emotions initially provoked by conversations about race and racism.
-                </p>
-              </li>
-            </ul>
+          <h1 class="ae-1 ">
+            Most of what we see that we call information<br/>
+             doesn&rsquo;t inform, and most questions do not have a quest.
+          </h1>
 
-            <ul class="flex margin-top-10 ae-7">
-              <li class="col-6-12">
-                <h3 class="micro margin-bottom-2 fromLeft text-yellow right type-nunito margin-top-1">
-                  <i class="far fa-clock margin-right-1"></i> Appox. 10 minute
-                </h3>
-              <li>
-              <li class="col-6-12">
-                <%= link_to s1_1_path, class: "button blue gradient ae-3 circle left" do %>
-                  Let's Begin <i class="far fa-long-arrow-alt-right margin-left-1"></i>
-                <% end %>
-              </li>
-            </ul>
-          </div>
-
+          <%= render "step1/intro/emoji_group" %>
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(https://www.sccpre.cat/mypng/full/145-1456885_moderate-red-curve-gradient-graphics-background-graphic.png);"></div>
-
+    <div class="background" style="background-image:url(assets/img/background/img-68.jpg)"></div>
   </section>
+
+  <!-- Slide #100 -->
+<section class="slide horizontal fade-6 kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap padding-top-phablet-5">
+
+        <div class="fix-12-12">
+          <ul class="flex later">
+            <li class="col-7-12 left ae-1  flex-slide-100">
+
+              <div class="wrap-img-100" style="background-image: url(assets/img/image-100.jpg);">
+                <%= image_tag("emoji/animations/disinterested.gif", style: "height: 195px; margin-bottom: 0px;")%>
+                <div class="blackout"></div>
+                <div class="wrap-text-100">
+                  <h1 class="ae-2">The secret of success</h1>
+                  <h3 class="ae-3 margin-bottom-3">No matter how many times your amazing, absolutely brilliant work is rejected by the client, for whatever dopey</h3>
+                  <a href="#" class="button white ae-4 margin-left-0">Read More</a>
+                </div>
+              </div>
+            </li>
+            <li class="col-5-12 left padding-left-3 padding-left-phablet-0 margin-top-phablet-3">
+              <h2 class="ae-2 small light margin-bottom-3 opacity-8">Recent Posts</h2>
+              <ul class="flex later flex-slide-100">
+                <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+                  <a href="#" class="item-100">
+                    <h3>40 Lessons About Web You Need To Learn Before You Hit</h3>
+                    <p class="tiny opacity-6"><i class="material-icons small-watch">access_time</i><span class="date-small">&nbsp;&nbsp;08 Mar 2018</span></p>
+                  </a>
+                </li>
+                <li class="col-12-12 ae-4 cell-100 rounded margin-bottom-2">
+                  <a href="#" class="item-100">
+                    <h3>40 Lessons About Web You Need To Learn Before You Hit</h3>
+                    <p class="tiny opacity-6"><i class="material-icons small-watch">access_time</i><span class="date-small">&nbsp;&nbsp;08 Mar 2018</span></p>
+                  </a>
+                </li>
+                <li class="col-12-12 ae-5 cell-100 rounded">
+                  <a href="#" class="item-100">
+                    <h3>40 Lessons About Web You Need To Learn Before You Hit</h3>
+                    <p class="tiny opacity-6"><i class="material-icons small-watch">access_time</i><span class="date-small">&nbsp;&nbsp;08 Mar 2018</span></p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-100.jpg)"></div>
+</section>
+
+<section class="slide kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap center ">
+        <h1 class=" ae-1 left light">
+          How does it make you feel<br/>to talk about racial equity?</h1>
+        <%= render "step1/emoji_cluster" %>
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+
+</section>
+
+
+
+
 
 </body>
