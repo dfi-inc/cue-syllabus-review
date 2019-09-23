@@ -1,4 +1,16 @@
 <body class="slides zoom horizontal noPreload animated">
+  <script>
+    $(function(){
+      window.autoplayInterval = setInterval(function(){
+        window.changeSlide('increase');
+      },4000);
+
+      $(document).on('click mousewheel', function(){
+        clearInterval(window.autoplayInterval);
+      });
+    });
+  </script>
+
 
   <!-- Slide 1 (#72) -->
   <section class="slide fade-6 kenBurns">
@@ -149,34 +161,36 @@
 
         <div class="fix-12-12">
           <ul class="flex reverse noSpaces verticalCenter">
-            <li class="col-6-12 left">
-              <h1 class="ae-2">Quick Guide for Using our Tool</h1>
-              <p class="ae-3"><span class="opacity-8">Design solves problems.</span></p>
+            <li class="col-12-12 left">
+              <h1 class="huge ae-2">Guidance for Using our Tool</h1>
+              <p class="hero ae-3"><span class="opacity-8">A few quick tips for using our tool effectively.</span></p>
               <ul class="flex grid-62 later margin-top-7">
-                <li class="col-6-12 ae-4">
-                  <i class="fal fa-arrows-alt h1 huge"></i>
-                  <h3>Use Direction Arrows</h3>
-                  <p class="tiny opacity-6">Design is the conscious effort to impose a meaningful order.</p>
+                <li class="col-3-12 ae-4 margin-bottom-5">
+                  <i class="fal fa-arrows-alt h1 margin-bottom-1 huge text-blue"></i>
+                  <h2 class="small normal">Scroll or use direction arrows</h2>
+                  <!-- <p class="tiny opacity-6">Design is the conscious effort to impose a meaningful order.</p> -->
                 </li>
-                <li class="col-6-12 ae-5">
-                  <i class="fal fa-user-lock h1 huge"></i>
-                  <h3>Everything is Anonymous</h3>
-                  <p class="tiny opacity-6">Design is as much a matter of finding problems as it is solving them..</p>
+                <li class="col-3-12 ae-5 margin-bottom-5">
+                  <i class="fal fa-user-lock h1 margin-bottom-1 huge text-blue"></i>
+                  <h2 class="small">Everything is Anonymous</h2>
+                  <!-- <p class="tiny opacity-6">Design is as much a matter of finding problems as it is solving them..</p> -->
                 </li>
-                <li class="col-6-12 ae-6">
-                  <i class="fas fa-history h1 huge"></i>
-                  <h3>Self-paced Learning</h3>
-                  <p class="tiny opacity-6">It’s all fun and games until someone breaks a link.</p>
+                <li class="col-3-12 ae-6 margin-bottom-5">
+                  <i class="fas fa-history h1 margin-bottom-1 huge text-blue"></i>
+                  <h2 class="small">Learn your your own pace</h2>
+                  <!-- <p class="tiny opacity-6">It’s all fun and games until someone breaks a link.</p> -->
                 </li>
-                <li class="col-6-12 ae-7">
-                  <i class="material-icons huge">face</i>
-                  <h3>Photo profile</h3>
-                  <p class="tiny opacity-6">The definition of an expert is someone who knows what not to do.</p>
+                <li class="col-3-12 ae-7 margin-bottom-5">
+                  <i class="fas fa-comment h1 margin-bottom-1 huge text-blue"></i>
+                  <h2 class="small">Ask question and give feedback</h2>
+                  <!-- <p class="tiny opacity-6">The definition of an expert is someone who knows what not to do.</p> -->
                 </li>
               </ul>
-            </li>
-            <li class="col-6-12 left ae-1 image-62">
-              <img class="macbook-62 margin-bottom-3" src="assets/img/macbook-62.png" data-action="zoom" width="1044" alt="Macbook Image"/>
+              <div class="fix-12-12 center margin-top-5">
+                <%= link_to title_1_path, class: "center button blue round gradient ae-3 circle" do %>
+                  Let's Get Started <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                <% end %>
+              </div>
             </li>
           </ul>
         </div>
