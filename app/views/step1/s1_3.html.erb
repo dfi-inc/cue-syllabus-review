@@ -1,46 +1,237 @@
+<script>
+  $(function(){
+    window.autoplayInterval = setInterval(function(){
+      window.changeSlide('increase');
+    },4000);
+
+    $(document).on('click mousewheel', function(){
+      clearInterval(window.autoplayInterval);
+    });
+  });
+</script>
+
+
+
+    <!-- EXAMPLE: Typewriter -->
+<script>
+  $(function(){
+    $('.typeIn').each(function(){
+      var $element = $(this),
+          letters = $element.text().split(""),
+          interval = 0.02;
+
+      $element.empty();
+
+      $.each(letters, function(i, letter){
+        if (letter == " ") {
+          letter = "&nbsp;"
+        }
+        $element.append('<span style="-webkit-transition-delay: ' + interval * i + 's; transition-delay: ' + interval * i+ 's; ">'+letter+'</span>')
+      });
+    });
+  });
+</script>
+<style>
+.typeIn span {
+  opacity: 0;
+  display: inline-block;
+  -webkit-transform: scale(1.2) translateY(-10px) !important;
+  transform: scale(1.2) translateY(-10px) !important;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+.slide:not(.active) .typeIn span {
+  transition-delay: 0s !important;
+}
+
+.page-loaded:not(.resizing) .slide.active .typeIn span {
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  opacity: 1;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+</style>
+
+
 <body class="slides zoom noPreload animated">
-  <section class="slide kenBurns whiteSlide">
-    <div class="content"  style="background: #DDFBFF;">
-      <div class="container">
-        <div class="wrap">
 
-          <h1 class="big ae-1 left normal" style="
-          text-decoration: underline; text-decoration-color: #3BC0D1;">
-          Thank you for exploring the reactions you feel when conversations about racial
-            equity emerge.
-          </h1>
-
-
-
-          <p class="normal large left margin-top-5"> If you’re not there already, CUE’s goal is to help you feel comfortable
-            and confident when talking about racial equity and the ways in which race and racism
-            exist in our and our students’ day-to-day lives. Our goal is to also provide you with
-            language and tools that will help you make sense of your classroom dynamics in a
-            race-conscious way. In this module we’ll focus on reflecting on your syllabus and
-            identifying the ways it already serves students from minoritized racial/ethnic
-            groups and also could be better leveraged to do so in equity-minded ways.
-            To start, we encourage you to think about the following prompts:
-          </p>
-
-          <ul class="list disc left">
+    <nav class="panel top fixed">
+      <!-- desktop version -->
+      <div class="sections">
+        <div class="left">
+          <%= image_tag("logos/cue-white-logo.png", class: "", style:"height: 40px; width: auto;")%>
+        </div>
+        <div class="center">
+          <ul class="menu">
             <li>
-              What life experiences have contributed to the reactions you feel when
-               conversations about racial equity emerge?
-            </li>
-            <li>
-              Do you think that your peers have similar or different reactions when
-              conversations about racial equity emerge? If different, what do you think
-              contributes to this difference?
-            </li>
-            <li>In an ideal future, what reaction would you like to have when conversations
-              about racial equity emerge?
+              <%#= link_to "EQMD", title_1_path, class: "bold" %>
             </li>
           </ul>
         </div>
+        <div class="right"><span class="button actionButton white sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+      </div>
+    </nav>
+
+
+    <!-- Slide #50 -->
+    <section class="slide fade-6 kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-11-12 left">
+              <h1 class="ae-1 huge">  Thank you for exploring the reactions you feel when conversations about racial
+                  equity emerge.</h1>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
+
+    <!-- Slide #50 -->
+    <section class="slide fade-6 kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-11-12 left">
+              <h1 class="ae-1 big">Our goal is to help you feel comfortable
+                and confident when talking about racial equity and the ways in which race and racism
+                exist in our students’ day-to-day lives. </h1>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
+
+    <!-- Slide #50 -->
+    <section class="slide fade-6 kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-11-12 left">
+              <h1 class="ae-1 big">Our goal is to also provide you with
+                language and tools that will help you make sense of your classroom dynamics in a
+                race-conscious way. </h1>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
+
+    <section class="slide fade-6 kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-11-12 left">
+              <h1 class="ae-1">In this module we’ll focus on reflecting on your syllabus and
+              identifying the ways it already serves students from minoritized racial/ethnic
+              groups and also could be better leveraged to do so in equity-minded ways.</h1>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
+
+    <section class="slide fade-6 kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-11-12 left">
+              <h1 class="ae-1 huge">To start, we encourage you to think about the following prompts:</h1>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
+
+<section class="slide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap left">
+        <div class="fix-8-12 toCenter">
+          <h1 class="typeIn ">What life experiences have contributed to &#10;the reactions you feel when conversations&#10; about racial equity emerge?</h1>
+          <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+        </div>
       </div>
     </div>
-    <div class="background" style="background-image:url('<%= image_url("backgrounds/purple.png")%>'); backgroud-position: contain;"></div>
+  </div>
+</section>
 
-  </section>
 
-</body>
+<section class="slide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap left">
+        <div class="fix-8-12 toCenter">
+          <h1 class="typeIn ">  Do you think that your peers have similar or different reactions when
+            conversations about racial equity emerge? If different, what do you think
+            contributes to this difference?</h1>
+          <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="slide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap left">
+        <div class="fix-8-12 toCenter">
+          <h1 class="typeIn ">In an ideal future, what reaction would you like to have when conversations
+          about racial equity emerge?</h1>
+          <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
+  <div class="sections desktop ">
+    <div class="left">
+      <span class="onTop" data-tooltip="Section Home">
+        <span class="white button actionButton">
+          <%= link_to s1_1_path do %>
+            <i class="far fa-home h4"></i>
+          <% end %>
+        </span>
+      </span>
+    </div>
+    <div class="center">
+
+    </div>
+    <div class="right">
+      <span class="onTop" data-tooltip="Next Page">
+        <span class="white button actionButton">
+          <%= link_to recap_1_path do %>
+            <i class="fal fa-arrow-circle-right h3"></i>
+          <% end %>
+        </span>
+      </span>
+    </div>
+  </div>
+</nav>
