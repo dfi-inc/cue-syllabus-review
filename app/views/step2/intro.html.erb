@@ -1,6 +1,23 @@
 <body class="slides zoom horizontal noPreload animated ">
 
+  <script>
+    $(function(){
+      window.autoplayInterval = setInterval(function(){
+        window.changeSlide('increase');
+      },4000);
+
+      $(document).on('click mousewheel', function(){
+        clearInterval(window.autoplayInterval);
+      });
+    });
+  </script>
+
 <%= render "shared/panels/top/nav_1" %>
+
+
+  <!-- Slide 5 (#97) -->
+
+
 
 
   <section class="slide fade-1 kenBurns slideWhite teal" data-name="intro" data-title="Intro">
