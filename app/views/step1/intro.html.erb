@@ -23,8 +23,8 @@
         <div class="wrap center">
 
           <h1 class="ae-1 ">
-            Most of what we see that we call information<br/>
-             doesn&rsquo;t inform, and most questions do not have a quest.
+            We'll use emojis to explore and better <br/>
+             understand how we're feeling about racial equity.
           </h1>
 
           <%= render "step1/intro/emoji_group" %>
@@ -40,41 +40,25 @@
         <div class="wrap padding-top-phablet-5">
 
           <div class="fix-12-12">
+            <h1 class="left">A  quick example...</h1>
             <ul class="flex later">
-              <li class="col-7-12 left ae-1  flex-slide-100">
+              <li class="col-5-12 left ae-1  flex-slide-100">
 
                 <div class="wrap-img-100" style="background-image: url(assets/img/image-100.jpg);">
-                  <%= image_tag("emoji/animations/disinterested.gif", style: "height: 195px; margin-bottom: 0px;")%>
-                  <div class="blackout"></div>
+                  <%= image_tag("emoji/animations/interested.gif", class: "center", style: "height: 450px; margin-bottom: 0px;")%>
+                  <div class=""></div>
                   <div class="wrap-text-100">
-                    <h1 class="ae-2">The secret of success</h1>
-                    <h3 class="ae-3 margin-bottom-3">No matter how many times your amazing, absolutely brilliant work is rejected by the client, for whatever dopey</h3>
-                    <a href="#" class="button white ae-4 margin-left-0">Read More</a>
+                    <!-- <h1 class="ae-2">I'm feeling Disppointed</h1>
+                    <h3 class="ae-3 margin-bottom-3">No matter how many times your amazing, absolutely brilliant work is rejected by the client, for whatever dopey</h3> -->
                   </div>
                 </div>
               </li>
-              <li class="col-5-12 left padding-left-3 padding-left-phablet-0 margin-top-phablet-3">
-                <h2 class="ae-2 small light margin-bottom-3 opacity-8">Recent Posts</h2>
-                <ul class="flex later flex-slide-100">
-                  <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
-                    <a href="#" class="item-100">
-                      <h3>40 Lessons About Web You Need To Learn Before You Hit</h3>
-                      <p class="tiny opacity-6"><i class="material-icons small-watch">access_time</i><span class="date-small">&nbsp;&nbsp;08 Mar 2018</span></p>
-                    </a>
-                  </li>
-                  <li class="col-12-12 ae-4 cell-100 rounded margin-bottom-2">
-                    <a href="#" class="item-100">
-                      <h3>40 Lessons About Web You Need To Learn Before You Hit</h3>
-                      <p class="tiny opacity-6"><i class="material-icons small-watch">access_time</i><span class="date-small">&nbsp;&nbsp;08 Mar 2018</span></p>
-                    </a>
-                  </li>
-                  <li class="col-12-12 ae-5 cell-100 rounded">
-                    <a href="#" class="item-100">
-                      <h3>40 Lessons About Web You Need To Learn Before You Hit</h3>
-                      <p class="tiny opacity-6"><i class="material-icons small-watch">access_time</i><span class="date-small">&nbsp;&nbsp;08 Mar 2018</span></p>
-                    </a>
-                  </li>
-                </ul>
+              <li class="col-7-12 left padding-left-3 padding-left-phablet-0 margin-top-phablet-3">
+                <h2 class="ae-2 bold margin-bottom-3 opacity-8">I'm feeling Interested...</h2>
+                <div class="ae-1 fromBottomLeft"><p class="small shadow opaque chat-bubble fade-6 hideOnScroll">I am curious to learn about practices and policies that negatively impact students of color.</p></div>
+                <div class="ae-3 fromBottomLeft"><p class="small shadow opaque chat-bubble">I have never engaged in talks about racial equity but am interested to learn what it entails</p></div>
+                <div class="ae-5 fromBottomLeft"><p class="small shadow opaque chat-bubble">I have been talking to students and noticing more that race is important</p></div>
+                <div class="ae-7 fromBottomLeft"><p class="small shadow opaque chat-bubble">I’ve seen my disaggregated data and have some gaps. I want to do something but I don’t know what</p></div>
               </li>
             </ul>
           </div>
@@ -92,13 +76,45 @@
         <div class="wrap center ">
           <h1 class=" ae-1 left light">
             How does it make you feel<br/>to talk about racial equity?</h1>
-          <h3 class="left big ae-2 light">Select an emoji to begin.</h3>
+          <h3 class="left big ae-2 semiBold text-blue">Select an emoji to begin.</h3>
           <%= render "step1/intro/emoji_group_linked" %>
         </div>
       </div>
     </div>
     <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
   </section>
+
+
+
+  <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
+    <div class="sections desktop ">
+      <div class="left">
+        <span class="onTop" data-tooltip="Section Home">
+          <span class="white button actionButton">
+            <%= link_to s1_1_path do %>
+              <i class="far fa-home h4"></i>
+            <% end %>
+          </span>
+        </span>
+      </div>
+      <div class="center opacity-1">
+        <i class="fal fa-arrow-alt-left h2 no-margin"></i>
+        <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+        <i class="fal fa-arrow-alt-right h2 no-margin"></i>
+
+      </div>
+      <div class="right">
+        <span class="onTop" data-tooltip="Next Page">
+          <span class="white button actionButton">
+            <%= link_to recap_1_path do %>
+              <i class="fal fa-check-circle h3"></i>
+            <% end %>
+          </span>
+        </span>
+      </div>
+    </div>
+  </nav>
+
 
 
 

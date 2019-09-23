@@ -1,91 +1,169 @@
-<!-- EXAMPLE: Background Gradient -->
-<style>
-  /* get more here: http://www.colorzilla.com/gradient-editor/ */
-  .gradient-1 {
-    background: rgba(255,42,104,1);
-    background: -moz-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,42,104,1)), color-stop(100%, rgba(255,94,58,1)));
-    background: -webkit-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
-    background: linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2a68', endColorstr='#ff5e3a', GradientType=1 );
-  }
-  .gradient-2 {
-    background: rgba(198,68,252,1);
-    background: -moz-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(198,68,252,1)), color-stop(100%, rgba(88,86,214,1)));
-    background: -webkit-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
-    background: -o-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
-    background: -ms-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
-    background: linear-gradient(to bottom, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c644fc', endColorstr='#5856d6', GradientType=0 );
-  }
+<script>
+  $(function(){
+    window.autoplayInterval = setInterval(function(){
+      window.changeSlide('increase');
+    },10000);
 
-  .gradient-3 {
-    background: rgba(253,169,147,1);
-    background: -moz-linear-gradient(top, rgba(253,169,147,1) 0%, rgba(243,202,62,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,202,62,1)), color-stop(100%, rgba(88,86,214,1)));
-    background: -webkit-linear-gradient(top, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c644fc', endColorstr='#5856d6', GradientType=0 );
-  }
+    $(document).on('click mousewheel', function(){
+      clearInterval(window.autoplayInterval);
+    });
+  });
+</script>
+
+
+<script>
+  $(function(){
+    $('.typeIn').each(function(){
+      var $element = $(this),
+          letters = $element.text().split(""),
+          interval = 0.02;
+
+      $element.empty();
+
+      $.each(letters, function(i, letter){
+        if (letter == " ") {
+          letter = "&nbsp;"
+        }
+        $element.append('<span style="-webkit-transition-delay: ' + interval * i + 's; transition-delay: ' + interval * i+ 's; ">'+letter+'</span>')
+      });
+    });
+  });
+</script>
+<style>
+.typeIn span {
+  opacity: 0;
+  display: inline-block;
+  -webkit-transform: scale(1.2) translateY(-10px) !important;
+  transform: scale(1.2) translateY(-10px) !important;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+.slide:not(.active) .typeIn span {
+  transition-delay: 0s !important;
+}
+
+.page-loaded:not(.resizing) .slide.active .typeIn span {
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  opacity: 1;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
 </style>
 
 
-<!-- EXAMPLE: Split -->
-<!-- 1) Copy styles -->
-<style>
-/* scroll effect support */
-.scroll .slide.split,
-.scroll .slide.split .container {
-  min-height: 100vh;
-}
+    <!-- Slide #50 -->
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
 
-.slide.split .wrap {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
+            <div class="fix-11-12 left">
+              <h1 class="ae-1 big">Our goal is to help you feel comfortable
+                and confident when talking about racial equity and the ways in which race and racism
+                exist in our students’ day-to-day lives. </h1>
 
-@media screen and (max-width: 1024px) {
-  .slide.split .container,
-  .slide.split .wrap {
-    width: 100% !important;
-    min-height: 50vh;
-  }
+            </div>
 
-  .slide.split .container {
-    display: block;
-    height: auto;
-  }
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
 
-  .slide.split .wrap {
-    display: table;
-    background-attachment: inherit;
-  }
+    <!-- Slide #50 -->
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
 
-  .slide.split .wrap .mobile-wrap {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    overflow: hidden;
-  }
-}
-</style>
+            <div class="fix-11-12 left">
+              <h1 class="ae-1 big">Our goal is to also provide you with
+                language and tools that will help you make sense of your classroom dynamics in a
+                race-conscious way. </h1>
 
-<!-- Panel Bottom #09 -->
-<nav class="panel bottom">
-  <div class="sections">
-    <div class="center"><span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span></div>
-  </div>
-</nav>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
 
 
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
 
-<%= render "step4/sections/intro" %>
-<%= render "step4/sections/fairness" %>
-<%= render "step4/sections/care" %>
-<%= render "step4/sections/transformation" %>
+            <div class="fix-11-12 left">
+              <h1 class="ae-1">In this module we’ll focus on reflecting on your syllabus and
+              identifying the ways it already serves students from minoritized racial/ethnic
+              groups and also could be better leveraged to do so in equity-minded ways.</h1>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
+
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-11-12 left">
+              <h1 class="ae-1 huge">To start, we encourage you to think about the following prompts:</h1>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
+
+    <section class="slide">
+      <div class="content">
+        <div class="container">
+          <div class="wrap left">
+            <div class="fix-8-12 toCenter">
+              <h1 class="typeIn ">What life experiences have contributed to &#10;the reactions you feel when conversations&#10; about racial equity emerge?</h1>
+              <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="content">
+        <div class="container">
+          <div class="wrap left">
+            <div class="fix-8-12 toCenter">
+              <h1 class="typeIn ">  Do you think that your peers have similar or different reactions when
+                conversations about racial equity emerge? If different, what do you think
+                contributes to this difference?</h1>
+              <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="content">
+        <div class="container">
+          <div class="wrap left">
+            <div class="fix-8-12 toCenter">
+              <h1 class="typeIn ">In an ideal future, what reaction would you like to have when conversations
+              about racial equity emerge?</h1>
+              <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

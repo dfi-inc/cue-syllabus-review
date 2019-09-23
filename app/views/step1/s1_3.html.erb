@@ -1,61 +1,18 @@
-<script>
-  $(function(){
-    window.autoplayInterval = setInterval(function(){
-      window.changeSlide('increase');
-    },4000);
-
-    $(document).on('click mousewheel', function(){
-      clearInterval(window.autoplayInterval);
-    });
-  });
-</script>
-
-
-
-    <!-- EXAMPLE: Typewriter -->
-<script>
-  $(function(){
-    $('.typeIn').each(function(){
-      var $element = $(this),
-          letters = $element.text().split(""),
-          interval = 0.02;
-
-      $element.empty();
-
-      $.each(letters, function(i, letter){
-        if (letter == " ") {
-          letter = "&nbsp;"
-        }
-        $element.append('<span style="-webkit-transition-delay: ' + interval * i + 's; transition-delay: ' + interval * i+ 's; ">'+letter+'</span>')
-      });
-    });
-  });
-</script>
-<style>
-.typeIn span {
-  opacity: 0;
-  display: inline-block;
-  -webkit-transform: scale(1.2) translateY(-10px) !important;
-  transform: scale(1.2) translateY(-10px) !important;
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-}
-
-.slide:not(.active) .typeIn span {
-  transition-delay: 0s !important;
-}
-
-.page-loaded:not(.resizing) .slide.active .typeIn span {
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  opacity: 1;
-  -webkit-transform: scale(1) !important;
-  transform: scale(1) !important;
-}
-</style>
-
 
 <body class="slides zoom noPreload animated">
+
+  <script>
+    $(function(){
+      window.autoplayInterval = setInterval(function(){
+        window.changeSlide('increase');
+      },5000);
+
+      $(document).on('click mousewheel', function(){
+        clearInterval(window.autoplayInterval);
+      });
+    });
+  </script>
+
 
     <nav class="panel top fixed">
       <!-- desktop version -->
@@ -74,18 +31,24 @@
       </div>
     </nav>
 
-
     <!-- Slide #50 -->
-    <section class="slide fade-6 kenBurns">
+    <section class="slide kenBurns">
       <div class="content">
         <div class="container">
           <div class="wrap">
 
-            <div class="fix-11-12 left">
-              <h1 class="ae-1 huge">  Thank you for exploring the reactions you feel when conversations about racial
+
+            <div class="fix-10-12 toCenter">
+              <h2 class="ae-2 normal small margin-bottom-2">
+                <i class="fad fa-check margin-right-1"></i> <span class="opacity-3">Well Done.</span></h2>
+              <h1 class="ae-3 large">Thank you for exploring the reactions you feel when conversations about racial
                   equity emerge.</h1>
-
+              <h2 class="ae-8 light margin-top-5">Next, let's recap</h2>
             </div>
+            <div class="fix-12-12 ae-5">
+              <%= image_tag("emoji/animations/interested.gif", class: "ipad-36", style: "")%>
+            </div>
+
 
           </div>
         </div>
@@ -93,145 +56,29 @@
       <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
     </section>
 
-    <!-- Slide #50 -->
-    <section class="slide fade-6 kenBurns">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
 
-            <div class="fix-11-12 left">
-              <h1 class="ae-1 big">Our goal is to help you feel comfortable
-                and confident when talking about racial equity and the ways in which race and racism
-                exist in our students’ day-to-day lives. </h1>
+    <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
+      <div class="sections desktop ">
+        <div class="left">
+          <span class="onTop" data-tooltip="Section Home">
+            <span class="white button actionButton">
+              <%= link_to s1_1_path do %>
+                <i class="far fa-home h4"></i>
+              <% end %>
+            </span>
+          </span>
+        </div>
+        <div class="center">
 
-            </div>
-
-          </div>
+        </div>
+        <div class="right">
+          <span class="onTop" data-tooltip="Next Page">
+            <span class="white button actionButton">
+              <%= link_to recap_1_path do %>
+                <i class="fal fa-arrow-circle-right h3"></i>
+              <% end %>
+            </span>
+          </span>
         </div>
       </div>
-      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
-    </section>
-
-    <!-- Slide #50 -->
-    <section class="slide fade-6 kenBurns">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-11-12 left">
-              <h1 class="ae-1 big">Our goal is to also provide you with
-                language and tools that will help you make sense of your classroom dynamics in a
-                race-conscious way. </h1>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
-    </section>
-
-    <section class="slide fade-6 kenBurns">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-11-12 left">
-              <h1 class="ae-1">In this module we’ll focus on reflecting on your syllabus and
-              identifying the ways it already serves students from minoritized racial/ethnic
-              groups and also could be better leveraged to do so in equity-minded ways.</h1>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
-    </section>
-
-    <section class="slide fade-6 kenBurns">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-11-12 left">
-              <h1 class="ae-1 huge">To start, we encourage you to think about the following prompts:</h1>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
-    </section>
-
-<section class="slide">
-  <div class="content">
-    <div class="container">
-      <div class="wrap left">
-        <div class="fix-8-12 toCenter">
-          <h1 class="typeIn ">What life experiences have contributed to &#10;the reactions you feel when conversations&#10; about racial equity emerge?</h1>
-          <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="slide">
-  <div class="content">
-    <div class="container">
-      <div class="wrap left">
-        <div class="fix-8-12 toCenter">
-          <h1 class="typeIn ">  Do you think that your peers have similar or different reactions when
-            conversations about racial equity emerge? If different, what do you think
-            contributes to this difference?</h1>
-          <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="slide">
-  <div class="content">
-    <div class="container">
-      <div class="wrap left">
-        <div class="fix-8-12 toCenter">
-          <h1 class="typeIn ">In an ideal future, what reaction would you like to have when conversations
-          about racial equity emerge?</h1>
-          <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
-  <div class="sections desktop ">
-    <div class="left">
-      <span class="onTop" data-tooltip="Section Home">
-        <span class="white button actionButton">
-          <%= link_to s1_1_path do %>
-            <i class="far fa-home h4"></i>
-          <% end %>
-        </span>
-      </span>
-    </div>
-    <div class="center">
-
-    </div>
-    <div class="right">
-      <span class="onTop" data-tooltip="Next Page">
-        <span class="white button actionButton">
-          <%= link_to recap_1_path do %>
-            <i class="fal fa-arrow-circle-right h3"></i>
-          <% end %>
-        </span>
-      </span>
-    </div>
-  </div>
-</nav>
+    </nav>
