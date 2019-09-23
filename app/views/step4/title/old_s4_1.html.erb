@@ -1,0 +1,91 @@
+<!-- EXAMPLE: Background Gradient -->
+<style>
+  /* get more here: http://www.colorzilla.com/gradient-editor/ */
+  .gradient-1 {
+    background: rgba(255,42,104,1);
+    background: -moz-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,42,104,1)), color-stop(100%, rgba(255,94,58,1)));
+    background: -webkit-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
+    background: linear-gradient(45deg, rgba(255,42,104,1) 0%, rgba(255,94,58,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2a68', endColorstr='#ff5e3a', GradientType=1 );
+  }
+  .gradient-2 {
+    background: rgba(198,68,252,1);
+    background: -moz-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(198,68,252,1)), color-stop(100%, rgba(88,86,214,1)));
+    background: -webkit-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
+    background: -o-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
+    background: -ms-linear-gradient(top, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
+    background: linear-gradient(to bottom, rgba(198,68,252,1) 0%, rgba(88,86,214,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c644fc', endColorstr='#5856d6', GradientType=0 );
+  }
+
+  .gradient-3 {
+    background: rgba(253,169,147,1);
+    background: -moz-linear-gradient(top, rgba(253,169,147,1) 0%, rgba(243,202,62,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,202,62,1)), color-stop(100%, rgba(88,86,214,1)));
+    background: -webkit-linear-gradient(top, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,170,148,1) 0%, rgba(243,202,62,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c644fc', endColorstr='#5856d6', GradientType=0 );
+  }
+</style>
+
+
+<!-- EXAMPLE: Split -->
+<!-- 1) Copy styles -->
+<style>
+/* scroll effect support */
+.scroll .slide.split,
+.scroll .slide.split .container {
+  min-height: 100vh;
+}
+
+.slide.split .wrap {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .slide.split .container,
+  .slide.split .wrap {
+    width: 100% !important;
+    min-height: 50vh;
+  }
+
+  .slide.split .container {
+    display: block;
+    height: auto;
+  }
+
+  .slide.split .wrap {
+    display: table;
+    background-attachment: inherit;
+  }
+
+  .slide.split .wrap .mobile-wrap {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+}
+</style>
+
+<!-- Panel Bottom #09 -->
+<nav class="panel bottom">
+  <div class="sections">
+    <div class="center"><span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span></div>
+  </div>
+</nav>
+
+
+
+<%= render "step4/sections/intro" %>
+<%= render "step4/sections/fairness" %>
+<%= render "step4/sections/care" %>
+<%= render "step4/sections/transformation" %>

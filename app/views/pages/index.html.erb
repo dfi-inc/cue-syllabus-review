@@ -11,9 +11,25 @@
     });
   </script>
 
+  <style media="screen">
+    section[data-name="index"] {background: #222;}
+
+    section[data-name="quote"] {background: #222;}
+    section[data-name="excited"] {background: blue;}
+    section[data-name="happy"] {background: #ff284d;}
+    section[data-name="interested"] {background: #39A64D;}
+    section[data-name="scared"] {background: #8f0019;}
+    section[data-name="confused"] {background: purple;}
+    section[data-name="angry"] {background: #E74C3C;}
+    section[data-name="annoyed"] {background: #008080;}
+    section[data-name="uncomfortable"] {background: #EC7063;}
+    section[data-name="neutral"] {background: teal;}
+    section[data-name="disinterested"] {background: blue;}
+  </style>
+
 
   <!-- Slide 1 (#72) -->
-  <section class="slide fade-6 kenBurns">
+  <section class="slide kenBurns" data-name="index" data-title="index">
     <div class="content">
       <div class="container">
         <div class="wrap">
@@ -31,13 +47,11 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/img-72.jpg)"></div>
+    <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
   </section>
 
-
-
   <!-- Slide #79 -->
-  <section class="slide fade-6 kenBurns" data-name="p1" data-title="p1">
+  <section class="slide kenBurns" data-name="quote" data-title="quote">
     <div class="content">
       <div class="container">
         <div class="wrap">
@@ -45,7 +59,7 @@
           <div class="fix-9-12">
             <div class="quote-79 ae-1">“</div>
             <h1 class="ae-2">
-              CUE uses the term <span class="p1-bg">equity-mindedness</span>  to refer to the mode of thinking exhibited by practitioners
+              CUE uses the term <span class="yellow">equity-mindedness</span>  to refer to the mode of thinking exhibited by practitioners
               who are willing to:
             </h1>
 
@@ -59,23 +73,21 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/img-79.jpg)"></div>
+    <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
   </section>
 
-
-
   <!-- Slide 2 (#74) -->
-  <section class="slide fade-6 kenBurns">
+  <section class="slide kenBurns">
     <div class="content">
       <div class="container">
         <div class="wrap">
 
           <div class="fix-10-12 toCenter">
             <!-- <h6 class="uppercase text-gray normal margin-bottom-2 ae-1">introduction</h6> -->
-            <h1 class="huge ae-2 margin-bottom-2">We'll explore six learning modules</h1>
-            <h2 class="small light ae-3"><span class="opacity-8">
+            <h1 class="large ae-2 margin-bottom-2">We've designed six learning modules</h1>
+            <!-- <h2 class="small light ae-3"><span class="opacity-8">
               Our goal is to help you review your syllabi.</span>
-            </h2>
+            </h2> -->
           </div>
           <div class="fix-10-10">
             <ul class="grid grid-74 later equal margin-top-5">
@@ -150,53 +162,53 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/img-74.jpg)"></div>
+    <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
   </section>
 
   <!-- Slide #62 -->
-<section class="slide fade-6 kenBurns">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
+  <section class="slide kenBurns">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
 
-        <div class="fix-12-12">
-          <ul class="flex reverse noSpaces verticalCenter">
-            <li class="col-12-12 left">
-              <h1 class="huge ae-2">Guidance for Using our Tool</h1>
-              <p class="hero ae-3"><span class="opacity-8">A few quick tips for using our tool effectively.</span></p>
-              <ul class="flex grid-62 later margin-top-7">
-                <li class="col-3-12 ae-4 margin-bottom-5">
-                  <i class="fal fa-arrows-alt h1 margin-bottom-1 huge text-blue"></i>
-                  <h2 class="small normal">Scroll or use direction arrows</h2>
-                  <!-- <p class="tiny opacity-6">Design is the conscious effort to impose a meaningful order.</p> -->
-                </li>
-                <li class="col-3-12 ae-5 margin-bottom-5">
-                  <i class="fal fa-user-lock h1 margin-bottom-1 huge text-blue"></i>
-                  <h2 class="small">Everything is Anonymous</h2>
-                  <!-- <p class="tiny opacity-6">Design is as much a matter of finding problems as it is solving them..</p> -->
-                </li>
-                <li class="col-3-12 ae-6 margin-bottom-5">
-                  <i class="fas fa-history h1 margin-bottom-1 huge text-blue"></i>
-                  <h2 class="small">Learn your your own pace</h2>
-                  <!-- <p class="tiny opacity-6">It’s all fun and games until someone breaks a link.</p> -->
-                </li>
-                <li class="col-3-12 ae-7 margin-bottom-5">
-                  <i class="fas fa-comment h1 margin-bottom-1 huge text-blue"></i>
-                  <h2 class="small">Ask question and give feedback</h2>
-                  <!-- <p class="tiny opacity-6">The definition of an expert is someone who knows what not to do.</p> -->
-                </li>
-              </ul>
-              <div class="fix-12-12 center margin-top-5">
-                <%= link_to title_1_path, class: "center button blue round gradient ae-3 circle" do %>
-                  Let's Get Started <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
-                <% end %>
-              </div>
-            </li>
-          </ul>
+          <div class="fix-12-12">
+            <ul class="flex reverse noSpaces verticalCenter">
+              <li class="col-12-12 left">
+                <h1 class="huge ae-2">Guidance for Using our Tool</h1>
+                <p class="hero ae-3"><span class="opacity-8">A few quick tips for using our tool effectively.</span></p>
+                <ul class="flex grid-62 later margin-top-7">
+                  <li class="col-3-12 ae-4 margin-bottom-5">
+                    <i class="fal fa-arrows-alt h1 margin-bottom-1 huge text-blue"></i>
+                    <h2 class="small normal">Scroll or use direction arrows</h2>
+                    <!-- <p class="tiny opacity-6">Design is the conscious effort to impose a meaningful order.</p> -->
+                  </li>
+                  <li class="col-3-12 ae-5 margin-bottom-5">
+                    <i class="fal fa-user-lock h1 margin-bottom-1 huge text-blue"></i>
+                    <h2 class="small">Everything is Anonymous</h2>
+                    <!-- <p class="tiny opacity-6">Design is as much a matter of finding problems as it is solving them..</p> -->
+                  </li>
+                  <li class="col-3-12 ae-6 margin-bottom-5">
+                    <i class="fas fa-history h1 margin-bottom-1 huge text-blue"></i>
+                    <h2 class="small">Learn your your own pace</h2>
+                    <!-- <p class="tiny opacity-6">It’s all fun and games until someone breaks a link.</p> -->
+                  </li>
+                  <li class="col-3-12 ae-7 margin-bottom-5">
+                    <i class="fas fa-comment h1 margin-bottom-1 huge text-blue"></i>
+                    <h2 class="small">Ask question and give feedback</h2>
+                    <!-- <p class="tiny opacity-6">The definition of an expert is someone who knows what not to do.</p> -->
+                  </li>
+                </ul>
+                <div class="fix-12-12 center margin-top-5">
+                  <%= link_to title_1_path, class: "center button blue round gradient ae-3 circle" do %>
+                    Let's Get Started <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  <% end %>
+                </div>
+              </li>
+            </ul>
+          </div>
+
         </div>
-
       </div>
     </div>
-  </div>
-  <div class="background" style="background-image:url(assets/img/background/img-61.jpg)"></div>
-</section>
+    <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+  </section>
