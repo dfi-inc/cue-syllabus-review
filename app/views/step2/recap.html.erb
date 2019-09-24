@@ -1,66 +1,104 @@
-<style media="screen">
-.fade-1 .content {
-  background: rgba(33, 33, 33, .95) !important;
-}
-</style>
+
+<body class="slides zoom noPreload animated">
+
+  <script>
+    $(function(){
+      window.autoplayInterval = setInterval(function(){
+        window.changeSlide('increase');
+      },5000);
+
+      $(document).on('click mousewheel', function(){
+        clearInterval(window.autoplayInterval);
+      });
+    });
+  </script>
 
 
+    <nav class="panel top fixed">
+      <!-- desktop version -->
+      <div class="sections">
+        <div class="left">
+          <%= image_tag("logos/cue-white-logo.png", class: "", style:"height: 40px; width: auto;")%>
+        </div>
+        <div class="center">
+          <ul class="menu">
+            <li>
+              <%#= link_to "EQMD", title_1_path, class: "bold" %>
+            </li>
+          </ul>
+        </div>
+        <div class="right"><span class="button actionButton white sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+      </div>
+    </nav>
 
-<body class="slides zoom horizontal noPreload animated ">
+    <!-- Slide #50 -->
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
 
-  <section class="slide fade-1 kenBurns slideWhite">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-
-          <div class="fix-12-12 left">
-            <div class="float-right ae-4 margin-top-2">
-              <%= link_to title_2_path, class: "" do %>
-                <i class="far fa-home h1"></i>
-              <% end %>
+            <div class="fix-10-12 toCenter">
+              <h2 class="ae-2 normal small margin-bottom-2">
+                <i class="fad fa-check margin-right-1"></i> <span class="opacity-3">Well Done.</span></h2>
+              <h1 class="ae-3 large">Thank you for exploring why syllabi matter and why this is important to racial equity.</h1>
+              <h2 class="ae-8 light margin-top-5">Next, let's recap</h2>
             </div>
-            <h3 class="small font-weight-bold ae-2 fromLeft section-title ">Section II</h3>
-            <h5 class=" ae-2 fromLeft type-nunito left subtitle underline margin-bottom-5">
-              section recap and takeaways
-            </h5>
-            <h2 class="margin-bottom-5 ae-2 fromLeft">Let's review what we learned in this section.</h2>
-            <ul class="flex reverse verticalCenter">
-              <li class="col-12-12 left toRight section-header">
-                <ul class="grid">
-                  <li class="col-4-12 left ae-4 fromAbove toLeft align-left ">
-                    <h6 class=" ae-2 fromLeft text-yellow subtitle">Learning #1</h6>
-                    <p class="ae-3 left">
-                      There are a range of emotions people feel when discussing race and racism.
-                    </p>
-                  </li>
-                  <li class="col-4-12 left ae-4 fromAbove toLeft align-left ">
-                    <h6 class=" ae-2 fromLeft text-yellow subtitle">Learning #2</h6>
-                    <p class="ae-3 left">
-                       It’s important to identify and name the emotions you feel when conversations about race and racism occurs.
-                    </p>
-                  </li>
-                  <li class="col-4-12 left ae-4 fromAbove toLeft align-left ">
-                    <h6 class=" ae-2 fromLeft text-yellow subtitle">Learning #3</h6>
-                    <p class="ae-3 left">
-                      As applicable, CUE encourages you to identify the emotions you’d like to feel when conversations about race and racism emerge and to work towards that emotional goal.
-                    </p>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            <div class="fix-12-12 ae-5">
+              <%= image_tag("emoji/animations/interested.gif", class: "ipad-36", style: "")%>
+            </div>
 
-          <div class="fix-12-12 center margin-top-5">
-            <%= link_to title_3_path, class: "center button cueRed round gradient ae-3 circle" do %>
-              Next Section <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
-            <% end %>
-          </div>
 
+          </div>
         </div>
       </div>
-    </div>
-    <div class="background" style="background-image:url(https://www.sccpre.cat/mypng/full/145-1456885_moderate-red-curve-gradient-graphics-background-graphic.png);"></div>
+      <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+    </section>
 
-  </section>
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-12-12 left">
+              <h5 class="bold uppercase ae-2 fromLeft margin-bottom-1 opacity-3">module II</h5>
+              <h1 class=" ae-2 fromLeft left subtitle underline margin-bottom-7">
+                Learning Recap and Takeaways
+              </h1>
+              <h2 class="small normal margin-bottom-2 ae-2 fromLeft opacity-3">What did we learn in this section?</h2>
+              <div class="fix-12-12">
+                <ul class="grid fixedSpaces equal left grid-71">
+                  <li class="col-4-12 ae-3">
+                    <a href="#" class="cell-71 rounded equalElement verticalCenter">
+                      <h3 class="big">A range of motions is normal and expected.</h3>
+                      <p class=" opacity-6">There are a range of emotions people feel when discussing race and racism.</p>
+                    </a>
+                  </li>
+                  <li class="col-4-12 ae-4">
+                    <a href="#" class="cell-71 rounded equalElement verticalCenter">
+                      <h3 class="big">Observing and naming your emotions is important.</h3>
+                      <p class="opacity-6">It’s important to identify and name the emotions you feel when conversations about race and racism occurs.</p>
+                    </a>
+                  </li>
+                  <li class="col-4-12 ae-6">
+                    <a href="#" class="cell-71 rounded equalElement last verticalCenter">
+                      <h3 class="big">Knowing how you want to feel and work progressively.</h3>
+                      <p class="opacity-6">We encourages you to identify the emotions you’d like to feel when conversations about race and racism emerge and to work towards that emotional goal.</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="fix-12-12 center margin-top-10">
+              <%= link_to title_2_path, class: "center button blue big ae-3 circle" do %>
+                Next Section <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+              <% end %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+    </section>
 
 </body>
