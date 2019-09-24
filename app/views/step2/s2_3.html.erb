@@ -1,44 +1,225 @@
-<body class="slides plain">
-  <nav class="side">
-    <div class="navigation">
-      <div class="cell">
-        <span class="nextSlide"><svg class="sideArrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
-      </div>
-    </div>
-  </nav>
-  <nav class="side">
-    <div class="navigation">
-      <div class="cell">
-        <span class="nextSlide"><svg class="sideArrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
-      </div>
-    </div>
-  </nav>
+<body class="slides zoom horizontal noPreload animated ">
 
-  <%= render "step2/sections/s3/p1" %>
-  <%= render "step2/sections/s3/p2" %>
-  <%= render "step2/sections/s3/p3" %>
-  <%= render "step2/sections/s3/p4" %>
+  <!-- <script>
+    $(function(){
+      window.autoplayInterval = setInterval(function(){
+        window.changeSlide('increase');
+      },7000);
 
-  <nav class="panel bottom white border-top">
-    <div class="sections desktop">
-      <div class="left">
-        <span class="onTop" data-tooltip="Section Home">
-          <span class="white button actionButton">
-            <%= link_to s2_2_path do %>
-              <i class="fal fa-arrow-circle-left h3"></i>
-            <% end %>
-          </span>
-        </span>
-      </div>
-      <div class="center"><nav class="medium"><div class="navigation"><ul></ul></div></nav></div>
-      <div class="right">
-        <span class="onTop" data-tooltip="Next Section">
-          <span class="white button actionButton">
-            <%= link_to s2_4_path do %>
-              <i class="fal fa-arrow-circle-right h3"></i>
-            <% end %>
-          </span>
-        </span>
+      $(document).on('click mousewheel', function(){
+        clearInterval(window.autoplayInterval);
+      });
+    });
+  </script> -->
+
+  <style>
+    .item-100 {
+      padding: 10px;
+    }
+  </style>
+
+<%= render "shared/panels/top/nav_1" %>
+
+<section class="slide kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap top">
+        <%= render "step2/menus/part3" %>
+        <div class="center margin-top-3">
+          <%= render "step2/titles/part3" %>
+        </div>
+        <ul class="flex left">
+          <li class="col-3-12">
+            <h6 class="uppercase margin-bottom-2 opacity-5 semiBold"><i class="fas fa-lightbulb margin-right-1"></i> Takeaways</h6>
+            <ul class="flex later flex-slide-100">
+
+            </ul>
+          </li>
+          <li class="col-9-12">
+            <div class="fix-12-12 left margin-top-5">
+              <ul class="grid margin-top-5">
+                <li class="col-2-12 ae-1 fromCenter">
+                  <%= image_tag("https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/zoomin-512.png")%>
+                </li>
+                <li class="col-9-12 col-tablet-1-2 col-phablet-1-1 fromCenter ae-4">
+                  <h3 class="large">With few exceptions (historically black colleges and universities being the most notable), higher education institutions were founded and designed to serve white students, particularly those who are male, middle- to upper-class, heterosexual, able-bodied, and Christian.</h3>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
       </div>
     </div>
-  </nav>
+  </div>
+  <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+</section>
+
+<section class="slide kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap top">
+        <%= render "step2/menus/part3" %>
+        <div class="center margin-top-3">
+          <%= render "step2/titles/part3" %>
+        </div>
+        <ul class="flex left">
+          <li class="col-3-12">
+            <h6 class="ae-2 uppercase margin-bottom-2 opacity-5 semiBold"><i class="fas fa-lightbulb margin-right-1"></i> Takeaways</h6>
+            <ul class="flex later flex-slide-100">
+              <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+                <a href="#" class="item-100">
+                  <!-- <p class="text-yellow normal micro opacity-6 margin-bottom-1"><i class="fas fa-question-circle"></i><span class="date-small">&nbsp;&nbsp;Part I: Focus</span></p> -->
+                  <h3 class="left">Takeaway #1</h3>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="col-9-12">
+            <div class="fix-12-12 left margin-top-5">
+              <ul class="grid margin-top-5">
+                <li class="col-2-12 ae-1 fromCenter">
+                  <%= image_tag("https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/check-256.png")%>
+                </li>
+                <li class="col-9-12 col-tablet-1-2 col-phablet-1-1 fromCenter ae-4">
+                  <h3 class="large">Despite the increasing diversity of the American college student population, many of higher education’s policies and practices have not been reconfigured to equitably support, affirm, and validate students from racially minoritized groups.</h3>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+<section class="slide kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap top">
+        <%= render "step2/menus/part3" %>
+        <div class="center margin-top-3">
+          <%= render "step2/titles/part3" %>
+        </div>
+        <ul class="flex left">
+          <li class="col-3-12">
+            <h6 class="uppercase margin-bottom-2 opacity-5 semiBold"><i class="fas fa-lightbulb margin-right-1"></i> Takeaways</h6>
+            <ul class="flex later flex-slide-100">
+              <li class="col-12-12 cell-100 rounded margin-bottom-2">
+                <a href="#" class="item-100">
+                  <!-- <p class="text-yellow normal micro opacity-6 margin-bottom-1"><i class="fas fa-question-circle"></i><span class="date-small">&nbsp;&nbsp;Part I: Focus</span></p> -->
+                <h3 class="left">Takeaway #1</h3>
+                </a>
+              </li>
+              <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+                <a href="#" class="item-100">
+                  <!-- <p class="text-yellow normal micro opacity-6 margin-bottom-1"><i class="fas fa-question-circle"></i><span class="date-small">&nbsp;&nbsp;Part I: Focus</span></p> -->
+                  <h3 class="left">Takeaway #2</h3>
+
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="col-9-12">
+            <div class="fix-12-12 left margin-top-5">
+              <ul class="grid margin-top-5">
+                <li class="col-2-12 ae-1 fromCenter">
+                  <%= image_tag("https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/tools-512.png")%>
+                </li>
+                <li class="col-9-12 col-tablet-1-2 col-phablet-1-1 fromCenter ae-4">
+                  <h3 class="big bold">Artifacts of Practice</h3>
+                  <h3 class="large">Syllabi can reinforce and reproduce the norms and rules that generally align with the experience of white students, or syllabi can counter those norms and rules. For racially minoritized students who have experienced exclusion, marginalization, discrimination, and oppression in education and elsewhere, syllabi can be tools for equity-minded practice.</h3>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+<section class="slide kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap top">
+        <%= render "step2/menus/part3" %>
+
+        <div class="fix-12-12 margin-top-5">
+          <div class="center">
+            <h5 class="font-weight-bold opacity-3 uppercase ae-1">A Quick Recap</h5>
+            <h1 class="ae-3 fromLeft normal margin-top-1 light">What do Syllabi have to do with Racial Equity?</h1>
+          </div>
+        <div class="fix-6-12 left margin-top-5">
+          <ul class="flex center later flex-slide-100">
+            <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+              <a href="#" class="item-100">
+                <!-- <p class="text-yellow normal micro opacity-6 margin-bottom-1"><i class="fas fa-question-circle"></i><span class="date-small">&nbsp;&nbsp;Part I: Focus</span></p> -->
+                <h3 class="">Takeaway #1</h3>
+              </a>
+            </li>
+            <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+              <a href="#" class="item-100">
+                <!-- <p class="text-yellow normal micro opacity-6 margin-bottom-1"><i class="fas fa-question-circle"></i><span class="date-small">&nbsp;&nbsp;Part I: Focus</span></p> -->
+                <h3 class="">Takeaway #2</h3>
+              </a>
+            </li>
+            <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+              <a href="#" class="item-100">
+                <!-- <p class="text-yellow normal micro opacity-6 margin-bottom-1"><i class="fas fa-question-circle"></i><span class="date-small">&nbsp;&nbsp;Part I: Focus</span></p> -->
+                <h3 class="">Takeaway #3</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fix-12-12 center margin-top-5">
+          <%= link_to s2_4_path, class: "center button blue ae-3 circle" do %>
+            Next Section <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
+  <div class="sections desktop ">
+    <div class="left">
+      <span class="onTop" data-tooltip="Section Home">
+        <span class="white button actionButton">
+          <%= link_to title_2_path do %>
+            <i class="far fa-home h4"></i>
+          <% end %>
+        </span>
+      </span>
+    </div>
+    <div class="center opacity-1">
+      <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+      <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+      <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+
+    </div>
+    <div class="right">
+      <span class="onTop" data-tooltip="Next Page">
+        <span class="white button actionButton">
+          <%= link_to s2_4_path do %>
+            <i class="fal fa-check-circle h3"></i>
+          <% end %>
+        </span>
+      </span>
+    </div>
+  </div>
+</nav>
+
+
+</body>
+
+
+
+
+
+  <%#= render "step2/sections/s3/p1" %>
+  <%#= render "step2/sections/s3/p2" %>
+  <%#= render "step2/sections/s3/p3" %>
+  <%#= render "step2/sections/s3/p4" %>
