@@ -1,17 +1,3 @@
-  <nav class="side">
-    <div class="navigation">
-      <div class="cell">
-        <span class="nextSlide"><svg class="sideArrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
-      </div>
-    </div>
-  </nav>
-  <nav class="side">
-    <div class="navigation">
-      <div class="cell">
-        <span class="nextSlide"><svg class="sideArrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
-      </div>
-    </div>
-  </nav>
 
 <%= render "step2/sections/s1/p1" %>
 <%= render "step2/sections/s1/p2" %>
@@ -19,27 +5,31 @@
 <%= render "step2/sections/s1/p4" %>
 <%= render "step2/sections/s1/p5" %>
 
-<!-- Panel Bottom #06 -->
-<nav class="panel bottom white border-top">
-  <div class="sections desktop">
-    <div class="left">
-      <span class="onTop" data-tooltip="Section Home">
-        <span class="white button actionButton">
-          <%= link_to intro_2_path do %>
-            <i class="far fa-home h4"></i>
-          <% end %>
+  <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
+    <div class="sections desktop ">
+      <div class="left">
+        <span class="onTop" data-tooltip="Section Home">
+          <span class="white button actionButton">
+            <%= link_to s1_1_path do %>
+              <i class="far fa-home h4"></i>
+            <% end %>
+          </span>
         </span>
-      </span>
-    </div>
-    <div class="center"><nav class="medium"><div class="navigation"><ul></ul></div></nav></div>
-    <div class="right">
-      <span class="onTop" data-tooltip="Next Section">
-        <span class="white button actionButton">
-          <%= link_to s2_2_path do %>
-            <i class="fal fa-arrow-circle-right h3"></i>
-          <% end %>
+      </div>
+      <div class="center opacity-1">
+        <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+        <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+        <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+
+      </div>
+      <div class="right">
+        <span class="onTop" data-tooltip="Next Page">
+          <span class="white button actionButton">
+            <%= link_to s1_3_path do %>
+              <i class="fal fa-arrow-circle-right h3"></i>
+            <% end %>
+          </span>
         </span>
-      </span>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
