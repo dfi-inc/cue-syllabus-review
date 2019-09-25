@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  get '/index'   => 'pages#index',     as: :home
-  get '/about'   => 'pages#about',     as: :about
-  get '/contact' => 'pages#contact',   as: :contact
-  get '/faq'     => 'pages#faq',       as: :faq
-  get '/terms'   => 'pages#terms',     as: :terms
-  get '/privacy' => 'pages#privacy',   as: :privacy
-  get '/login'   => 'pages#login',     as: :login
-  get '/signup'  => 'pages#signup',    as: :signup
+  get '/index'        => 'pages#index',         as: :home
+  get '/onboarding'   => 'pages#onboarding',    as: :onboarding
+  get '/about'        => 'pages#about',         as: :about
+  get '/contact'      => 'pages#contact',       as: :contact
+  get '/faq'          => 'pages#faq',           as: :faq
+  get '/terms'        => 'pages#terms',         as: :terms
+  get '/privacy'      => 'pages#privacy',       as: :privacy
+  get '/login'        => 'pages#login',         as: :login
+  get '/signup'       => 'pages#signup',        as: :signup
 
   get '/overview'         => 'overview#title',    as: :overview_title
   get '/overview/intro'   => 'overview#intro',    as: :overview_intro
