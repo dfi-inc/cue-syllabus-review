@@ -12,4 +12,7 @@ class Step3Controller < ApplicationController
   def s3_2
   end
 
+  def s3_3
+  end
+
 end
