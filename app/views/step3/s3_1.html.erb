@@ -158,6 +158,8 @@
      </div>
   </section>
 
+  <%= render "step3/sections/3/slide1" %>
+
    <section class="slide  whiteSlide autoHeight">
      <div class="content">
        <div class="container">
@@ -173,6 +175,10 @@
            <div class="fix-4-12">
              <%= image_tag("graphics/mind-0.png", class:"wide ae-1 fromCenter")%>
            </div>
+
+           <%= link_to s3_2_path, class: "button p1-bg big ae-8" do %>
+             Great Job! Let's move on <i class="far fa-long-arrow-alt-right margin-left-1"></i>
+           <% end %>
 
          </div>
        </div>
