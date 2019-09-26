@@ -3,29 +3,45 @@
 <%= render "step5/sections/s1/p3" %>
 <%= render "step5/sections/s1/p4" %>
 
+<nav class="side medium stroke">
+
+  <!-- for desktop -->
+<script> window.disableOnScroll = 1; </script>
+
+<!-- for mobile -->
+<script> window.disableOnSwipe = 1; </script>
 
 
-<!-- Panel Bottom #06 -->
-<nav class="panel bottom white border-top">
-  <div class="sections desktop">
-    <div class="left">
-      <span class="onTop" data-tooltip="Section Home">
-        <span class="white button actionButton">
-          <%= link_to intro_5_path do %>
-            <i class="far fa-home h4"></i>
-          <% end %>
-        </span>
-      </span>
-    </div>
-    <div class="center"><nav class="medium"><div class="navigation"><ul></ul></div></nav></div>
-    <div class="right">
-      <span class="onTop" data-tooltip="Next Section">
-        <span class="white button actionButton">
-          <%= link_to s5_2_path do %>
-            <i class="fal fa-arrow-circle-right h3"></i>
-          <% end %>
-        </span>
-      </span>
-    </div>
+  <div class="navigation">
+    <ul></ul>
   </div>
 </nav>
+
+
+ <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
+   <div class="sections desktop ">
+     <div class="left">
+       <span class="onTop" data-tooltip="Section Home">
+         <span class="white button actionButton">
+           <%= link_to title_5_path do %>
+             <i class="far fa-home h4"></i>
+           <% end %>
+         </span>
+       </span>
+     </div>
+     <div class="center opacity-3">
+       <i class="fal fa-arrow-alt-left h2 no-margin"></i>
+       <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+       <i class="fal fa-arrow-alt-right h2 no-margin"></i>
+     </div>
+     <div class="right">
+       <span class="onTop" data-tooltip="Next Page">
+         <span class="white button actionButton">
+           <%= link_to s5_2_path do %>
+             <i class="fal fa-check-circle h3"></i>
+           <% end %>
+         </span>
+       </span>
+     </div>
+   </div>
+ </nav>

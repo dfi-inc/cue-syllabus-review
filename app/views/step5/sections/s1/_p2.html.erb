@@ -1,56 +1,78 @@
 
 
-<section class="slide whiteSlide" data-name="p2" data-title="p2">
+<section class="slide" data-name="p2" data-title="p2">
   <div class="content" style="background: ;">
    <div class="container">
-     <div class="top">
+     <div class="wrap top">
+       <div class="fix-12-12 left">
+         <ul class="grid">
+           <li class="col-12-12">
+             <h3 class="font-weight-bold opacity-3">Get Reaqcuainted</h3>
+             <h1 class="big fromLeft normal">How well do you know your syllabus?</h1>
+           </li>
+         </ul>
 
-       <div class="wrap">
-         <ul class="flex">
-           <li class="col-12-12 left toLeft">
-             <h3 class="ae-1 font-weight-bold">Get Reaqcuainted</h3>
-             <h1 class="big ae-2 fromLeft text-pink bold">How well do you know your syllabus?</h1>
-            </li>
-          </ul>
-           <ul class="flex reverse margin-top-8">
-             <li class="col-7-12 left">
-              <ul class="flex">
-                <li class="col-1-12 left">
-                  <i class="fas fa-check-circle h1 text-green ae-4"></i>
-                </li>
-                <li class="col-11-12 left">
-                  <p class=" ae-4 text-gray">1. What are three words or phrases that come to mind when you hear the word "syllabus"?</p>
-                  <h4 class="ae-5 text-gray opacity-6 normal">
-                    <span class="badge white text-teal">Strict</span>
-                    <span class="badge white text-teal">Helpful</span>
-                    <span class="badge white text-teal">Helpful</span>
-                  </h4>
-                  <div class="margin-top-5">
-                    <ol>
-                      <li>
-                        <form class="slides-form wide" action="#" autocomplete="off">
-                          <p class="lead semiBold ae-6">2. Is the Syllabus important to me as an instructor??</p>
-                          <p class="ae-7">
-                            <a href="#" class="button white text-teal">Yes</a>
-                            <a href="#" class="button white text-teal">No</a>
-                          </p>
-                            <textarea class=" ae-8" rows="6"></textarea>
-                        </form>
-                      </li>
-                    </ol>
-                  </div>
-                  <br/><br/>
-                  <p>
-                   <a href="#p3" class="ae-9 circle button blue gradient ae-3 fromCenter cropLeft">Next</a>
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li class="col-5-12 right">
-              <%= image_tag("graphics/syllabus.svg", class:"ae-8", style:"width: 800px !important;", alt:"iPad Image")%>
-            </li>
-          </ul>
-       </div>
+         <ul class="grid">
+           <li class="col-7-12">
+             <h3 class="big bold text-teal margin-bottom-2">Purpose & Intentionality</h3>
+             <h3 class="large light ae-4">Is the Syllabus important to you as an instructor?</h3>
+              <form class="slides-form wide margin-top-2" action="#" autocomplete="off">
+                <p class="lead normal ae-6"></p>
+                <ul class="grid ae-7">
+                  <li class="col-6-12">
+                    <a href="#p3" class="wide button white text-teal">Yes</a>
+                  </li>
+                  <li class="col-6-12">
+                    <a href="#p3a" class="wide button white text-teal">No</a>
+                  </li>
+                </ul>
+              </form>
+             </li>
+             <li class="col-5-12"><%= image_tag("graphics/syllabus.svg", class:"", alt:"iPad Image")%></li>
+           </ul>
+        </div>
      </div>
    </div>
+ </div>
+</section>
+
+
+
+<section class="slide" data-name="p3a" data-title="p3a">
+  <div class="content" style="background: ;">
+   <div class="container">
+     <div class="wrap top">
+       <div class="fix-12-12 left">
+         <ul class="grid">
+           <li class="col-12-12">
+             <h3 class="font-weight-bold opacity-3">Get Reaqcuainted</h3>
+             <h1 class="big fromLeft normal">How well do you know your syllabus?</h1>
+           </li>
+         </ul>
+
+         <ul class="grid">
+           <li class="col-7-12">
+             <h3 class="big bold text-teal margin-bottom-2">Purpose & Intentionality</h3>
+             <h3 class="large light">Is the Syllabus important to you as an instructor?</h3>
+              <form class="slides-form wide margin-top-2" action="#" autocomplete="off">
+                <ul class="grid ae-7">
+                  <li class="col-6-12">
+                    <a href="#p3a" class="wide button teal">No</a>
+                  </li>
+                  <li class="col-6-12">
+                    <h3 class="large margin-top-1">If so, why not?</h3>
+                  </li>
+                </ul>
+                <textarea placeholder="Please clarify in a few sentences." class="margin-top-4 ae-8 wide" rows="6"></textarea>
+              </form>
+              <p class="margin-top-3">
+                <a href="#p3" class="cell-100 rounded  button ae-5 fromBottom cropLeft">Next</a>
+               </p>
+             </li>
+             <li class="col-5-12"><%= image_tag("graphics/syllabus.svg", class:"", alt:"iPad Image")%></li>
+           </ul>
+        </div>
+     </div>
+   </div>
+ </div>
 </section>
