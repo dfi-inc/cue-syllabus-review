@@ -1,53 +1,48 @@
 <body class="slides zoom horizontal noPreload animated ">
-
+  <nav class="side medium stroke">
+    <div class="navigation">
+      <ul></ul>
+    </div>
+  </nav>
   <%= render "shared/panels/top/nav_1" %>
 
-  <section class="slide fade-1 kenBurns slideWhite teal" data-name="intro" data-title="Intro">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-12-12 left">
-            <div class="float-right ae-4 margin-top-2">
-              <%= link_to title_6_path, class: "margin-right-2" do %>
-                <i class="far fa-home h1"></i>
-              <% end %>
-              <%= link_to recap_6_path, class: "" do %>
-                <i class="fal fa-list-ol h1"></i>
-              <% end %>
-            </div>
-            <h3 class="small font-weight-bold ae-2 fromLeft section-title ">Section VI</h3>
-            <h5 class="subtitle underline ae-2 fromLeft type-nunito">section overview</h5>
-            <h3 class=" margin-bottom-2 ae-2 fromLeft">
-               What are the important learning outcomes for this section?
-            </h3>
 
-            <ul class="flex  margin-top-4 ae-3" style="border: 1px solid #fff; padding: 30px 0 20px 0px;">
-              <li class="col-3-12">
-                <h3 class="subtitle font-weight-heavy text-yellow ae-4 right">learning outcome</h3></li>
-              <li>
-              <li class="col-9-12">
-                <p class="hero ae-5 left margin-top-1">
-                  A greater understanding of the intentional (or unintentional) messages your syllabus communicates, particularly to students from minoritized racial/ethnic groups, and (potentially) new equity-minded practices you can experiment with and incorporate into your syllabi.
-                </p>
-              </li>
-            </ul>
+  <%= render "step6/sections/page_0/p0" %>
+  <%= render "step6/sections/page_0/p1" %>
+  <%= render "step6/sections/page_0/p2" %>
+  <nav class="side medium stroke">
+    <div class="navigation">
+      <ul></ul>
+    </div>
+  </nav>
 
-            <ul class="flex margin-top-10 ae-7">
-              <li class="col-6-12">
-                <h3 class="micro margin-bottom-2 fromLeft text-yellow right type-nunito margin-top-1">
-                  <i class="far fa-clock margin-right-1"></i> Appox. 10 minute
-                </h3>
-              <li>
-              <li class="col-6-12">
-                <%= link_to s6_1_path, class: "button blue gradient ae-3 circle left" do %>
-                  Let's Begin <i class="far fa-long-arrow-alt-right margin-left-1"></i>
-                <% end %>
-              </li>
-            </ul>
-          </div>
 
-        </div>
+
+  <!-- Panel Bottom #06 -->
+  <nav class="panel bottom">
+    <div class="sections desktop">
+      <div class="left">
+        <span class="onTop" data-tooltip="Section Home">
+          <span class="white button actionButton">
+            <%= link_to s6_4_path do %>
+              <i class="fal fa-arrow-circle-left h3"></i>
+            <% end %>
+          </span>
+        </span>
+      </div>
+      <div class="center opacity-3">
+        <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+        <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+        <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+      </div>
+      <div class="right">
+        <span class="onTop" data-tooltip="Next Section">
+          <span class="white button actionButton">
+            <%= link_to recap_4_path do %>
+              <i class="fal fa-arrow-circle-right h3"></i>
+            <% end %>
+          </span>
+        </span>
       </div>
     </div>
-    <div class="background" style=""></div>
-  </section>
+  </nav>
