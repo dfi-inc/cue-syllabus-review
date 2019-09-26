@@ -1,5 +1,5 @@
   <body class="slides zoom horizontal noPreload animated ">
-    <script>
+    <!-- <script>
       $(function(){
         window.autoplayInterval = setInterval(function(){
           window.changeSlide('increase');
@@ -9,52 +9,19 @@
           clearInterval(window.autoplayInterval);
         });
       });
-    </script>
-
-
-    <script>
-      $(function(){
-        $('.typeIn').each(function(){
-          var $element = $(this),
-              letters = $element.text().split(""),
-              interval = 0.02;
-
-          $element.empty();
-
-          $.each(letters, function(i, letter){
-            if (letter == " ") {
-              letter = "&nbsp;"
-            }
-            $element.append('<span style="-webkit-transition-delay: ' + interval * i + 's; transition-delay: ' + interval * i+ 's; ">'+letter+'</span>')
-          });
-        });
-      });
-    </script>
-    <style>
-    .typeIn span {
-      opacity: 0;
-      display: inline-block;
-      -webkit-transform: scale(1.2) translateY(-10px) !important;
-      transform: scale(1.2) translateY(-10px) !important;
-      -webkit-transition-duration: 0s;
-      transition-duration: 0s;
-    }
-
-    .slide:not(.active) .typeIn span {
-      transition-delay: 0s !important;
-    }
-
-    .page-loaded:not(.resizing) .slide.active .typeIn span {
-      -webkit-transition-duration: 0.15s;
-      transition-duration: 0.15s;
-      opacity: 1;
-      -webkit-transform: scale(1) !important;
-      transform: scale(1) !important;
-    }
-    </style>
+    </script> -->
 
 
     <%= render "shared/panels/top/nav_1" %>
+
+
+      <!-- Navigation -->
+      <nav class="side medium stroke">
+        <div class="navigation">
+          <ul></ul>
+        </div>
+      </nav>
+
 
     <section class="slide kenBurns">
       <div class="content">
@@ -62,8 +29,9 @@
           <div class="wrap padding-top-phablet-5">
 
             <div class="fix-10-12 toCenter">
-              <h1 class="ae-1">Six Learning Modules</h1>
-              <p class="ae-2 margin-bottom-3"><span class="opacity-8">Each section is approximately 10-15 minutes.</span></p>
+              <h5 class="uppercase text-gray semiBold margin-bottom-2 ae-1">cue online syllabus review</h5>
+              <h1 class="ae-1">Learning Module V</h1>
+              <!-- <p class="ae-2 margin-bottom-3"><span class="opacity-8">Each section is approximately 10-15 minutes.</span></p> -->
             </div>
 
             <div class="fix-12-12 margin-top-7">
@@ -141,7 +109,7 @@
     </section>
 
 
-    <section class="slide fade-6 kenBurns" data-name="intro" data-title="Intro">
+    <section class="slide kenBurns" data-name="intro" data-title="Intro">
       <div class="content">
         <div class="container">
           <div class="wrap">
@@ -155,16 +123,34 @@
       <div class="background" style="background-image:url(assets/img/background/img-23.jpg)"></div>
     </section>
 
-    <section class="slide fade-6 kenBurns">
+    <section class="slide kenBurns">
       <div class="content">
         <div class="container">
           <div class="wrap">
-
-            <div class="fix-10-12">
-              <h3 class="ae-1 small light margin-bottom-3 uppercase"><span class="opacity-6">focus</span></h3>
-              <h1 class=" thin ae-2">This section is designed to help you think about who your syllabus is written for and who it’s designed to serve.</h1>
+            <div class="fix-11-12 center">
+              <h3 class="ae-1 small light margin-bottom-3 uppercase "><span class="opacity-6">
+                in this section</span></h3>
+                <h1 class="ae-1">We'll <span class="yellow normal padding-1 margin-1">reflect</span> on your syllabus,
+                <span class="yellow normal padding-1 margin-1">identify how it serves</span> students from minoritized racial/ethnic
+                groups and how it could be better leveraged to do so in equity-minded ways.</h1>
+              </div>
             </div>
+          </div>
+        </div>
+      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
+    </section>
 
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="fix-10-12">
+              <div class="col-12-12 ae-3 cell-100 rounded margin-bottom-2 done padding-5">
+                <h3 class="ae-1 small light margin-bottom-3 uppercase"><span class="opacity-6">
+                  <i class="fal fa-lightbulb-on margin-right-1"></i> Key focus</span></h3>
+                <h1 class=" thin ae-2">This section is designed to help you think about who your syllabus is written for and who it’s designed to serve.</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -176,100 +162,55 @@
         <div class="container">
           <div class="wrap">
 
-            <div class="fix-11-12 left">
-              <h1 class="ae-1">In this module we’ll focus on reflecting on your syllabus and
-              identifying the ways it already serves students from minoritized racial/ethnic
-              groups and also could be better leveraged to do so in equity-minded ways.</h1>
-
+            <div class="frame-93 rounded ae-1">
+              <div class="ae-2">
+                <h1 class="cropBottom inline">Ready to get started?
+                  <%= link_to intro_5_path, class: "big button blue gradient small ae-3 middle margin-top-1
+                  margin-left-4" do %>
+                  Yes, Let's Begin
+                  <% end %>
+                  <%= link_to root_path, class: "big button white small ae-3 middle margin-top-1
+                  " do %>
+                  I'll come back later
+                  <% end %>
+                </h1>
+              </div>
             </div>
 
           </div>
         </div>
       </div>
-      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
-    </section>
-
-    <section class="slide kenBurns">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-11-12 left">
-              <h1 class="ae-1 huge">To start, we encourage you to think about the following prompts:</h1>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/background/img-50.jpg)"></div>
-    </section>
-
-    <section class="slide">
-      <div class="content">
-        <div class="container">
-          <div class="wrap left">
-            <div class="fix-8-12 toCenter">
-              <h1 class="typeIn ">What life experiences have contributed to &#10;the reactions you feel when conversations&#10; about racial equity emerge?</h1>
-              <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="slide">
-      <div class="content">
-        <div class="container">
-          <div class="wrap left">
-            <div class="fix-8-12 toCenter">
-              <h1 class="typeIn ">  Do you think that your peers have similar or different reactions when
-                conversations about racial equity emerge? If different, what do you think
-                contributes to this difference?</h1>
-              <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="slide">
-      <div class="content">
-        <div class="container">
-          <div class="wrap left">
-            <div class="fix-8-12 toCenter">
-              <h1 class="typeIn ">In an ideal future, what reaction would you like to have when conversations
-              about racial equity emerge?</h1>
-              <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
     </section>
 
 
-    <!-- Slide #93 -->
-    <section class="slide fade-6 kenBurns">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-
-          <div class="frame-93 rounded ae-1">
-            <div class="ae-2">
-              <h1 class="cropBottom inline">Ready to get started?
-                <%= link_to intro_5_path, class: "button blue gradient small ae-3 middle margin-top-1
-                margin-left-2 margin-right-2" do %>
-                Let's Begin
-                <% end %>
-              </h1>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="background" style="background-image:url(assets/img/background/img-93.jpg)"></div>
-    </section>
+   <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
+     <div class="sections desktop ">
+       <div class="left">
+         <span class="onTop" data-tooltip="Section Home">
+           <span class="white button actionButton">
+             <%= link_to title_5_path do %>
+               <i class="far fa-home h4"></i>
+             <% end %>
+           </span>
+         </span>
+       </div>
+       <div class="center opacity-3">
+         <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+         <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+         <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+       </div>
+       <div class="right">
+         <span class="onTop" data-tooltip="Next Page">
+           <span class="white button actionButton">
+             <%= link_to intro_5_path do %>
+               <i class="fal fa-check-circle h3"></i>
+             <% end %>
+           </span>
+         </span>
+       </div>
+     </div>
+   </nav>
 
 
 </body>

@@ -1,54 +1,173 @@
 <body class="slides zoom horizontal noPreload animated ">
 
-  <section class="slide fade-1 kenBurns slideWhite teal" data-name="intro" data-title="Intro">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-12-12 left">
-            <div class="float-right ae-4 margin-top-2">
-              <%= link_to title_5_path, class: "margin-right-2" do %>
-                <i class="far fa-home h1"></i>
-              <% end %>
-              <%= link_to recap_5_path, class: "" do %>
-                <i class="fal fa-list-ol h1"></i>
-              <% end %>
-            </div>
-            <h3 class="small font-weight-bold ae-2 fromLeft section-title ">Section V</h3>
-            <h5 class="subtitle underline ae-2 fromLeft type-nunito">section overview</h5>
-            <h3 class=" margin-bottom-2 ae-2 fromLeft">
-               What are the important learning outcomes for this section?
-            </h3>
+      <script>
+        $(function(){
+          $('.typeIn').each(function(){
+            var $element = $(this),
+                letters = $element.text().split(""),
+                interval = 0.02;
 
-            <ul class="flex  margin-top-4 ae-3" style="border: 1px solid #fff; padding: 30px 0 20px 0px;">
-              <li class="col-3-12">
-                <h3 class="subtitle font-weight-heavy text-yellow ae-4 right">learning outcome</h3></li>
-              <li>
-              <li class="col-9-12">
-                <p class="hero ae-5 left margin-top-1">
-                   A proportional assessment of who—among higher education audiences like faculty, students, accreditation agencies, and the system office—your syllabus is currently designed to serve.
-                </p>
-              </li>
-            </ul>
+            $element.empty();
 
-            <ul class="flex margin-top-10 ae-7">
-              <li class="col-6-12">
-                <h3 class="micro margin-bottom-2 fromLeft text-yellow right type-nunito margin-top-1">
-                  <i class="far fa-clock margin-right-1"></i> Appox. 10 minute
-                </h3>
-              <li>
-              <li class="col-6-12">
-                <%= link_to s5_1_path, class: "button blue gradient ae-3 circle left" do %>
-                  Let's Begin <i class="far fa-long-arrow-alt-right margin-left-1"></i>
-                <% end %>
-              </li>
-            </ul>
+            $.each(letters, function(i, letter){
+              if (letter == " ") {
+                letter = "&nbsp;"
+              }
+              $element.append('<span style="-webkit-transition-delay: ' + interval * i + 's; transition-delay: ' + interval * i+ 's; ">'+letter+'</span>')
+            });
+          });
+        });
+      </script>
+      <style>
+      .typeIn span {
+        opacity: 0;
+        display: inline-block;
+        -webkit-transform: scale(1.2) translateY(-10px) !important;
+        transform: scale(1.2) translateY(-10px) !important;
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+      }
+
+      .slide:not(.active) .typeIn span {
+        transition-delay: 0s !important;
+      }
+
+      .page-loaded:not(.resizing) .slide.active .typeIn span {
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        opacity: 1;
+        -webkit-transform: scale(1) !important;
+        transform: scale(1) !important;
+      }
+      </style>
+
+
+
+        <!-- Navigation -->
+        <nav class="side medium stroke">
+          <div class="navigation">
+            <ul></ul>
           </div>
+        </nav>
 
+
+      <section class="slide kenBurns">
+        <div class="content">
+          <div class="container">
+            <div class="wrap">
+
+              <div class="fix-11-12 center">
+                <h1 class="ae-1 huge">To start, we encourage you to think about the following prompts...</h1>
+                <div class="center margin-top-5">
+                  <a href="#prompt-1" class="center button big cell-100 rounded ae-3 circle">
+                    Prompt #1 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="background" style=""></div>
+      </section>
 
-  </section>
+      <section class="slide" data-name="prompt-1" data-title="Prompt 1">
+        <div class="content">
+          <div class="container">
+            <div class="wrap left">
+              <div class="fix-9-12 toCenter">
+                <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                <h1 class="typeIn">What life experiences have contributed to &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reactions you feel when conversations about &nbsp; &nbsp; &nbsp; &nbsp; racial equity emerge?</h1>
+                <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                <a href="#prompt-2" class="ae-10 center button big cell-100 rounded circle margin-top-5">
+                  Prompt #2 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-name="prompt-2" data-title="Prompt 2">
+        <div class="content">
+          <div class="container">
+            <div class="wrap left">
+              <div class="fix-9-12 toCenter">
+                <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                <h1 class="typeIn ">Do you think that your peers have similar or &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; different reactions when conversations about &nbsp; &nbsp; &nbsp; racial equity emerge? If different, what do you &nbsp; &nbsp; &nbsp; &nbsp;think contributes to this difference?</h1>
+                <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                <a href="#prompt-3" class="ae-10 center button big cell-100 rounded circle margin-top-5">
+                  Prompt #3 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-name="prompt-3" data-title="Prompt 3">
+        <div class="content">
+          <div class="container">
+            <div class="wrap left">
+              <div class="fix-8-12 toCenter">
+                <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                <h1 class="typeIn">In an ideal future, what reaction would you &nbsp; &nbsp;like to have when conversations about &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; racial equity emerge?</h1>
+                <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                <a href="#outcome" class="ae-10 center button big cell-100 rounded circle margin-top-5">
+                  Great Job! Let's move on.<i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="slide kenBurns" data-name="outcome" data-title="learning outcome">
+        <div class="content">
+          <div class="container">
+            <div class="wrap">
+              <div class="fix-10-12">
+                <div class="col-12-12 ae-3 cell-100 rounded margin-bottom-2 done padding-5">
+                  <h3 class="ae-1 small light margin-bottom-3 uppercase"><span class="opacity-6">
+                    <i class="fal fa-lightbulb-on margin-right-1"></i> Key learning outcome</span></h3>
+                    <h2 class="ae-10">A proportional assessment of who—among higher education audiences like faculty,
+                    students, accreditation agencies, and the system office—your syllabus is currently designed to serve.</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background" style="background-image:url();"></div>
+      </section>
+
+
+     <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
+       <div class="sections desktop ">
+         <div class="left">
+           <span class="onTop" data-tooltip="Section Home">
+             <span class="white button actionButton">
+               <%= link_to title_5_path do %>
+                 <i class="far fa-home h4"></i>
+               <% end %>
+             </span>
+           </span>
+         </div>
+         <div class="center opacity-3">
+           <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+           <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+           <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+         </div>
+         <div class="right">
+           <span class="onTop" data-tooltip="Next Page">
+             <span class="white button actionButton">
+               <%= link_to intro_5_path do %>
+                 <i class="fal fa-check-circle h3"></i>
+               <% end %>
+             </span>
+           </span>
+         </div>
+       </div>
+     </nav>
 
 </body>
