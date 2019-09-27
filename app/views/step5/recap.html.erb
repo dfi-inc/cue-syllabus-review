@@ -1,66 +1,70 @@
-<style media="screen">
-.fade-1 .content {
-  background: rgba(33, 33, 33, .95) !important;
-}
-</style>
+
+<body class="slides zoom noPreload animated">
 
 
+    <nav class="panel top fixed">
+      <!-- desktop version -->
+      <div class="sections">
+        <div class="left">
+          <%= image_tag("logos/cue-white-logo.png", class: "", style:"height: 40px; width: auto;")%>
+        </div>
+        <div class="center">
+          <ul class="menu">
+            <li>
+              <%#= link_to "EQMD", title_1_path, class: "bold" %>
+            </li>
+          </ul>
+        </div>
+        <div class="right"><span class="button actionButton white sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+      </div>
+    </nav>
 
-<body class="slides zoom horizontal noPreload animated ">
+    <section class="slide kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
 
-  <section class="slide fade-1 kenBurns slideWhite">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-
-          <div class="fix-12-12 left">
-            <div class="float-right ae-4 margin-top-2">
-              <%= link_to title_5_path, class: "" do %>
-                <i class="far fa-home h1"></i>
-              <% end %>
-            </div>
-            <h3 class="small font-weight-bold ae-2 fromLeft section-title ">Section V</h3>
-            <h5 class=" ae-2 fromLeft type-nunito left subtitle underline margin-bottom-5">
-              section recap and takeaways
-            </h5>
-            <h2 class="margin-bottom-5 ae-2 fromLeft">Let's review what we learned in this section.</h2>
-
-
-            <ul class="flex reverse verticalCenter">
-              <li class="col-12-12 left toRight section-header">
-                <ul class="grid">
-                  <li class="col-4-12 left ae-4 fromAbove toLeft align-left ">
-                    <h6 class=" ae-2 fromLeft text-yellow subtitle">Learning #3</h6>
-                    <p class="ae-3 left">
-                      Initial prompts to use when starting to reflect on classroom artifacts, like syllabi
-                    </p>
+            <div class="fix-12-12 left">
+              <h5 class="bold uppercase ae-2 fromLeft margin-bottom-1 opacity-3">module 5</h5>
+              <h1 class=" ae-2 fromLeft left subtitle underline margin-bottom-7 icon_left">
+                <i class="far fa-lightbulb-on"></i> Learning Recap and Takeaways
+              </h1>
+              <h2 class="small normal margin-bottom-2 ae-2 fromLeft opacity-3">What did we learn in this section?</h2>
+              <div class="fix-12-12">
+                <ul class="grid fixedSpaces equal left grid-71">
+                  <li class="col-4-12 ae-3">
+                    <div class="col-12-12 ae-2 cell-100 rounded padding-3 equalElement verticalCenter">
+                      <h4 class="big margin-bottom-2 text-yellow icon_right">
+                      <i class="far fa-lightbulb-on"></i> Lesson #1</h4>
+                      <p class=" normal">Initial prompts to use when starting to reflect on classroom artifacts, like syllabi</p>
+                    </div>
                   </li>
-                  <li class="col-4-12 left ae-4 fromAbove toLeft align-left ">
-                    <h6 class=" ae-2 fromLeft text-yellow subtitle">Learning #3</h6>
-                    <p class="ae-3 left">
-                      Your own first-take thoughts about syllabi
-                    </p>
-
+                  <li class="col-4-12 ae-4">
+                    <div class="col-12-12 ae-2 cell-100 rounded padding-3 equalElement verticalCenter">
+                      <h4 class="big margin-bottom-2 text-yellow icon_right"><i class="far fa-lightbulb-on"></i> Lesson #2</h4>
+                      <p class=" normal">Your own first-take thoughts about syllabix</p>
+                    </div>
                   </li>
-                  <li class="col-4-12 ae-4 fromAbove toRight">
-                    <h6 class=" ae-2 fromLeft text-yellow subtitle">Learning #3</h6>
-                    <p class="ae-3 left">
-                      The explicit statement of your current syllabi’s origins and trajectory.
-                    </p>
+                  <li class="col-4-12 ae-6">
+                    <div class="col-12-12 ae-2 cell-100 rounded padding-3 equalElement verticalCenter">
+                      <h4 class="big margin-bottom-2 text-yellow icon_right"><i class="far fa-lightbulb-on"></i> Lesson #3</h4>
+                      <p class=" normal">The explicit statement of your current syllabi’s origins and trajectory.</p>
+                    </div>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="fix-12-12 center margin-top-5">
-            <%= link_to "Next Section", title_6_path, class: "center button cueRed round gradient ae-3 circle"%>
-          </div>
+              </div>
+            </div>
 
+            <div class="fix-12-12 center margin-top-10">
+              <%= link_to title_6_path, class: "center button blue big ae-3 circle" do %>
+                Next Section <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+              <% end %>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-    <div class="background" style="background-image:url(https://www.sccpre.cat/mypng/full/145-1456885_moderate-red-curve-gradient-graphics-background-graphic.png);"></div>
-
-  </section>
+      <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+    </section>
 
 </body>
