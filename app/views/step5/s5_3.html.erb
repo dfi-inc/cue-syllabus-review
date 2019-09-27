@@ -7,27 +7,61 @@
 <%= render "step5/sections/s3/p7" %>
 
 
-<!-- Panel Bottom #06 -->
-<nav class="panel bottom">
-  <div class="sections desktop">
-    <div class="left">
-      <span class="onTop" data-tooltip="Section Home">
-        <span class="white button actionButton">
-          <%= link_to s5_2_path do %>
-            <i class="fal fa-arrow-circle-left h3"></i>
+<section class="slide kenBurns" data-name="intro" data-title="Intro">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <h1 class="big cropBottom ae-2"><i class="fal fa-check-square margin-right-2"></i>Deconstruction and Reflection</h1>
+        <h3 class="ae-2 small light margin-top-3 uppercase"><span class="opacity-6">next up </span></h3>
+        <h3 class="ae-3 large semiBold margin-top-3">HOW SYLLABI COULD SERVE</h3>
+
+
+        <p class="">
+          <%= link_to s5_4_path, class: "ae-10 center button big cell-100 rounded circle margin-top-5" do %>
+            Let's Get Started.<i class="fad fa-long-arrow-alt-right margin-left-1"></i>
           <% end %>
-        </span>
-      </span>
-    </div>
-    <div class="center"><nav class="medium"><div class="navigation"><ul></ul></div></nav></div>
-    <div class="right">
-      <span class="onTop" data-tooltip="Next Section">
-        <span class="white button actionButton">
-          <%= link_to s5_4_path do %>
-            <i class="fal fa-arrow-circle-right h3"></i>
-          <% end %>
-        </span>
-      </span>
+        </p>
+
+      </div>
     </div>
   </div>
+  <div class="background" style="background-image:url(assets/img/background/img-23.jpg)"></div>
+</section>
+
+<nav class="side medium stroke">
+  <div class="navigation">
+    <ul></ul>
+  </div>
 </nav>
+
+
+
+
+ <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
+   <div class="sections desktop ">
+     <div class="left">
+       <span class="onTop" data-tooltip="Section Home">
+         <span class="white button actionButton">
+           <%= link_to title_5_path do %>
+             <i class="far fa-home h4"></i>
+           <% end %>
+         </span>
+       </span>
+     </div>
+     <div class="center opacity-3">
+       <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+       <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+       <i class="fal fa-arrow-alt-down   h2 no-margin"></i>
+     </div>
+     <div class="right">
+       <span class="onTop" data-tooltip="Next Page">
+         <span class="white button actionButton">
+           <%= link_to s5_4_path do %>
+             <i class="fal fa-check-circle h3"></i>
+           <% end %>
+         </span>
+       </span>
+     </div>
+   </div>
+ </nav>
