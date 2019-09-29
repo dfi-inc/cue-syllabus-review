@@ -1,17 +1,5 @@
 <%= render "step1/css/s1_2" %>
 
-<script>
-  $(function(){
-    window.autoplayInterval = setInterval(function(){
-      window.changeSlide('increase');
-    },4000);
-
-    $(document).on('click mousewheel', function(){
-      clearInterval(window.autoplayInterval);
-    });
-  });
-</script>
-
 
 <body class="slides noPreload animated">
   <%= render "shared/panels/top/nav_1" %>
@@ -23,7 +11,7 @@
   </nav>
 
   <section class="slide kenBurns">
-    <div class="content">
+    <div class="content" style="background: #9C3F3D;">
       <div class="container">
         <div class="wrap center">
 
@@ -40,7 +28,7 @@
   </section>
 
   <section class="slide kenBurns">
-    <div class="content">
+    <div class="content" style="background: #9C3F3D;">
       <div class="container">
         <div class="wrap padding-top-phablet-5">
 
@@ -74,9 +62,8 @@
     <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
   </section>
 
-
   <section class="slide kenBurns">
-    <div class="content">
+    <div class="content" style="background: #9C3F3D;">
       <div class="container">
         <div class="wrap center ">
           <h1 class=" ae-1 left light">
@@ -88,8 +75,6 @@
     </div>
     <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
   </section>
-
-
 
   <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
     <div class="sections desktop ">
