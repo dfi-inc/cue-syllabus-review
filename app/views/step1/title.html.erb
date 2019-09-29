@@ -1,15 +1,3 @@
-<script>
-  $(function(){
-    window.autoplayInterval = setInterval(function(){
-      window.changeSlide('increase');
-    },4000);
-
-    $(document).on('click mousewheel', function(){
-      clearInterval(window.autoplayInterval);
-    });
-  });
-</script>
-
 <body class="slides zoom noPreload animated ">
 
 
@@ -27,61 +15,45 @@
 
 
   <section class="slide kenBurns">
-    <div class="content">
+    <div class="content" style="background: #b6514d;">
       <div class="container">
         <div class="wrap">
-
-          <h3 class="ae-1 small light margin-bottom-3 uppercase"><span class="opacity-6">Section I</span></h3>
-          <h1 class="big cropBottom ae-2">What	do syllabi have	to do	with <br/>racial and ethnic	equity?</h1>
-
+          <div class="fix-12-12">
+            <h3 class="ae-1 small light margin-bottom-3 uppercase"><span class="opacity-6">Section I</span></h3>
+            <h1 class="big cropBottom ae-2 normal margin-bottom-3">What	do syllabi have	to do	with <br/>racial and ethnic	equity?</h1>
+            <h1 class="large ae-2 ">This section encourages you to reflect on your initial reactions to conversations focusing on race and racism.</h1>
+          </div>
         </div>
       </div>
     </div>
     <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
   </section>
+
 
   <section class="slide kenBurns">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-
-          <div class="fix-10-12">
-            <h3 class="ae-1 small light margin-bottom-3 uppercase"><span class="opacity-6">focus</span></h3>
-            <h1 class="large thin ae-2">This section encourages you to reflect on your initial reactions to conversations focusing on race and racism.</h1>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
-  </section>
-
-  <!-- Slide #93 -->
-<section class="slide kenBurns">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-
-        <div class="frame-93 rounded ae-1">
-          <div class="ae-2">
-            <h1 class="cropBottom inline">Ready to get started?
-              <%= link_to intro_1_path, class: "big button blue gradient small ae-3 middle margin-top-1
-              margin-left-4" do %>
-              Yes, Let's Begin
-              <% end %>
-              <%= link_to root_path, class: "big button white small ae-3 middle margin-top-1
-              " do %>
-              I'll come back later
-              <% end %>
-            </h1>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
-</section>
+   <div class="content" style="background: #b6514d;">
+     <div class="container">
+       <div class="wrap center">
+         <div class="fix-12-12 center">
+           <div class="col-12-12 ae-3 cell-100 rounded margin-bottom-2 done padding-5">
+             <h3 class="ae-1 small  margin-bottom-3 uppercase"><span class="">
+               <i class="fal fa-lightbulb-on margin-right-1"></i> Key learning outcome</span></h3>
+             <h2 class="normal ae-4 fromLeft">
+               Practitioners will be further prepared to examine their syllabi—and the beliefs, values, and world views that informed their syllabi—from an equity-minded lens.
+             </h2>
+           </div>
+            <div class="ae-2">
+              <%= link_to intro_2_path, class: "big button border ae-3 middle margin-top-1
+             " do %>
+             Let's Begin
+             <% end %>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+ </section>
 
 
   <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">

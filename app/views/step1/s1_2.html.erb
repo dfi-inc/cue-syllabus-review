@@ -12,7 +12,7 @@
       <div class="center">
         <ul class="menu">
           <li>
-            <%#= link_to "EQMD", title_1_path, class: "bold" %>
+            <%= render "step1/navigation/emoji_menu" %>
           </li>
         </ul>
       </div>
@@ -20,21 +20,9 @@
     </div>
   </nav>
 
-
-  <!-- Navigation Arrows -->
-  <nav class="side left">
+  <nav class="side medium stroke">
     <div class="navigation">
-      <div class="cell">
-        <span class="prevSlide"><svg class="sideArrow     "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></span>
-      </div>
-    </div>
-  </nav>
-
-  <nav class="side">
-    <div class="navigation">
-      <div class="cell">
-        <span class="nextSlide"><svg class="sideArrow     "><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
-      </div>
+      <ul></ul>
     </div>
   </nav>
 
@@ -53,7 +41,7 @@
   <%= render "step1/sections/neutral" %>
   <%= render "step1/sections/disinterested" %>
 
-
+<%#
   <div class="dialogContainer bottom">
 
     <div class="dialog hidden" data-dialog-id="dialog" data-dialog-delay="1000" data-dialog-hide-delay="20000">
@@ -66,6 +54,6 @@
     </div>
 
 
-  </div>
+  </div> %>
   <%= render "step1/navigation/section_panel" %>
 </body>
