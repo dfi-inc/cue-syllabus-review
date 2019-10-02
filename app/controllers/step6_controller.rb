@@ -7,6 +7,9 @@ class Step6Controller < ApplicationController
   def intro
   end
 
+  def recap_6
+  end
+
   def s6_0
   end
 
