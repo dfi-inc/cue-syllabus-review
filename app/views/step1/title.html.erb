@@ -28,61 +28,87 @@
 
   <%= render "shared/panels/top/nav_1" %>
 
-  <%= render "step1/title/toc" %>
+  <%#= render "step1/title/toc" %>
 
-
-
-  <section class="slide fade-8 kenBurns">
-    <div class="content" style="background: rgba(182, 81, 77, .95);">
+  <section class="slide zoom kenBurns">
+    <div class="content" style="background: rgba(59, 62, 83, .95);">
       <div class="container">
-        <div class="wrap top">
-          <div class="margin-bottom-5 left underline">
-            <h4 class="ae-1 small uppercase letter-spacing-3 ">Section 1</h4>
-          </div>
-          <ul class="flex margin-bottom-5 left">
-            <li class="col-6-12">
-              <h1 class="large ae-1 uppercase letter-spacing-3 ">How do you Feel?</h1>
-              <p class="large ae-5 opacity-9">Exploring reactions to racial equity</p>
-                <!-- <h3 class=" ae-5 opacity-9 left">Throughout this tool, we will be talking about racial equity in the syllabus.</h3> -->
-              <ul class="flex margin-bottom-5 left">
-                <li class="col-4-12">
-                <div class="box-74 margin-top-5 center">
-                  <div class="thumbnail-74 white" style="height: 200px;">
+        <div class="wrap top padding-top-phablet-5">
+          <div class="fix-12-12 toCenter ae-3 margin-bottom-10">
+            <h5 class="ae-1 small bold margin-bottom-1 uppercase underline padding-bottom-2">UP NEXT</h5>
+            <!-- <h1 class="ae-1 normal">Section 4</h1> -->
+            <!-- <p class="ae-2 margin-bottom-3"><span class="opacity-8">Each section is approximately 10-15 minutes.</span></p> -->
+            <ul class="grid grid-74 later equal margin-top-10 center">
+              <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
+                <div class="box-74">
+                  <div class="thumbnail-74 white">
                     <%= image_tag("emoji/animations/excited.gif", class: "wide padding-2")%>
                   </div>
                   <div class="name-74 equalElement table wide border-top teal">
-
+                    <div class="cell left top">
+                    </div>
                   </div>
                 </div>
-                </li>
-              </ul>
-            </li>
-            <li class="col-6-12">
-              <h2 class="big ae-5 opacity-9 left">This section encourages you to reflect on your initial reactions to conversations focusing on race and racism.</h2>
-              <div class="ae-3 cell-100 rounded margin-top-5 done padding-5">
-                <h3 class="ae-5 small Left margin-bottom-3 uppercase">
-                  <i class="fal fa-lightbulb-on margin-right-1"></i> Key learning outcome
-                </h3>
-                <p class="hero normal ae-4 fromLeft">
-                  A greater understanding of and comfort with the emotions initially provoked by conversations about race and racism.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <div class="ae-2">
-            <%= link_to intro_1_path, class: "big button border ae-3 middle margin-top-1
-           " do %>
-           Let's Begin
-           <% end %>
-         </div>
+              </li>
+              <li class="col-7-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft left padding-left-5 padding-right-5">
+                <h5 class="ae-1 normal margin-bottom-1 uppercase letter-spacing-2"><span class="opacity-6">Section 1</span></h5>
+                <h1 class="large semiBold margin-bottom-1">How do you Feel?</h1>
+                <p class="hero">Exploring reactions to racial equity</p>
+                <p class="semiBold ae-5 opacity-9 margin-top-3">
+                  This section explains why syllabi matters and aligning content with equity-minded syllabi practices can support the goal of racial/ethnic equity.</h2>
+                <div class="ae-2">
+
+               </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
   </section>
 
+  <section class="slide kenBurns">
+    <div class="content" style="background: rgba(182, 81, 77, .95);">
+      <div class="container">
+        <div class="wrap top">
+          <div class="fix-12-12 toCenter ae-3 margin-bottom-10">
+            <div class="margin-bottom-5 left underline ae-1">
+              <h4 class="ae-3 small uppercase letter-spacing-3 ">Section 1</h4>
+            </div>
+            <h1 class="large ae-1 uppercase letter-spacing-3 left">How do you Feel?</h1>
+            <p class="hero semiBold ae-5 opacity-5 left">Exploring reactions to racial equity</p>
 
+            <ul class="grid margin-top-10 margin-bottom-5 left">
+              <li class="col-6-12">
+                <h2 class=" ae-3 left">
+                  <!-- Throughout this tool, we will be talking about racial equity in the syllabus. -->
+                  This section encourages you to reflect on your initial reactions to conversations focusing on race and racism.
+                </h2>
+              </li>
+              <li class="col-6-12">
+                <div class="ae-3">
+                  <h4 class="ae-5 smaller uppercase"><i class="fal fa-lightbulb-on margin-right-1"></i> Key learning outcome</h4>
+                  <p class="normal ae-4 fromLeft">
+                    A greater understanding of and comfort with the emotions initially provoked by conversations about race and racism.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="ae-2">
+              <%= link_to intro_1_path, class: "big button transparent ae-3 margin-top-3 icon_right
+             " do %>
+             Let's Begin <i class="fad fa-long-arrow-alt-right fa-lg margin-left-1"></i>
+             <% end %>
+           </div>
 
+           </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
 
   <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
     <div class="sections desktop ">
