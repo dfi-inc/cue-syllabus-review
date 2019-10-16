@@ -1,20 +1,105 @@
-<body class="slides zoom noPreload animated">
-  <section class="slide kenBurns" data-name="index" data-title="index">
-      <div class="content" style="background: #0D605F;">
-        <div class="container">
-          <div class="wrap">
-            <div class="fix-12-12 left">
-              <div class="fix-7-12 toLeft">
-                <div class="ae-5 fromRight"><p class="opacity-6 margin-bottom-1 semiBold">Center for Urban Education</p></div>
-                <h1 class="huge ae-1 margin-bottom-3">Syllabus Review Guide</h1>
-                <p class="lead ae-3">An	inquiry	tool	for	promoting	racial/ethnic<br>
-                  equity	and	equity-minded	practice.</p>
+<body class="slides zoom horizontal noPreload animated">
 
-                <%= link_to "Let's Get Started", onboarding_path, class: "button big ae-2 crop" %>
-              </div>
+
+  <!-- Navigation -->
+  <nav class="side medium stroke">
+    <div class="navigation">
+      <ul></ul>
+    </div>
+  </nav>
+
+
+  <section class="slide fade-8 kenBurns">
+    <div class="content" style="background: rgba(34, 67, 95, .95);">
+      <div class="container">
+        <div class="wrap left">
+          <div class="ae-5 fromRight"><p class="opacity-6 margin-bottom-1 semiBold">Center for Urban Education</p></div>
+          <h1 class="huge semiBold margin-bottom-2 ae-2">Syllabus Review Guide</h1>
+          <p class="large ae-5 opacity-9">An	inquiry	tool	for	promoting	racial/ethnic<br>
+            equity	and	equity-minded	practice.</p>
+        </div>
+      </div>
+    </div>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
+
+
+
+<%= render "pages/pages/quote" %>
+<%= render "pages/pages/goal" %>
+<%= render "pages/pages/sections" %>
+<%= render "pages/pages/instructions" %>
+
+
+  <section class="slide kenBurns">
+    <div class="content" style="background: #0D605F;">
+      <div class="container">
+        <div class="wrap">
+
+          <div class="fix-10-12 toCenter">
+            <h2 class="ae-2 normal small margin-bottom-2">
+              <i class="fad fa-check margin-right-1"></i> <span class="opacity-3">You're All Set.</span></h2>
+            <h1 class="ae-3 large">Thank you for taking the time to use our tool, we appreciate you participation in our work.</h1>
+            <ul class="flex reverse noSpaces verticalCenter">
+              <li class="col-12-12 left">
+                <ul class="flex grid-62 later margin-top-2">
+                  <li class="col-4-12 ae-5 margin-bottom-5 center">
+                    <i class="fal fa-user-lock h1 huge text-blue"></i>
+                    <h3 class="big">All user sessions <br/>are anonymous</h3>
+                    <!-- <p class="tiny opacity-6">Design is as much a matter of finding problems as it is solving them..</p> -->
+                  </li>
+                  <li class="col-4-12 ae-6 margin-bottom-5 center">
+                    <i class="fas fa-history h1 huge text-blue"></i>
+                    <h3 class="big">Complete at your <br/>own pace</h3>
+                    <!-- <p class="tiny opacity-6">It’s all fun and games until someone breaks a link.</p> -->
+                  </li>
+                  <li class="col-4-12 ae-7 margin-bottom-5 center">
+                    <i class="fas fa-comment  text-blue h1 huge"></i>
+                    <h3 class="big  ">We appreciate your feedback</h3>
+                    <!-- <p class="tiny opacity-6">The definition of an expert is someone who knows what not to do.</p> -->
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="fix-12-12 center">
+              <%= link_to overview_title_path, class: "button margin-top-5 ae-8 big" do %>
+                Let's Get Started! <i class="far fa-long-arrow-alt-right margin-left-1"></i>
+              <% end %>
             </div>
-
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+  </section>
+
+
+
+    <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
+      <div class="sections desktop ">
+        <div class="left">
+          <span class="onTop" data-tooltip="Section Home">
+            <span class="white button actionButton">
+              <%= link_to home_path do %>
+                <i class="far fa-home h4"></i>
+              <% end %>
+            </span>
+          </span>
+        </div>
+        <div class="center opacity-5">
+          <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+          <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+          <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+        </div>
+        <div class="right">
+          <span class="onTop" data-tooltip="Next Page">
+            <span class="white button actionButton">
+              <%= link_to overview_title_path do %>
+                <i class="fal fa-check-circle h3"></i>
+              <% end %>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
