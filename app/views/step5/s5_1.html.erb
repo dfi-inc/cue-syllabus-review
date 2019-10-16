@@ -1,29 +1,239 @@
-<%= render "step5/sections/s1/p1" %>
-<%= render "step5/sections/s1/p2" %>
-<%= render "step5/sections/s1/p3" %>
-<%= render "step5/sections/s1/p4" %>
 
+  <!-- title -->
+  <section class="slide kenBurns">
+    <div class="content" style="background: rgba(130, 53, 89, .97);">
+      <div class="container">
+        <div class="wrap top">
+          <div class="fix-12-12 toCenter ae-3 margin-bottom-2">
+            <div class="margin-bottom-2 left underline ae-1">
+              <h5 class="ae-3 small uppercase letter-spacing-3 opacity-4 padding-bottom-2">Section 4</h5>
+            </div>
+            <h1 class="large ae-3 left">Who does your Syllabi Serve?</h1>
+            <p class="normal left semiBold opacity-5 ae-5">Let’s explore one of your own syllabi</p>
 
-<section class="slide kenBurns" data-name="done" data-title="done">
-   <div class="content" style="background: #E7C9A8;">
-    <div class="container">
-      <div class="wrap">
-
-        <h1 class="big cropBottom ae-2"><i class="fal fa-check-square margin-right-2"></i>How well do you know your syllabus?</h1>
-        <h3 class="ae-2 small light margin-top-3 uppercase"><span class="opacity-6">next up </span></h3>
-        <h3 class="ae-3 large semiBold margin-top-3">HOW SYLLABI SERVE</h3>
-
-        <p class="">
-          <%= link_to s5_2_path, class: "ae-10 center button big cell-100 rounded circle margin-top-5" do %>
-            Let's Get Started.<i class="fad fa-long-arrow-alt-right margin-left-1"></i>
-          <% end %>
-        </p>
-
+            <ul class="grid margin-top-10 margin-bottom-5 left">
+              <li class="col-8-12 left">
+                <div class="margin-top-10 left">
+                  <h5 class="ae-1 small uppercase letter-spacing-3 opacity-5 padding-bottom-2"><i class="fal fa-lightbulb-on margin-right-1"></i> learning outcome</h5>
+                </div>
+                <h2 class="small ae-3 left margin-top-3">
+                  A proportional assessment of who—among higher education audiences like faculty,
+                  students, accreditation agencies, and the system office—your syllabus is currently designed to serve.
+                </h2>
+              </li>
+              <li class="col-4-12 float-right margin-top-2">
+                <%= image_tag("graphics/syllabus.svg", class:"wide ae-8", alt:"iPad Image")%>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="background" style="background-image:url(assets/img/background/img-23.jpg)"></div>
-</section>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
+
+
+
+
+  <!-- How well do you know your syllabus? -->
+
+  <section class="slide" data-name="p1" data-title="p1">
+     <div class="content" style="background: rgba(130, 53, 89, .97);">
+     <div class="container">
+       <div class="wrap top">
+         <div class="fix-12-12 left">
+           <ul class="grid">
+             <li class="col-12-12">
+               <h5 class="margin-bottom-2 opacity-3 uppercase">Get Reacquainted</h5>
+               <h1 class="large fromLeft normal">How well do you know your syllabus?</h1>
+             </li>
+           </ul>
+
+           <ul class="grid margin-top-10">
+             <li class="col-7-12">
+               <h3 class="big text-teal margin-bottom-2 ae-3">Purpose & Intentionality</h3>
+               <p class="hero ae-4">What are three words or phrases that come to mind when you hear the word "syllabus"?</p>
+               <form class="slides-form wide margin-top-3" action="#" autocomplete="off">
+                 <input class="ae-4" id="email42" type="email" name="email" placeholder="Enter text" address" required/><br/>
+                 <input class="ae-4" id="email42" type="email" name="email" placeholder="Enter text" address" required/><br/>
+                 <input class="ae-4" id="email42" type="email" name="email" placeholder="Enter text" address" required/><br/>
+               </form>
+               <!-- <p class="margin-top-3">
+                 <a href="#p2" class="cell-100 rounded  button ae-5 fromBottom cropLeft">Next</a>
+                </p> -->
+             </li>
+             <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:"ae-8 shadow", alt:"iPad Image")%></li>
+           </ul>
+          </div>
+       </div>
+     </div>
+   </div>
+   <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
+
+  <section class="slide" data-name="p2" data-title="p2">
+     <div class="content" style="background: rgba(130, 53, 89, .97);">
+     <div class="container">
+       <div class="wrap top">
+         <div class="fix-12-12 left">
+           <ul class="grid">
+             <li class="col-12-12">
+               <h5 class="margin-bottom-2 opacity-3 uppercase">Get Reacquainted</h5>
+               <h1 class="large fromLeft normal">How well do you know your syllabus?</h1>
+             </li>
+           </ul>
+
+           <ul class="grid margin-top-10">
+             <li class="col-7-12">
+               <h3 class="big text-teal margin-bottom-2 ae-3">Purpose & Intentionality</h3>
+               <p class="hero ae-4">Is the Syllabus important to you as an instructor?</p>
+               <form class="slides-form wide margin-top-2" action="#" autocomplete="off">
+                 <p class="lead normal ae-6"></p>
+                 <ul class="grid ae-7">
+                   <li class="col-6-12">
+                     <a href="#p3" class="wide button white text-teal">Yes</a>
+                   </li>
+                   <li class="col-6-12">
+                     <a href="#p3a" class="wide button white text-teal">No</a>
+                   </li>
+                 </ul>
+               </form>
+               <!-- <p class="margin-top-3">
+                 <a href="#p2" class="cell-100 rounded  button ae-5 fromBottom cropLeft">Next</a>
+                </p> -->
+             </li>
+             <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:"shadow", alt:"iPad Image")%></li>
+           </ul>
+          </div>
+       </div>
+     </div>
+   </div>
+   <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
+
+  <section class="slide" data-name="p3a" data-title="p3a">
+     <div class="content" style="background: rgba(130, 53, 89, .97);">
+     <div class="container">
+       <div class="wrap top">
+         <div class="fix-12-12 left">
+           <ul class="grid">
+             <li class="col-12-12">
+               <h5 class=" margin-bottom-2 opacity-3 uppercase">Get Reacquainted</h5>
+               <h1 class="large fromLeft normal">How well do you know your syllabus?</h1>
+             </li>
+           </ul>
+
+           <ul class="grid margin-top-10">
+             <li class="col-7-12">
+               <h3 class="big text-teal margin-bottom-2 ae-3">Purpose & Intentionality</h3>
+               <p class="hero ae-4">Is the Syllabus important to you as an instructor?</p>
+               <form class="slides-form wide margin-top-2" action="#" autocomplete="off">
+                 <ul class="grid ae-7">
+                   <li class="col-6-12">
+                     <a href="#p3a" class="wide button teal">No</a>
+                   </li>
+                   <li class="col-6-12">
+                     <h3 class="large margin-top-1">If so, why not?</h3>
+                   </li>
+                 </ul>
+                 <textarea placeholder="Please clarify in a few sentences." class="margin-top-4 ae-8 wide" rows="6"></textarea>
+               </form>
+               <p class="margin-top-3">
+                 <a href="#p3" class="cell-100 rounded  button ae-5 fromBottom cropLeft">Next</a>
+                </p>
+             </li>
+             <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:" shadow", alt:"iPad Image")%></li>
+           </ul>
+          </div>
+       </div>
+     </div>
+   </div>
+   <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
+
+  <section class="slide" data-name="p3" data-title="p3">
+    <div class="content" style="background: rgba(130, 53, 89, .97);">
+     <div class="container">
+       <div class="wrap top">
+         <div class="fix-12-12 left">
+           <ul class="grid">
+             <li class="col-12-12">
+               <h5 class="ae-1 margin-bottom-2 opacity-3 uppercase">Get Reacquainted</h5>
+               <h1 class="large ae-2 fromLeft normal">How well do you know your syllabus?</h1>
+             </li>
+           </ul>
+
+           <ul class="grid margin-top-10">
+             <li class="col-7-12">
+               <h3 class="big text-teal margin-bottom-2 ae-3">Purpose & Intentionality</h3>
+               <p class="hero ae-4">What types of changes have you made to your course syllabus (e.g., layout, content)?</p>
+               <form class="slides-form wide margin-top-3" action="#" autocomplete="off">
+                  <textarea placeholder="Please clarify in a few sentences." class="wide ae-8" rows="6"></textarea>
+               </form>
+               <p class="margin-top-3">
+                 <a href="#p4" class="cell-100 rounded  button ae-5 fromBottom cropLeft">Next</a>
+                </p>
+             </li>
+             <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:"shadow", alt:"iPad Image")%></li>
+           </ul>
+          </div>
+       </div>
+     </div>
+   </div>
+   <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
+
+  <section class="slide" data-name="p4" data-title="p4">
+    <div class="content" style="background: rgba(130, 53, 89, .97);">
+     <div class="container">
+       <div class="wrap top">
+         <div class="fix-12-12 left">
+           <ul class="grid">
+             <li class="col-12-12">
+               <h5 class="ae-1 margin-bottom-2 opacity-3 uppercase">Get Reacquainted</h5>
+               <h1 class="large ae-2 fromLeft normal">How well do you know your syllabus?</h1>
+             </li>
+           </ul>
+
+           <ul class="grid margin-top-10">
+             <li class="col-7-12">
+               <h3 class="big text-teal margin-bottom-2 ae-3">Purpose & Intentionality</h3>
+               <p class="hero ae-4">Think about one or two changes you made. Why did you make those changes?</p>
+               <form class="slides-form wide" action="#" autocomplete="off">
+                 <textarea placeholder="Please clarify in a few sentences." class="wide ae-8 margin-top-3" rows="5"></textarea>
+               </form>
+             </li>
+             <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:"ae-8 shadow", alt:"iPad Image")%></li>
+           </ul>
+          </div>
+       </div>
+     </div>
+   </div>
+   <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
+
+  <!-- Transition -->
+
+  <section class="slide kenBurns" data-name="done" data-title="done">
+     <div class="content" style="background: rgba(130, 53, 89, .97);">
+      <div class="container">
+        <div class="wrap">
+
+          <h1 class=" cropBottom ae-2"><i class="fal fa-check-square margin-right-2"></i>How well do you know your syllabus?</h1>
+          <h5 class="ae-2 small light margin-top-8 uppercase"><span class="opacity-6">next up </span></h5>
+          <h3 class="ae-3 large semiBold margin-top-1">HOW SYLLABI SERVE</h3>
+
+          <p class="">
+            <%= link_to s5_2_path, class: "ae-10 center button big transparent margin-top-5" do %>
+              Let's Get Started.<i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+            <% end %>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+  </section>
 
 
 
