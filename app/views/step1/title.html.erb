@@ -1,3 +1,20 @@
+<!-- EXAMPLE: Slides Autoplay -->
+<!-- 1) Copy scripts -->
+<!-- <script>
+  $(function(){
+    window.autoplayInterval = setInterval(function(){
+      window.changeSlide('increase');
+    },4000);
+
+    $(document).on('click mousewheel', function(){
+      clearInterval(window.autoplayInterval);
+    });
+  });
+</script> -->
+
+
+
+
 <body class="slides zoom noPreload animated ">
 
 
@@ -14,46 +31,57 @@
   <%= render "step1/title/toc" %>
 
 
-  <section class="slide kenBurns">
-    <div class="content" style="background: #b6514d;">
+
+  <section class="slide fade-8 kenBurns">
+    <div class="content" style="background: rgba(182, 81, 77, .95);">
       <div class="container">
-        <div class="wrap">
-          <div class="fix-12-12">
-            <h3 class="ae-1 small light margin-bottom-3 uppercase"><span class="opacity-6">Section I</span></h3>
-            <h1 class="big cropBottom ae-2 normal margin-bottom-3">How do you feel?</h1>
-            <h1 class="large ae-2 "> Throughout this tool, will be talking about racial equity in the syllabus. This section encourages you to reflect on your initial reactions to conversations focusing on race and racism.</h1>
+        <div class="wrap top">
+          <div class="margin-bottom-5 left underline">
+            <h4 class="ae-1 small uppercase letter-spacing-3 ">Section 1</h4>
           </div>
+          <ul class="flex margin-bottom-5 left">
+            <li class="col-6-12">
+              <h1 class="large ae-1 uppercase letter-spacing-3 ">How do you Feel?</h1>
+              <p class="large ae-5 opacity-9">Exploring reactions to racial equity</p>
+                <!-- <h3 class=" ae-5 opacity-9 left">Throughout this tool, we will be talking about racial equity in the syllabus.</h3> -->
+              <ul class="flex margin-bottom-5 left">
+                <li class="col-4-12">
+                <div class="box-74 margin-top-5 center">
+                  <div class="thumbnail-74 white" style="height: 200px;">
+                    <%= image_tag("emoji/animations/excited.gif", class: "wide padding-2")%>
+                  </div>
+                  <div class="name-74 equalElement table wide border-top teal">
+
+                  </div>
+                </div>
+                </li>
+              </ul>
+            </li>
+            <li class="col-6-12">
+              <h2 class="big ae-5 opacity-9 left">This section encourages you to reflect on your initial reactions to conversations focusing on race and racism.</h2>
+              <div class="ae-3 cell-100 rounded margin-top-5 done padding-5">
+                <h3 class="ae-5 small Left margin-bottom-3 uppercase">
+                  <i class="fal fa-lightbulb-on margin-right-1"></i> Key learning outcome
+                </h3>
+                <p class="hero normal ae-4 fromLeft">
+                  A greater understanding of and comfort with the emotions initially provoked by conversations about race and racism.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="ae-2">
+            <%= link_to intro_1_path, class: "big button border ae-3 middle margin-top-1
+           " do %>
+           Let's Begin
+           <% end %>
+         </div>
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
   </section>
 
 
-  <section class="slide kenBurns">
-   <div class="content" style="background: #b6514d;">
-     <div class="container">
-       <div class="wrap center">
-         <div class="fix-12-12 center">
-           <div class="col-12-12 ae-3 cell-100 rounded margin-bottom-2 done padding-5">
-             <h3 class="ae-1 small  margin-bottom-3 uppercase"><span class="">
-               <i class="fal fa-lightbulb-on margin-right-1"></i> Key learning outcome</span></h3>
-             <h2 class="normal ae-4 fromLeft">
-               A greater understanding of and comfort with the emotions initially provoked by conversations about race and racism.
-             </h2>
-           </div>
-            <div class="ae-2">
-              <%= link_to intro_1_path, class: "big button border ae-3 middle margin-top-1
-             " do %>
-             Let's Begin
-             <% end %>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
- </section>
 
 
   <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
@@ -67,7 +95,7 @@
           </span>
         </span>
       </div>
-      <div class="center opacity-1">
+      <div class="center opacity-5">
         <i class="fal fa-arrow-alt-up h2 no-margin"></i>
         <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
         <i class="fal fa-arrow-alt-down h2 no-margin"></i>

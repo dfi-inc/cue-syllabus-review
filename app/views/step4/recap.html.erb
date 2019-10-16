@@ -8,6 +8,162 @@
 
 <body class="slides zoom horizontal noPreload animated ">
 
+  <body class="slides zoom horizontal noPreload animated ">
+
+        <script>
+          $(function(){
+            $('.typeIn').each(function(){
+              var $element = $(this),
+                  letters = $element.text().split(""),
+                  interval = 0.02;
+
+              $element.empty();
+
+              $.each(letters, function(i, letter){
+                if (letter == " ") {
+                  letter = "&nbsp;"
+                }
+                $element.append('<span style="-webkit-transition-delay: ' + interval * i + 's; transition-delay: ' + interval * i+ 's; ">'+letter+'</span>')
+              });
+            });
+          });
+        </script>
+        <style>
+        .typeIn span {
+          opacity: 0;
+          display: inline-block;
+          -webkit-transform: scale(1.2) translateY(-10px) !important;
+          transform: scale(1.2) translateY(-10px) !important;
+          -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+        }
+
+        .slide:not(.active) .typeIn span {
+          transition-delay: 0s !important;
+        }
+
+        .page-loaded:not(.resizing) .slide.active .typeIn span {
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          opacity: 1;
+          -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+        }
+        </style>
+
+
+
+          <!-- Navigation -->
+          <nav class="side medium stroke">
+            <div class="navigation">
+              <ul></ul>
+            </div>
+          </nav>
+
+
+        <section class="slide kenBurns">
+          <div class="content">
+            <div class="container">
+              <div class="wrap">
+
+                <div class="fix-11-12 center">
+                  <h1 class="ae-1 huge">To start, we encourage you to think about the following prompts...</h1>
+                  <div class="center margin-top-5">
+                    <a href="#prompt-1" class="center button big cell-100 rounded ae-3 circle">
+                      Prompt #1 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-name="prompt-1" data-title="Prompt 1">
+          <div class="content">
+            <div class="container">
+              <div class="wrap left">
+                <div class="fix-9-12 toCenter">
+                  <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                  <h1 class="typeIn">What life experiences have contributed to &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reactions you feel when conversations about &nbsp; &nbsp; &nbsp; &nbsp; racial equity emerge?</h1>
+                  <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                  <a href="#prompt-2" class="ae-10 center button big cell-100 rounded circle margin-top-5">
+                    Prompt #2 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-name="prompt-2" data-title="Prompt 2">
+          <div class="content">
+            <div class="container">
+              <div class="wrap left">
+                <div class="fix-9-12 toCenter">
+                  <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                  <h1 class="typeIn ">Do you think that your peers have similar or &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; different reactions when conversations about &nbsp; &nbsp; &nbsp; racial equity emerge? If different, what do you &nbsp; &nbsp; &nbsp; &nbsp;think contributes to this difference?</h1>
+                  <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                  <a href="#prompt-3" class="ae-10 center button big cell-100 rounded circle margin-top-5">
+                    Prompt #3 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-name="prompt-3" data-title="Prompt 3">
+          <div class="content">
+            <div class="container">
+              <div class="wrap left">
+                <div class="fix-8-12 toCenter">
+                  <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                  <h1 class="typeIn">In an ideal future, what reaction would you &nbsp; &nbsp;like to have when conversations about &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; racial equity emerge?</h1>
+                  <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                  <%= link_to s5_1_path, class: "ae-10 center button big cell-100 rounded circle margin-top-5" do %>
+                    Great Job! Let's move on.<i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+       <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
+         <div class="sections desktop ">
+           <div class="left">
+             <span class="onTop" data-tooltip="Section Home">
+               <span class="white button actionButton">
+                 <%= link_to title_5_path do %>
+                   <i class="far fa-home h4"></i>
+                 <% end %>
+               </span>
+             </span>
+           </div>
+           <div class="center opacity-3">
+             <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+             <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+             <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+           </div>
+           <div class="right">
+             <span class="onTop" data-tooltip="Next Page">
+               <span class="white button actionButton">
+                 <%= link_to s5_1_path do %>
+                   <i class="fal fa-check-circle h3"></i>
+                 <% end %>
+               </span>
+             </span>
+           </div>
+         </div>
+       </nav>
+
+  </body>
+
+
   <section class="slide fade-1 kenBurns slideWhite">
     <div class="content">
       <div class="container">
