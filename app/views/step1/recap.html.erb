@@ -1,49 +1,184 @@
 
 <body class="slides zoom noPreload animated">
 
-    <nav class="panel top fixed">
-      <!-- desktop version -->
-      <div class="sections">
-        <div class="left">
-          <%= image_tag("logos/cue-white-logo.png", class: "", style:"height: 40px; width: auto;")%>
-        </div>
-        <div class="center">
-          <ul class="menu">
-            <li>
-              <%#= link_to "EQMD", title_1_path, class: "bold" %>
-            </li>
-          </ul>
-        </div>
-        <div class="right"><span class="button actionButton white sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
-      </div>
-    </nav>
 
-    <!-- Slide #50 -->
-    <section class="slide kenBurns">
-      <div class="content" style="background: #9C3F3D;">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-10-12 toCenter">
-              <h2 class="ae-2 normal small margin-bottom-2">
-                <i class="fad fa-check margin-right-1"></i> <span class="opacity-3">Well Done.</span></h2>
-              <h1 class="ae-3 large">Thank you for exploring the reactions you feel when conversations about racial
-                  equity emerge.</h1>
-              <h2 class="ae-8 light margin-top-5">Next, let's recap</h2>
-            </div>
-            <div class="fix-12-12 ae-5">
-              <%= image_tag("emoji/animations/interested.gif", class: "ipad-36", style: "")%>
-            </div>
-
-
+      <nav class="panel top fixed">
+        <!-- desktop version -->
+        <div class="sections">
+          <div class="left">
+            <%= image_tag("logos/cue-white-logo.png", class: "", style:"height: 40px; width: auto;")%>
           </div>
+          <div class="center">
+            <ul class="menu">
+              <li>
+                <%#= link_to "EQMD", title_1_path, class: "bold" %>
+              </li>
+            </ul>
+          </div>
+          <div class="right"><span class="button actionButton white sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
         </div>
-      </div>
-      <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
-    </section>
+      </nav>
 
-    <section class="slide kenBurns">
-      <div class="content" style="background: #9C3F3D;">
+        <script>
+          $(function(){
+            $('.typeIn').each(function(){
+              var $element = $(this),
+                  letters = $element.text().split(""),
+                  interval = 0.02;
+
+              $element.empty();
+
+              $.each(letters, function(i, letter){
+                if (letter == " ") {
+                  letter = "&nbsp;"
+                }
+                $element.append('<span style="-webkit-transition-delay: ' + interval * i + 's; transition-delay: ' + interval * i+ 's; ">'+letter+'</span>')
+              });
+            });
+          });
+        </script>
+        <style>
+        .typeIn span {
+          opacity: 0;
+          display: inline-block;
+          -webkit-transform: scale(1.2) translateY(-10px) !important;
+          transform: scale(1.2) translateY(-10px) !important;
+          -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+        }
+
+        .slide:not(.active) .typeIn span {
+          transition-delay: 0s !important;
+        }
+
+        .page-loaded:not(.resizing) .slide.active .typeIn span {
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          opacity: 1;
+          -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+        }
+        </style>
+
+
+
+          <!-- Navigation -->
+          <nav class="side medium stroke">
+            <div class="navigation">
+              <ul></ul>
+            </div>
+          </nav>
+
+
+        <section class="slide kenBurns">
+          <div class="content" style="background: rgba(182, 81, 77, .95);">
+            <div class="container">
+              <div class="wrap top">
+                <div class="margin-bottom-5 left underline ae-1">
+                  <h4 class="ae-3 small uppercase letter-spacing-3 ">Section 1</h4>
+                </div>
+
+                <ul class="flex margin-bottom-5 left">
+                  <li class="col-6-12">
+                    <h1 class="big ae-3 left">
+                      Thank you for exploring the reactions you feel when conversations about racial equity emerge.
+                    </h1>
+                  </li>
+                  <li class="col-6-12">
+                    <p class="large semiBold ae-4 left">
+                      If you’re not there already, CUE’s goal is to help you feel comfortable and confident when talking about racial equity
+                      and the ways in which race and racism exist in our and our students’ day-to-day lives.
+                      <br/><br/>
+                      Our goal is to also provide you with language and tools that will help you make sense of your classroom dynamics in a
+                      race-conscious way. In this module we’ll focus on reflecting on your syllabus and identifying the ways
+                      it already serves students from minoritized racial/ethnic groups and also could be better leveraged to do so in
+                      equity-minded ways.
+                    </p>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+        </section>
+
+
+        <section class="slide kenBurns">
+          <div class="content" style="background: rgba(182, 81, 77, .95);">
+            <div class="container">
+              <div class="wrap">
+                <div class="fix-11-12 center">
+                  <h1 class="ae-1 huge">To start, we encourage you to think about the following prompts...</h1>
+                  <div class="center margin-top-5">
+                    <a href="#prompt-1" class="center button big cell-100 rounded ae-3 circle">
+                      Prompt #1 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+        </section>
+
+        <section class="slide" data-name="prompt-1" data-title="Prompt 1">
+          <div class="content" style="background: rgba(182, 81, 77, .95);">
+            <div class="container">
+              <div class="wrap left">
+                <div class="fix-9-12 toCenter">
+                  <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                  <h1 class="typeIn">What life experiences have contributed to &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reactions you feel when conversations about &nbsp; &nbsp; &nbsp; &nbsp; racial equity emerge?</h1>
+                  <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                  <a href="#prompt-2" class="ae-10 center button big cell-100 rounded circle margin-top-5">
+                    Prompt #2 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+        </section>
+
+        <section class="slide" data-name="prompt-2" data-title="Prompt 2">
+          <div class="content" style="background: rgba(182, 81, 77, .95);">
+            <div class="container">
+              <div class="wrap left">
+                <div class="fix-9-12 toCenter">
+                  <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                  <h1 class="typeIn ">Do you think that your peers have similar or &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; different reactions when conversations about &nbsp; &nbsp; &nbsp; racial equity emerge? If different, what do you &nbsp; &nbsp; &nbsp; &nbsp;think contributes to this difference?</h1>
+                  <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                  <a href="#prompt-3" class="ae-10 center button big cell-100 rounded circle margin-top-5">
+                    Prompt #3 <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+        </section>
+
+        <section class="slide" data-name="prompt-3" data-title="Prompt 3">
+          <div class="content" style="background: rgba(182, 81, 77, .95);">
+            <div class="container">
+              <div class="wrap left">
+                <div class="fix-8-12 toCenter">
+                  <h5 class="uppercase semiBold p2-color margin-bottom-3 ae-10"><i class="far fa-stopwatch"></i> 1-minute reflection</h5>
+                  <h1 class="typeIn">In an ideal future, what reaction would you &nbsp; &nbsp;like to have when conversations about &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; racial equity emerge?</h1>
+                  <div class="opacity-8"><p class="hero opaque typeIn ae-10"></p></div>
+                  <%= link_to s5_1_path, class: "ae-10 center button big cell-100 rounded circle margin-top-5" do %>
+                    Great Job! Let's move on.<i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+        </section>
+
+
+        <section class="slide kenBurns">
+          <div class="content" style="background: rgba(182, 81, 77, .95);">
         <div class="container">
           <div class="wrap">
 
@@ -85,8 +220,37 @@
 
           </div>
         </div>
-      </div>
-      <div class="background" style="background-image:url(<%= image_url("backgrounds/purple.png")%>)"></div>
-    </section>
+          </div>
+          <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+        </section>
+
+
+           <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
+             <div class="sections desktop ">
+               <div class="left">
+                 <span class="onTop" data-tooltip="Section Home">
+                   <span class="white button actionButton">
+                     <%= link_to title_5_path do %>
+                       <i class="far fa-home h4"></i>
+                     <% end %>
+                   </span>
+                 </span>
+               </div>
+               <div class="center opacity-3">
+                 <i class="fal fa-arrow-alt-up h2 no-margin"></i>
+                 <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
+                 <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+               </div>
+               <div class="right">
+                 <span class="onTop" data-tooltip="Next Page">
+                   <span class="white button actionButton">
+                     <%= link_to s5_1_path do %>
+                       <i class="fal fa-check-circle h3"></i>
+                     <% end %>
+                   </span>
+                 </span>
+               </div>
+             </div>
+           </nav>
 
 </body>
