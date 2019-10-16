@@ -54,6 +54,7 @@ Rails.application.routes.draw do
   get 'section/5/s5_2'    => 'step5#s5_2',    as: :s5_2
   get 'section/5/s5_3'    => 'step5#s5_3',    as: :s5_3
   get 'section/5/s5_4'    => 'step5#s5_4',    as: :s5_4
+  get 'section/5/s5_5'    => 'step5#s5_5',    as: :s5_5
 
   get 'section/6/title'   => 'step6#title',   as: :title_6
   get 'section/6/intro'   => 'step6#intro',   as: :intro_6
