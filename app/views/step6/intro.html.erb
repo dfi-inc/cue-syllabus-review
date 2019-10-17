@@ -23,7 +23,7 @@
 
               <ul class="grid margin-top-10 margin-bottom-5 left">
                 <li class="col-8-12 left">
-                  <div class="margin-top-10 left">
+                  <div class="margin-top-5 left">
                     <h5 class="ae-1 small uppercase letter-spacing-3 opacity-5 padding-bottom-2"><i class="fal fa-lightbulb-on margin-right-1"></i> learning outcome</h5>
                   </div>
                   <h2 class="small ae-3 left margin-top-3">
@@ -36,6 +36,7 @@
                   <%= image_tag("graphics/syllabus-group.png", class:"wide ae-8", alt:"iPad Image")%>
                 </li>
               </ul>
+              <p class="left margin-top-7 semiBold opacity-3 lead ae-8"><i class="fal fa-mouse-alt margin-right-1"></i> Scroll down to begin</p>
             </div>
           </div>
         </div>
@@ -46,11 +47,11 @@
   <section class="slide kenBurns">
     <div class="content" style="background: rgba(59, 62, 83, .98);">
       <div class="container">
-        <div class="wrap top">
+        <div class="wrap center">
           <div class="fix-12-12 toCenter ae-3 margin-bottom-2">
             <ul class="flex">
               <li class="col-12-12">
-                <h3 class="normal big center margin-bottom-5 opacity-4">Click analyze to begin.</h3>
+                <h3 class="normal big center margin-bottom-8 opacity-4">Click analyze to begin.</h3>
                 <!-- <h5 class="uppercase center margin-bottom-2 opacity-5">The Syllabus Review Tool</h5> -->
                 <!-- <h2 class="light center">Let's review a syllbus together</h2> -->
                 <%= link_to s6_1_path do %>
@@ -64,33 +65,3 @@
     </div>
     <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
   </section>
-
-
-
-   <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
-     <div class="sections desktop ">
-       <div class="left">
-         <span class="onTop" data-tooltip="Section Home">
-           <span class="white button actionButton">
-             <%= link_to title_6_path do %>
-               <i class="far fa-home h4"></i>
-             <% end %>
-           </span>
-         </span>
-       </div>
-       <div class="center opacity-3">
-         <i class="fal fa-arrow-alt-up h2 no-margin"></i>
-         <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
-         <i class="fal fa-arrow-alt-down h2 no-margin"></i>
-       </div>
-       <div class="right">
-         <span class="onTop" data-tooltip="Next Page">
-           <span class="white button actionButton">
-             <%= link_to s6_1_path do %>
-               <i class="fal fa-check-circle h3"></i>
-             <% end %>
-           </span>
-         </span>
-       </div>
-     </div>
-   </nav>
