@@ -260,21 +260,30 @@
       <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-07.png")%>)"></div>
      </section>
 
-    <section class="slide kenBurns" data-name="intro" data-title="Intro">
+
+<section class="slide kenBurns" data-name="intro" data-title="Intro">
       <div class="content" style="background: rgba(130, 53, 89, .94);">
         <div class="container">
           <div class="wrap">
 
-            <h1 class="big cropBottom ae-2"><i class="fal fa-check-square margin-right-2"></i>Deconstruction and Reflection</h1>
-            <h3 class="ae-2 small light margin-top-3 uppercase"><span class="opacity-6">next up </span></h3>
-            <h3 class="ae-3 large semiBold margin-top-3">HOW SYLLABI COULD SERVE?</h3>
+            <div class="fix-10-12 toCenter">
+              <h2 class="ae-2 normal small margin-bottom-2">
+                <i class=" margin-right-1"></i> <span class="opacity-5"><i class="fad fa-check"></i> Section Complete</span></h2>
+                <h1 class="big cropBottom ae-2"><i class="fal fa-file-certificate margin-right-4"></i>Deconstruction and Reflection</h1>
+
+            </div>
+            <div class="fix-5-12 ae-5">
+              <%= image_tag("https://loading.io/assets/img/animation/icon/showcase/idea.svg", class: "width-50")%>
+            </div>
 
 
-            <p class="">
-              <%= link_to s5_4_path, class: "ae-10 center button big transparent margin-top-5" do %>
-                Let's Get Started.<i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+            <h4 class="ae-2 small text-yellow light margin-bottom-3 uppercase"><span class="opacity-6">next up </span></h4>
+            <h3 class="ae-3 large semiBold">
+              <%= link_to s5_4_path, class: "ae-10 center button big transparent" do %>
+              HOW SYLLABI COULD SERVE? <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
               <% end %>
-            </p>
+            </h3>
+
 
           </div>
         </div>
