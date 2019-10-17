@@ -70,11 +70,24 @@
                  <p class="semiBold lead ae-8">
                    <span class="normal yellow padding-1 rounded">Please pull out your syllabus to follow along.</span>
                  <p>
-                 <!-- <p class="">
-                   <a href="#p1" class="ae-10 center button big transparent margin-top-3">
-                     I'm Ready! <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
-                   </a>
-                 </p> -->
+
+                   <ul class="fix-12-12 float-left">
+                     <li class="left">
+                        <ul class="flex ae-2 cell-100 rounded margin-top-6 padding-3">
+                          <li class="col-6-12">
+                            <h5 class="uppercase semiBold margin-bottom-1 text-yellow ae-2"><i class="far fa-pen-square"></i> take notes</h5>
+                            <p class=" ae-2 tight semiBold margin-bottom-0 ">As you deconstruct your syllabus, write down your observations — ideas, a-ha's, insights — and sensemaking.</p>
+                          </li>
+                          <li class="col-6-12">
+                            <h5 class="uppercase semiBold margin-bottom-1 text-yellow ae-2"><i class="fal fa-crosshairs"></i> focused reflection</h5>
+                            <p class="ae-2 tight semiBold margin-bottom-0">
+                              What is the process of deconstructing my syllabus helping me understand about who my syllabus serves?
+                            </p>
+                           </li>
+                        </ul>
+
+                       </li>
+                    </ul>
 
 
                </li>
@@ -102,7 +115,7 @@
                  <h1 class="ae-3 left large margin-bottom-2">
                   Deconstruction and Reflection
                  </h1>
-                 <p class="lead semiBold text-teal ae-5">Who does your syllabus serve?</p>
+                 <p class="lead semiBold opacity-6 ae-5">Who does your syllabus serve?</p>
                </li>
              </ul>
              <p class="normal lead semiBold ae-6  margin-top-5"><i class="fal fa-pen margin-right-1"></i>
@@ -195,7 +208,7 @@
                  <h1 class="ae-3 left large margin-bottom-2">
                   Deconstruction and Reflection
                  </h1>
-                 <p class="lead semiBold text-teal ae-5">Who does your syllabus serve?</p>
+                 <p class="lead semiBold opacity-6 ae-5">Who does your syllabus serve?</p>
                </li>
              </ul>
              <p class="normal lead semiBold ae-6  margin-top-5"><i class="fal fa-pen margin-right-1"></i>
@@ -286,7 +299,7 @@
                  <h2 class="ae-3 left">
                    Reflection on Observations
                  </h2>
-                 <p class="normal p semiBold opacity-5 ae-5">Active Exercise</p>
+                 <p class="normal semiBold opacity-5 ae-2">Focused Reflection</p>
 
 
                </li>
@@ -315,82 +328,109 @@
     </section>
 
     <!-- reflection -->
-    <section class="slide kenBurns" data-name="p2" data-title="p2">
-      <div class="content" style="background: rgba(130, 53, 89, .96);">
-       <div class="container">
-         <div class="wrap top">
-           <div class="fix-12-12 left">
-          <ul class="flex left">
-             <li class="col-12-12">
-               <%= render "step5/sections/s3/title" %>
-             </li>
-           </ul>
-           <ul class="grid left margin-top-10">
-             <li class="col-3-12 right fromRight">
-               <img class="" src="<%= image_url("graphics/my-syllabus.png") %>"/>
-             </li>
-             <li class="col-9-12">
-               <h5 class="uppercase semiBold margin-bottom-2 text-yellow">
-                <i class="far fa-stopwatch margin-right-1"></i>  5-minute exercise
-              </h5>
 
-              <ul class="grid left padding-1 rounded">
-                <li class="col-12-12">
-                  <p class="lead semiBold">1. Which aspects of equity-minded practice are generally present in your syllabus? Which are generally absent? </p>
-                </li>
-                <li class="col-12-12">
-                  <p class="lead semiBold">2. Imagine you’re a student reading the syllabus on the first day of class. Do you feel that the instructor is willing to provide opportunities and resources for you to do well in the course? Why or why not?</p>
+     <section class="slide" >
+        <div class="content" style="background: rgba(130, 53, 89, .96);">
+        <div class="container">
+          <div class="wrap top">
+            <div class="fix-12-12">
+              <div class="margin-bottom-2 left underline">
+                <h5 class="uppercase semiBold margin-bottom-2 opacity-3 ae-2">Prompt Inquiry</h5>
+              </div>
+              <ul class="flex margin-bottom-8 left">
+                <li class="col-8-12">
+                  <h2 class="left">
+                    Reflections  on Observations
+                  </h2>
+                  <p class="normal semiBold opacity-5">Focused Reflection</p>
                 </li>
               </ul>
-             </li>
-            </ul>
-         </div>
-       </div>
-     </div>
-     </div>
-     <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-07.png")%>)"></div>
-    </section>
+
+              <h5 class="uppercase semiBold margin-bottom-3 text-yellow ae-4 left">
+               <i class="far fa-stopwatch margin-right-1"></i>  5-minute exercise
+             </h5>
+
+
+              <ul class="grid left">
+
+                <li class="col-2-10">
+                  <%= image_tag("graphics/my-syllabus.png", class: "shadow ae-4") %>
+                </li>
+                <li class="col-8-10 left">
+                  <div class="ae-2 cell-100 rounded padding-3">
+                    <ul class="grid left padding-1 rounded">
+                      <li class="col-12-12">
+                        <p class="lead semiBold">1. Which aspects of equity-minded practice are generally present in your syllabus? Which are generally absent? </p>
+                      </li>
+                      <li class="col-12-12">
+                        <p class="lead semiBold cropBottom">2. Imagine you’re a student reading the syllabus on the first day of class. Do you feel that the instructor is willing to provide opportunities and resources for you to do well in the course? Why or why not?</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="left margin-top-5 semiBold opacity-3 lead ae-8"><i class="fal fa-mouse-alt margin-right-1"></i> Scroll down once finished</p>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-07.png")%>)"></div>
+     </section>
+
 
     <!-- reflection -->
-    <section class="slide">
-      <div class="content" style="background: rgba(130, 53, 89, .96);">
+    <section class="slide" >
+       <div class="content" style="background: rgba(130, 53, 89, .96);">
        <div class="container">
          <div class="wrap top">
-           <div class="fix-12-12 left">
-          <ul class="flex left">
-             <li class="col-12-12">
-               <%= render "step5/sections/s3/title" %>
-             </li>
-           </ul>
-           <ul class="grid left margin-top-10">
-             <li class="col-3-12 right fromRight">
-               <img class="" src="<%= image_url("graphics/my-syllabus.png") %>"/>
-             </li>
-             <li class="col-9-12">
-               <h5 class="uppercase semiBold margin-bottom-2 text-yellow">
-                <i class="far fa-stopwatch margin-right-1"></i>  5-minute exercise
-              </h5>
+           <div class="fix-12-12">
+             <div class="margin-bottom-2 left underline">
+               <h5 class="uppercase semiBold margin-bottom-2 opacity-3 ae-2">Prompt Inquiry</h5>
+             </div>
+             <ul class="flex margin-bottom-8 left">
+               <li class="col-8-12">
+                 <h2 class="left">
+                   Reflections  on Observations
+                 </h2>
+                 <p class="normal semiBold opacity-5">Focused Reflection</p>
+               </li>
+             </ul>
 
-              <ul class="grid">
-                <li class="col-12-12">
-                  <p class="lead semiBold">3. Imagining yourself again as a student reading your syllabus, do you feel that the instructor assumes that you want to learn and cares for your development as scholars and human beings? Why or why not?</p>
-                </li>
-                <li class="col-12-12">
-                  <p class="lead semiBold">4. Imagine you are a student from a racially minoritized group reading your syllabus on the first day of class. Do you feel the instructor and the course speak to your experiences? Do you feel like the instructor is an advocate for racial equity? </p>
-                </li>
-                <li class="col-12-12">
-                  <p class="lead semiBold">5. What to you learn from completing this exercise?  </p>
-                </li>
-              </ul>
-             </li>
-            </ul>
+             <h5 class="uppercase semiBold margin-bottom-3 text-yellow ae-4 left">
+              <i class="far fa-stopwatch margin-right-1"></i>  5-minute exercise
+            </h5>
+
+
+             <ul class="grid left">
+
+               <li class="col-2-10">
+                 <%= image_tag("graphics/my-syllabus.png", class: "shadow ae-4") %>
+               </li>
+               <li class="col-8-10 left">
+                 <div class="ae-2 cell-100 rounded padding-3">
+                   <ul class="grid left padding-1 rounded">
+                     <li class="col-12-12">
+                       <p class="lead semiBold">3. Imagining yourself again as a student reading your syllabus, do you feel that the instructor assumes that you want to learn and cares for your development as scholars and human beings? Why or why not?</p>
+                     </li>
+                     <li class="col-12-12">
+                       <p class="lead semiBold ">4. Imagine you are a student from a racially minoritized group reading your syllabus on the first day of class. Do you feel the instructor and the course speak to your experiences? Do you feel like the instructor is an advocate for racial equity? </p>
+                     </li>
+                     <li class="col-12-12">
+                       <p class="lead semiBold cropBottom">5. What to you learn from completing this exercise?  </p>
+                     </li>
+                   </ul>
+                 </div>
+               </li>
+             </ul>
+
+             <p class="left margin-top-5 semiBold opacity-3 lead ae-8"><i class="fal fa-mouse-alt margin-right-1"></i> Scroll down once finished</p>
+            </div>
          </div>
-       </div>
        </div>
      </div>
      <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-07.png")%>)"></div>
     </section>
-
 
 
     <section class="slide kenBurns" data-name="intro" data-title="Intro">
