@@ -110,45 +110,39 @@
     <div class="container">
       <div class="wrap padding-top-phablet-5">
 
-        <div class="fix-12-12">
+        <div class="fix-12-12 left">
+          <h1 class="big ae-2 semiBold">Why Syllabi Matter?</h1>
+          <p class="lead ae-3 normal">We'll break this question into four parts that will allow us to delve in.</p>
+
+
           <ul class="flex later">
-            <li class="col-7-12 left ae-1  flex-slide-100">
+            <li class="col-4-12 left ae-1">
+              <%= image_tag("graphics/syllabus.svg", class: "wide")%>
 
-              <div class="wrap-img-100" style="background-image: url(<%= image_url("graphics/syllabus.svg", class: "3")%>);">
-                <div class="wrap-text-100">
-                  <h1 class="big ae-2 semiBold">Why Syllabi Matter?</h1>
-                </div>
-              </div>
             </li>
-            <li class="col-5-12 left padding-left-3 padding-left-phablet-0 margin-top-phablet-3">
-              <!-- <h1 class="large ae-2 margin-bottom-3 opacity-8">
-                Practical answers.
-              </h1> -->
-              <p class="lead ae-3 normal">We'll break this question into four parts that will allow us to delve in.</p>
-
-              <!-- <h5 class="ae-2 uppercase margin-bottom-3 opacity-3 semiBold"><i class="fas fa-question-circle"></i> 4 critical topics</h5> -->
-              <ul class="flex later flex-slide-100">
-                <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
-                  <div class="item-100">
+            <li class="col-8-12 left">
+              <ul class="flex margin-top-5">
+                <li class="col-6-12 ae-3 ">
+                  <div class="cell-100 rounded margin-bottom-2 padding-3">
                     <p class="text-yellow semiBold small opacity-6 margin-bottom-1">Part I: Focus</p>
                     <h3 class="big">Why focus on syllabi?</h3>
                   </div>
                 </li>
-                <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
-                  <div class="item-100">
+                <li class="col-6-12 ae-3 ">
+                  <div class="cell-100 rounded margin-bottom-2 padding-3">
                     <p class="text-yellow semiBold small opacity-6 margin-bottom-1">Part II: Inquiry</p>
                     <h3 class="big">Why inquire into syllabi?</h3>
                   </div>
                 </li>
-                <li class="col-12-12 ae-4 cell-100 rounded margin-bottom-2">
-                  <div class="item-100">
+                <li class="col-6-12 ae-3 ">
+                  <div class="cell-100 rounded margin-bottom-2 padding-3">
                     <p class="text-yellow semiBold small opacity-6 margin-bottom-1">Part III: Racial Equity</p>
                     <h3 class="big">What do syllabi have to do with racial equity?</h3>
                   </div>
                 </li>
-                <li class="col-12-12 ae-5 cell-100 rounded">
-                  <div class="item-100">
-                    <p class="text-yellow semiBold small opacity-6 margin-bottom-1">Part IV: Equity-mindness</p>
+                <li class="col-6-12 ae-3 ">
+                  <div class="cell-100 rounded margin-bottom-2 padding-3">
+                    <p class="text-yellow semiBold small opacity-6 margin-bottom-1">Part IV: Equity-mindedness</p>
                     <h3 class="big">Tools for Equity-minded Practice?</h3>
                   </div>
                 </li>
@@ -177,10 +171,10 @@
       <div class="wrap top">
         <div class="fix-12-12">
 
-          <ul class="flex center margin-bottom-10">
-            <li class="col-12-12 padding-left-phablet-0 margin-top-phablet-3 bottom">
-              <ul class="flex later left flex-slide-100">
-                <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+          <ul class="fix-8-12 center margin-bottom-10">
+            <li class="padding-left-phablet-0 margin-top-phablet-3 bottom">
+              <ul class="flex-slide-100">
+                <li class="ae-3 cell-100 rounded margin-bottom-2">
                   <div class="item-100">
                     <p class="text-yellow semiBold opacity-6 margin-bottom-1">Part I: Focus</p>
                     <h1 class="large">Why focus on syllabi?</h1>
@@ -190,29 +184,21 @@
             </li>
           </ul>
 
-          <ul class="flex later margin-top-10">
-            <li class="col-5-12 left ae-1 flex-slide-100">
-              <div class="wrap-img-100 left" style="height: 500px; background-image: url(<%= image_url("graphics/syllabus.svg", class: "3")%>);">
-                <div class="wrap-text-100">
-                  <h2 class=" ae-2 semiBold">Why Syllabi Matter?</h2>
-                </div>
+          <ul class="flex left">
+            <li class="col-12-12">
+              <div class="fix-12-12 left margin-top-5">
+                <ul class="grid margin-top-5">
+                  <li class="col-2-12 ae-1 fromCenter">
+                    <%= image_tag("https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/check-256.png")%>
+                  </li>
+                  <li class="col-9-12 col-tablet-1-2 col-phablet-1-1 fromCenter ae-4">
+                    <h2 class="small">The syllabus is a key feature of every academic course. It serves multiple purposes.</h2>
+                  </li>
+                </ul>
               </div>
             </li>
-            <li class="col-7-12 left padding-left-3 padding-left-phablet-0 margin-top-phablet-3">
-
-              <ul class="grid fixedSpaces left">
-                <li class="col-2-12 ae-3">
-                  <%= image_tag("https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/zoomin-512.png")%>
-                </li>
-                <li class="col-10-12 ae-4">
-                  <div class="col-12-12 ae-2 equalElement verticalCenter">
-                    <h2 class="small">Syllabi are a key feature of every academic course. It serves multiple purposes.</h2>
-                  </div>
-                </li>
-              </ul>
-
-            </li>
           </ul>
+
         </div>
 
       </div>
@@ -229,10 +215,10 @@
     <div class="wrap top">
       <div class="fix-12-12 toCenter ae-3 margin-bottom-2">
 
-        <ul class="flex center margin-bottom-10">
-          <li class="col-12-12 padding-left-phablet-0 margin-top-phablet-3 bottom">
-            <ul class="flex later left flex-slide-100">
-              <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+        <ul class="fix-8-12 center margin-bottom-10">
+          <li class="padding-left-phablet-0 margin-top-phablet-3 bottom">
+            <ul class="flex-slide-100">
+              <li class="ae-3 cell-100 rounded margin-bottom-2">
                 <div class="item-100">
                   <p class="text-yellow semiBold opacity-6 margin-bottom-1">Part I: Focus</p>
                   <h1 class="large">Why focus on syllabi?</h1>
@@ -271,10 +257,10 @@
       <div class="wrap top">
         <div class="fix-12-12 toCenter ae-3 margin-bottom-2">
 
-          <ul class="flex center margin-bottom-10">
-            <li class="col-12-12 padding-left-phablet-0 margin-top-phablet-3 bottom">
-              <ul class="flex later left flex-slide-100">
-                <li class="col-12-12 ae-3 cell-100 rounded margin-bottom-2">
+          <ul class="fix-8-12 center margin-bottom-10">
+            <li class="padding-left-phablet-0 margin-top-phablet-3 bottom">
+              <ul class="flex-slide-100">
+                <li class="ae-3 cell-100 rounded margin-bottom-2">
                   <div class="item-100">
                     <p class="text-yellow semiBold opacity-6 margin-bottom-1">Part I: Focus</p>
                     <h1 class="large">Why focus on syllabi?</h1>
@@ -327,7 +313,7 @@
           </ul>
 
           <ul class="flex left">
-            <li class="col-9-12">
+            <li class="col-12-12">
               <div class="fix-12-12 left margin-top-5">
                 <ul class="grid margin-top-5">
                   <li class="col-2-12 col-tablet-1-2 col-phablet-1-1 ae-1 fromCenter">
