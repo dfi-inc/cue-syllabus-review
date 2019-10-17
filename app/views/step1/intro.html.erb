@@ -12,7 +12,7 @@
 
 
     <section class="slide kenBurns">
-      <div class="content" style="background: rgba(182, 81, 77, .95);">
+      <div class="content" style="background: rgba(59, 62, 83, .97);">
         <div class="container">
           <div class="wrap top">
             <div class="fix-12-12 toCenter ae-3 margin-bottom-2">
@@ -46,7 +46,7 @@
 
 
     <section class="slide kenBurns">
-    <div class="content" style="background: #9C3F3D;">
+    <div class="content" style="background: rgba(30, 124, 119, .95);">
       <div class="container">
         <div class="wrap center">
 
@@ -59,11 +59,11 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-20.png")%>)"></div>
   </section>
 
   <section class="slide kenBurns">
-    <div class="content" style="background: #9C3F3D;">
+    <div class="content" style="background: rgba(30, 124, 119, .95);">
       <div class="container">
         <div class="wrap padding-top-phablet-5">
 
@@ -94,23 +94,63 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-20.png")%>)"></div>
   </section>
 
   <section class="slide kenBurns">
-    <div class="content" style="background: #9C3F3D;">
+    <div class="content" style="background: rgba(30, 124, 119, .95);">
       <div class="container">
         <div class="wrap center ">
-          <h1 class=" ae-1 left light">
-            How does it make you feel<br/>to talk about racial equity?</h1>
-          <h3 class="left big ae-2 semiBold  opacity-3">Select an emoji to begin.</h3>
-          <%= render "step1/intro/emoji_group_linked" %>
+          <div class="fix-12-12">
+            <h1 class=" ae-1 left light">
+              How does it make you feel<br/>to talk about racial equity?</h1>
+            <h3 class="left big ae-2 semiBold opacity-5">Select an emoji to begin. <i class="fal fa-hand-pointer"></i></h3>
+            <%= render "step1/intro/emoji_group_linked" %>
+          </div>
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+    <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-20.png")%>)"></div>
   </section>
 
+
+  <nav class="panel bottom small fixed">
+    <div class="sections">
+      <div class="left"></div>
+      <div class="center">
+        <span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span>
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+  </nav>
+
+  <nav class="panel bottom small customPanel">
+    <div class="sections">
+      <div class="left">
+        <ul class="menu small">
+          <li tabindex="0" class="toFirstSlide hover-state">
+            <%= link_to intro_2_path do %>
+              <i class="far fa-home margin-right-1"></i>
+              Section Home
+            <% end %>
+          </li>
+        </ul>
+    </div>
+      <div class="right">
+        <ul class="menu small">
+          <li tabindex="0" class="toFirstSlide hover-state">
+            <%= link_to s1_2_path do %>
+              <i class="fal fa-check-circle margin-right-1"></i> Next Section
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--
   <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
     <div class="sections desktop ">
       <div class="left">
@@ -138,7 +178,7 @@
         </span>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
 
 
