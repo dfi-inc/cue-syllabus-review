@@ -66,7 +66,7 @@
                      <input class="ae-4" id="email42" type="email" name="email" placeholder="Enter text" address" required/><br/>
                    </form>
                    <p class="margin-top-3">
-                     <a href="#p2" class="cell-100 rounded transparent button ae-5 fromBottom cropLeft">Next Step <i class="fad fa-long-arrow-alt-right fa-lg margin-left-1"></i></a>
+                     <a class="nextSlide cell-100 rounded transparent button ae-5 fromBottom cropLeft">Next Step <i class="fad fa-long-arrow-alt-right fa-lg margin-left-1"></i></a>
                     </p>
                  </li>
                  <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:"ae-8 white shadow", alt:"iPad Image")%></li>
@@ -122,7 +122,7 @@
        <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-07.png")%>)"></div>
       </section>
 
-      <section class="slide" >
+      <section class="slide" data-name="p3a" data-title="p3a">
          <div class="content" style="background: rgba(130, 53, 89, .96);">
          <div class="container">
            <div class="wrap top">
@@ -169,7 +169,7 @@
       </section>
 
 
-      <section class="slide" >
+      <section class="slide" data-name="p3" data-title="p3">
          <div class="content" style="background: rgba(130, 53, 89, .96);">
          <div class="container">
            <div class="wrap top">
@@ -194,7 +194,7 @@
                       <textarea placeholder="Please clarify in a few sentences." class="wide ae-8" rows="6"></textarea>
                    </form>
                    <p class="margin-top-3">
-                     <a href="#p4" class="cell-100 rounded transparent button ae-10 later fromBottom cropLeft">Next <i class="fad fa-long-arrow-alt-right fa-lg margin-left-1"></i></a>
+                     <a class="nextSlide cell-100 rounded transparent button ae-10 later fromBottom cropLeft">Next <i class="fad fa-long-arrow-alt-right fa-lg margin-left-1"></i></a>
                     </p>
                  </li>
                  <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:"white shadow", alt:"iPad Image")%></li>
@@ -232,7 +232,7 @@
                      <textarea placeholder="Please clarify in a few sentences." class="wide ae-8 margin-top-3" rows="5"></textarea>
                    </form>
                    <p class="margin-top-3">
-                     <a href="#done" class="cell-100 rounded transparent button ae-10 fromBottom cropLeft">Next <i class="fad fa-long-arrow-alt-right fa-lg margin-left-1"></i></a>
+                     <a href="#done" class=" cell-100 rounded transparent button ae-10 fromBottom cropLeft">Next <i class="fad fa-long-arrow-alt-right fa-lg margin-left-1"></i></a>
                     </p>
                  </li>
                  <li class="col-4-12 float-right"><%= image_tag("graphics/syllabus.svg", class:"ae-8 white shadow", alt:"iPad Image")%></li>
@@ -248,7 +248,7 @@
   <!-- Transition -->
 
 
-  <section class="slide kenBurns">
+  <section class="slide" data-name="done" data-title="done">
       <div class="content" style="background: rgba(130, 53, 89, .94);">
         <div class="container">
           <div class="wrap">
