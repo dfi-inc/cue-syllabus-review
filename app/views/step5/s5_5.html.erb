@@ -393,25 +393,31 @@
 
 
 
-      <section class="slide kenBurns">
-        <div class="content" style="background: rgba(130, 53, 89, .96);">
-          <div class="container">
-            <div class="wrap">
+    <section class="slide kenBurns" data-name="intro" data-title="Intro">
+      <div class="content" style="background: rgba(130, 53, 89, .94);">
+        <div class="container">
+          <div class="wrap">
 
-              <div class="fix-10-12 toCenter">
-                <h2 class="ae-2 normal small margin-bottom-2">
-                  <i class="fad fa-check margin-right-1"></i> <span class="opacity-3">Well Done.</span></h2>
-                  <h1 class="ae-3 huge">Great job! Let's move on.</h1>
-                <%= link_to recap_5_path, class: "button transparent margin-top-5 ae-8" do %>
-                  <h3 class="large margin-bottom-0">Learning Summary <i class="far fa-long-arrow-alt-right margin-left-1"></i></h3>
-                <% end %>
-              </div>
-              <div class="fix-5-12 ae-5">
-                <%= image_tag("https://loading.io/assets/img/animation/icon/showcase/idea.svg", class: "width-50")%>
-              </div>
+            <div class="fix-10-12 toCenter">
+              <h2 class="ae-2 normal small margin-bottom-2">
+                <i class=" margin-right-1"></i> <span class="opacity-5"><i class="fad fa-check"></i> Section Complete</span></h2>
+                <h1 class="big cropBottom ae-2"><i class="fal fa-file-certificate margin-right-4"></i>Deconstruction and Reflection</h1>
 
             </div>
+            <div class="fix-5-12 ae-5">
+              <%= image_tag("https://loading.io/assets/img/animation/icon/showcase/idea.svg", class: "width-50")%>
+            </div>
+
+
+            <h4 class="ae-2 small text-yellow light margin-bottom-3 uppercase"><span class="opacity-6">next up </span></h4>
+            <h3 class="ae-3 large semiBold">
+              <%= link_to recap_5_path, class: "ae-10 center button big transparent" do %>
+              Learning Summary <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+              <% end %>
+            </h3>
+
           </div>
         </div>
-        <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-07.png")%>)"></div>
-      </section>
+      </div>
+      <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-07.png")%>)"></div>
+    </section>
