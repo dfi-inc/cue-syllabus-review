@@ -1,6 +1,6 @@
 
 <section class="slide" data-name="p1c" data-title="p1c">
-  <div class="content">
+  <div class="content" style="background: rgba(130, 53, 89, .95);">
     <div class="container">
       <div class="wrap">
         <div class="flex">
@@ -22,5 +22,30 @@
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(<%= image_url("graphics/sections/6/background.png")%>);"></div>
+  <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
 </section>
+
+
+
+      <section class="slide kenBurns">
+        <div class="content" style="background: rgba(34, 67, 95, .97);">
+          <div class="container">
+            <div class="wrap">
+
+              <div class="fix-10-12 toCenter">
+                <h2 class="ae-2 normal small margin-bottom-2">
+                  <i class="fad fa-check margin-right-1"></i> <span class="opacity-3">Well Done.</span></h2>
+                  <h1 class="ae-3 huge">Great job! You're all done.</h1>
+                <%= link_to recap_6_path, class: "button transparent margin-top-5 ae-8" do %>
+                  <h3 class="large margin-bottom-0">Learning Summary <i class="far fa-long-arrow-alt-right margin-left-1"></i></h3>
+                <% end %>
+              </div>
+              <div class="fix-5-12 ae-5">
+                <%= image_tag("https://loading.io/assets/img/animation/icon/showcase/idea.svg", class: "width-50")%>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
+      </section>
