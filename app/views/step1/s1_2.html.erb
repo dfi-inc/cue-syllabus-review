@@ -12,7 +12,7 @@
       <div class="center">
         <ul class="menu">
           <li>
-            <%= render "step1/navigation/emoji_menu" %>
+            
           </li>
         </ul>
       </div>
@@ -80,5 +80,41 @@
 
 
   </div> %>
-  <%= render "step1/navigation/section_panel" %>
+
+    <nav class="panel bottom small fixed">
+      <div class="sections">
+        <div class="left"></div>
+        <div class="center">
+          <span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span>
+        </div>
+        <div class="right">
+
+        </div>
+      </div>
+    </nav>
+
+    <nav class="panel bottom small customPanel">
+      <div class="sections">
+        <div class="left">
+          <ul class="menu small">
+            <li tabindex="0" class="toFirstSlide hover-state">
+              <%= link_to intro_2_path do %>
+                <i class="far fa-home margin-right-1"></i>
+                Section Home
+              <% end %>
+            </li>
+          </ul>
+      </div>
+        <div class="right">
+          <ul class="menu small">
+            <li tabindex="0" class="toFirstSlide hover-state">
+              <%= link_to s1_2_path do %>
+                <i class="fal fa-check-circle margin-right-1"></i> Next Section
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
 </body>
