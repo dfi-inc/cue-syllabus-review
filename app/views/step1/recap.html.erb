@@ -292,32 +292,35 @@
   </section>
 
 
-  <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
-     <div class="sections desktop ">
-       <div class="left">
-         <span class="onTop" data-tooltip="Section Home">
-           <span class="white button actionButton">
-             <%= link_to title_5_path do %>
-               <i class="far fa-home h4"></i>
-             <% end %>
-           </span>
-         </span>
-       </div>
-       <div class="center opacity-5">
-         <i class="fal fa-arrow-alt-up h2 no-margin"></i>
-         <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
-         <i class="fal fa-arrow-alt-down h2 no-margin"></i>
-       </div>
-       <div class="right">
-         <span class="onTop" data-tooltip="Next Page">
-           <span class="white button actionButton">
-             <%= link_to s5_1_path do %>
-               <i class="fal fa-check-circle h3"></i>
-             <% end %>
-           </span>
-         </span>
-       </div>
-     </div>
+  <nav class="panel bottom small fixed">
+    <div class="sections">
+      <div class="left"></div>
+      <div class="center">
+        <span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span>
+      </div>
+      <div class="right">
+
+      </div>
+    </div>
+  </nav>
+
+  <nav class="panel bottom small customPanel">
+    <div class="sections">
+      <div class="left">
+        <ul class="menu small">
+          <li tabindex="0" class="toFirstSlide hover-state">
+            <%= link_to "Section Intro", intro_2_path %>
+          </li>
+        </ul>
+    </div>
+      <div class="right">
+        <ul class="menu small">
+          <li tabindex="0" class="toFirstSlide hover-state">
+            <%= link_to "Next Section", intro_3_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
 </body>
