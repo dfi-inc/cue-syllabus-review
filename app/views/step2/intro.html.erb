@@ -1,67 +1,5 @@
 <body class="slides zoom horizontal noPreload animated ">
 
-
-  <nav class="panel top">
-    <div class="sections">
-      <div class="center">
-        <ul class="menu small">
-          <li tabindex="0" class="toFirstSlide">Home</li>
-          <li tabindex="1" class="dropdownTrigger hover" data-dropdown-hover="true" data-dropdown-id="dropdown-menu">Section Menu<i class="material-icons">expand_more</i></li>
-          <li tabindex="0" class="toFirstSlide">Recap</li>
-          <!-- <li tabindex="2" class="dropdownTrigger" data-dropdown-id="dropdown-menu2" data-slider-id="submenu" data-slider-action="0">Submenu <i class="material-icons">expand_more</i></li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Menu dropdown -->
-  <div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu">
-    <ul class="menu">
-      <li class="toSlide-1">Intro</li>
-      <li class="toSlide-2">Why focus on syllabi?</li>
-      <li class="toSlide-3">Why inquire into syllabi?</li>
-      <li class="toSlide-3">What do syllabi have to do with racial equity?</li>
-      <li class="toSlide-3">Tools for Equity-minded Practice?</li>
-      <li class="toSlide-3">Learning Summary</li>
-    </ul>
-  </div>
-
-  <!-- Menu dropdown -->
-  <div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu2">
-    <ul class="slider autoHeight" data-slider-id="submenu">
-      <li class="selected wide">
-        <ul class="menu small">
-          <li class="link"><a href="http://google.com" target="_blank">Exernal Link</a></li>
-          <li class="toSlide-1">Go to Slide 1</li>
-          <li class="toSlide-2">Go to Slide 2</li>
-          <li class="toSlide-3">Go to Slide 3</li>
-          <li data-slider-id="submenu" data-slider-action="1">First submenu <i class="material-icons float-right">arrow_right</i></li>
-          <li data-slider-id="submenu" data-slider-action="2">Second submenu <i class="material-icons float-right">arrow_right</i></li>
-        </ul>
-      </li>
-      <li class="wide">
-        <!-- First submenu -->
-        <ul class="menu small">
-          <li data-slider-id="submenu" data-slider-action="0"><i class="material-icons float-left">arrow_left</i>Back</li>
-          <li class="toSlide-1">Go to Slide 1</li>
-          <li class="toSlide-2">Go to Slide 2</li>
-          <li class="toSlide-3">Go to Slide 3</li>
-          <li class="link"><a href="https://designmodo.com/startup/" target="_blank">Exernal Link 1</a></li>
-          <li class="link"><a href="https://designmodo.com/postcards/" target="_blank">Exernal Link 2</a></li>
-        </ul>
-      </li>
-      <li class="wide">
-        <!-- Second submenu -->
-        <ul class="menu small">
-          <li data-slider-id="submenu" data-slider-action="0"><i class="material-icons float-left">arrow_left</i>Back</li>
-          <li class="link"><a href="https://designmodo.com/startup/" target="_blank">Exernal Link 1</a></li>
-          <li class="link"><a href="https://designmodo.com/postcards/" target="_blank">Exernal Link 2</a></li>
-          <li class="toSlide-1">Go to Slide 1</li>
-          <li class="toSlide-2">Go to Slide 2</li>
-          <li class="toSlide-3">Go to Slide 3</li>
-        </ul>
-      </li>
-  </div>
 <%= render "shared/panels/top/nav_1" %>
 <nav class="side medium stroke">
   <div class="navigation">
@@ -381,17 +319,43 @@
           </ul>
         </div>
 
-        <div class="fix-12-12 center margin-top-2">
-          <%= link_to s2_2_path, class: "center button transparent ae-3" do %>
-            Next Section <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
-          <% end %>
-        </div>
 
       </div>
       </div>
     </div>
   </div>
 <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-02.png")%>)"></div>
+</section>
+
+
+
+<section class="slide kenBurns">
+  <div class="content" style="background: rgba(21, 79, 124, .97);">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-12-12 toCenter">
+          <h2 class="ae-2 normal small margin-bottom-2">
+            <i class=" margin-right-1"></i> <span class="opacity-5"><i class="fad fa-check"></i> Section Complete</span></h2>
+            <h1 class="big cropBottom ae-2"><i class="fal fa-file-certificate margin-right-4"></i>Why focus on syllabi?</h1>
+
+        </div>
+        <div class="fix-5-12 ae-5">
+          <%= image_tag("https://loading.io/assets/img/animation/icon/showcase/idea.svg", class: "width-50")%>
+        </div>
+
+
+        <h4 class="ae-2 small text-yellow light margin-bottom-3 uppercase"><span class="opacity-6">next up </span></h4>
+        <h3 class="ae-3 large semiBold">
+          <%= link_to s2_2_path, class: "ae-10 center button big transparent" do %>
+          Why inquire into syllabi? <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
+          <% end %>
+        </h3>
+
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-02.png")%>)"></div>
 </section>
 
 
