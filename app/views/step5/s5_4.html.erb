@@ -7,38 +7,42 @@
 
 
 
- <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(0, 0, 0, .10);">
-   <div class="sections desktop ">
-     <div class="left">
-       <span class="onTop" data-tooltip="Section Home">
-         <span class="white button actionButton">
-           <%= link_to title_5_path do %>
-             <i class="far fa-home h4"></i>
-           <% end %>
-         </span>
-       </span>
-     </div>
-     <div class="center opacity-3">
-       <i class="fal fa-arrow-alt-up h2 no-margin"></i>
-       <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
-       <i class="fal fa-arrow-alt-down   h2 no-margin"></i>
-     </div>
-     <div class="right">
-       <span class="onTop" data-tooltip="Next Page">
-         <span class="white button actionButton">
-           <%= link_to s5_3_path do %>
-             <i class="fal fa-check-circle h3"></i>
-           <% end %>
-         </span>
-       </span>
-     </div>
-   </div>
- </nav>
+<nav class="panel bottom small fixed">
+  <div class="sections">
+    <div class="left"></div>
+    <div class="center">
+      <span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span>
+    </div>
+    <div class="right">
+
+    </div>
+  </div>
+</nav>
+
+<nav class="panel bottom small customPanel">
+  <div class="sections">
+    <div class="left">
+      <ul class="menu small">
+        <li tabindex="0" class="toFirstSlide hover-state">
+          <%= link_to "Section Intro", intro_5_path %>
+        </li>
+      </ul>
+  </div>
+    <div class="right">
+      <ul class="menu small">
+        <li tabindex="0" class="toFirstSlide hover-state">
+          <%= link_to "Next Section", s5_5_path %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
 
 <!-- intro -->
  <section class="slide">
-   <div class="content">
+   <div class="content" style="background: rgba(130, 53, 89, .94);">
     <div class="container">
       <div class="wrap center">
         <ul class="fix-10-12 center">
@@ -50,7 +54,7 @@
                 <span class="opacity-5 margin-left-1 text-white"><i class="far fa-stopwatch"></i> final exercise</span></h5>
               <h2 class="light small ae-8">A Deeper Understanding</h2>
               <p class="">
-                <a href="#p1" class="ae-10 center button big cell-100 rounded margin-top-3">
+                <a href="#p1" class="ae-10 center button big transparent margin-top-3">
                   I'm Ready! <i class="fad fa-long-arrow-alt-right margin-left-1"></i>
                 </a>
               </p>
@@ -59,10 +63,11 @@
       </div>
     </div>
   </div>
+  <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-10.png")%>)"></div>
  </section>
 
  <section class="slide" data-name="p1" data-title="p1">
-    <div class="content" style="background: rgba(130, 53, 89, .97);">
+    <div class="content" style="background: rgba(130, 53, 89, .94);">
     <div class="container">
       <div class="wrap top">
         <div class="fix-12-12 left">
