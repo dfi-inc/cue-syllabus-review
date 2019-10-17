@@ -13,6 +13,9 @@
  *= require slides/slides
  */
 
+ .panel .menu > li:focus, .panel .menu > li.hover-state {
+     background: rgba(0, 0, 0, 0.15);
+ }
 
 
  h1, h2, h3, h4, h5, h5 {
