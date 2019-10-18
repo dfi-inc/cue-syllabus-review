@@ -66,5 +66,7 @@ Rails.application.routes.draw do
   get 'section/6/s6_4'    => 'step6#s6_4',    as: :s6_4
   get 'section/6/s6_5'    => 'step6#s6_5',    as: :s6_5
 
+  get "pages/download_pdf"
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
