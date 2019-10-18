@@ -64,7 +64,8 @@
   </section>
 
   <section class="slide kenBurns">
-    w
+    <div class="content" style="background: rgba(0, 105, 113, .96);">
+
       <div class="container">
         <div class="wrap padding-top-phablet-5">
 
@@ -91,10 +92,10 @@
               </li>
             </ul>
           </div>
+          </div>
 
         </div>
       </div>
-    </div>
     <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-23.png")%>)"></div>
   </section>
 
@@ -116,13 +117,27 @@
 
 
   <nav class="panel bottom small fixed">
-    <div class="sections">
-      <div class="left"></div>
+    <div class="sections desktop ">
+      <div class="left">
+        <span class="onTop" data-tooltip="Section Home">
+          <span class="white button actionButton">
+            <%= link_to intro_1_path do %>
+              <i class="far fa-home h4"></i>
+            <% end %>
+          </span>
+        </span>
+      </div>
       <div class="center">
         <span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span>
       </div>
       <div class="right">
-
+        <span class="onTop" data-tooltip="Next Page">
+          <span class="white button actionButton">
+            <%= link_to recap_1_path do %>
+              <i class="fal fa-check-circle h3"></i>
+            <% end %>
+          </span>
+        </span>
       </div>
     </div>
   </nav>
@@ -131,21 +146,12 @@
     <div class="sections">
       <div class="left">
         <ul class="menu small">
-          <li tabindex="0" class="toFirstSlide hover-state">
-            <%= link_to intro_2_path do %>
-              <i class="far fa-home margin-right-1"></i>
-              Section Home
-            <% end %>
-          </li>
+
         </ul>
     </div>
       <div class="right">
         <ul class="menu small">
-          <li tabindex="0" class="toFirstSlide hover-state">
-            <%= link_to s1_2_path do %>
-              <i class="fal fa-check-circle margin-right-1"></i> Next Section
-            <% end %>
-          </li>
+
         </ul>
       </div>
     </div>

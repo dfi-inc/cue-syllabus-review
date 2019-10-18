@@ -239,31 +239,39 @@
       </section>
 
 
-    <nav class="panel bottom forceMobileView dark" style="border-top: 1px solid rgba(255, 255, 255, .20);">
+    <nav class="panel bottom forceMobileView dark">
       <div class="sections desktop ">
         <div class="left">
-          <span class="onTop" data-tooltip="Section Home">
+          <!-- <span class="onTop" data-tooltip="Section Home">
             <span class="white button actionButton">
-              <%= link_to overview_title_path do %>
+              <%#= link_to overview_title_path do %>
                 <i class="far fa-home h4"></i>
-              <% end %>
+              <%# end %>
             </span>
-          </span>
+          </span> -->
         </div>
         <div class="center opacity-5">
-          <i class="fal fa-arrow-alt-up h2 no-margin"></i>
-          <span class="h2 micro margin-2 top" style="line-height: 2;"> Use Keyboard Arrows to Navigate</span>
-          <i class="fal fa-arrow-alt-down h2 no-margin"></i>
+          <span class="uppercase h6 bold margin-right-2 opacity-9 letter-spacing-2">
+            to navigate:
+          </span>
+
+
+          <i class="fal fa-arrows-alt fa-lg"></i>
+            <span class="h4 margin-left-1" style="line-height: 1;">
+              Keyboard
+            </span>
+          <i class="fal fa-mouse-alt fa-lg margin-left-2 margin-right-1"></i>
+            <span class="h4" style="line-height: 1;">Scroll</span>
 
         </div>
         <div class="right">
-          <span class="onTop" data-tooltip="Next Page">
+          <!-- <span class="onTop" data-tooltip="Next Page">
             <span class="white button actionButton">
-              <%= link_to title_1_path do %>
+              <%#= link_to title_1_path do %>
                 <i class="fal fa-check-circle h3"></i>
-              <% end %>
+              <%# end %>
             </span>
-          </span>
+          </span> -->
         </div>
       </div>
     </nav>
