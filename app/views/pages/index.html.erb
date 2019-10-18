@@ -8,70 +8,66 @@
     </div>
   </nav>
 
-  <section class="slide">
-    <div class="content" style="background: rgba(100, 29, 68, .98);">
-     <div class="container">
-       <div class="wrap center">
-         <div class="fix-12-12 left">
+    <section class="slide kenBurns">
+      <div class="content" style="background: rgba(100, 29, 68, .98);">
+        <div class="container">
+          <div class="wrap center left">
+            <div class="fix-12-12 left">
 
-           <div class="margin-bottom-2 left underline ae-1">
-             <h5 class="uppercase semiBold margin-bottom-2 ae-2">
-               <span class="opacity-5 margin-left-1 text-white"> Center for Urban Education</span>
-             </h5>
-           </div>
-           <ul class="flex margin-bottom-5 left">
-             <li class="col-12-12">
-               <h1 class="big ae-3 left">
-                 Syllabus Review Guide
-               </h1>
-             </li>
-           </ul>
-           <ul class="fix-8-12 float-left">
-             <li class="float-left">
-               <h2 class="small ae-2 light fromLeft opacity-8">
-                 An inquiry tool designed to promote	racial and ethnic
-                   equity	and	equity-minded	practice.
-                 </h2>
-              </li>
-            </ul>
-            <div class="ae-3 author-79 left margin-top-3 float-left margin-top-10 left">
-              <img src="https://collegecampaign.org/wp-content/uploads/2018/11/Estela-New-Large-Nov-2018.png" width="64" class="avatar-79 round">
-              <h2 class="small semiBold margin-bottom-0">Estela Mara Bensimon</h2>
-              <p class=" tight normal opacity-6 margin-bottom-2">Director and Professor of Higher Education</p>
-              <p class="semiBold tiny uppercase letter-spacing-2 opacity-8">Center for Urban Education</p>
-            </div>
-
-            <ul class="fix-12-12 margin-top-6 float-left">
-              <li class="left">
+              <div class="float-left ae-1 padding-left-5 padding-top-3" style="border-left: 5px solid rgba(255, 255, 255, .75);">
                 <ul class="flex">
-                  <li class="fix-7-12 left">
+                  <li class="col-8-12 left">
                     <div class="ae-5 fromRight">
-                      <h4 class="uppercase letter-spacing-2 margin-bottom-2 opacity-5 normal"></h4>
+                      <p class=" opacity-6 margin-bottom-2 text-yellow semiBold">Center for Urban Education</p>
                     </div>
-                    <h1 class="huge semiBold margin-bottom-5 ae-2"></h1>
-                    <p class="hero normal ae-5 opacity-9"></p>
-                  </li>
-                  <li class="col-3-12">
-                    <!-- <div class="relative left">
-                      <%= image_tag("https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/check-256.png", style: "right: 150px; height: 150px; top: -50px;",  class: "absolute")%>
-                      <%= image_tag("graphics/mind.svg", style: "height: 250px; right: 00px;",  class: "absolute")%>
-                      <%= image_tag("graphics/syllabus.svg", style: "right:200px; height: 300px; ",  class: "absolute")%>
-                      <%= image_tag("graphics/syllabus-group.png", style: "height: 150px; top: 90px; right: 130px;",  class: "absolute")%>
-                      <%= image_tag("emoji/animations/excited.gif", style: "height: 130px; top: 150px; right: 90px;", class: " absolute")%>
-                    </div> -->
+                    <h1 class="huge semiBold margin-bottom-5 ae-2">Syllabus Review Guide</h1>
+                    <p class="hero ae-5 normal opacity-7">A	inquiry	tool	for	promoting	racial and ethnic<br>
+                      equity	and	equity-minded	practice.</p>
+                   </li>
+                   <li class="col-3-12">
+                      <div class="ae-3 shadow cell-100 rounded padding-1 float-left">
+                        <%= image_tag("graphics/syllabus-review-guide.png")%>
+                      </div>
                   </li>
                 </ul>
+                <ul class="fix-12-12 float-left">
+                  <li class="left">
+                    <ul class="flex padding-top-3 margin-top-5" style="border-top: 1px solid rgba(255, 255, 255, .25);">
+                      <li class="col-1-10 float-left">
+                        <%= image_tag("logos/cue-white-logo.png", class: "ae-3 wide", style:"margin-top: 10px;")%>
+                      </li>
+                      <li class="col-1-10 float-left">
+                        <%= image_tag("logos/usc.png", class: "ae-3 wide")%>
+                      </li>
+                      <li class="col-5-10 float-left">
+                        <div class="ae-3 author-79 left float-left  left">
+                         <!-- <img src="https://collegecampaign.org/wp-content/uploads/2018/11/Estela-New-Large-Nov-2018.png" width="48" class="border avatar-79 round"> -->
+                         <h3 class="semiBold margin-bottom-0">Estela Mara Bensimon</h3>
+                         <p class="tiny semiBold opacity-4">Director and Professor of Higher Education</p>
+                       </div>
+                      </li>
+                      <li class="col-1-10 float-right ae-4 right">
+                        <%= link_to pages_download_pdf_url do %>
+                          <span claas="float-right right"><i class="fas fa-file-download fa-3x"></i></span>
+                        <% end %>
+                      </li>
+                      <li class="col-2-10 float-right ae-4">
+                        <span class="left tiny semiBold p">
+                          <span class="uppercase tiny p semiBold opacity-8 letter-spacing-2">Download</span><br/>
+                          <span class="opacity-5">Syllabus Review Guide</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-12.png")%>)"></div>
+    </section>
 
-                </li>
-             </ul>
-
-
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class="background" style="background-image:url(<%= image_url("patterns/png/Pattern-12.png")%>)"></div>
-  </section>
 
 
 <%= render "pages/pages/quote" %>

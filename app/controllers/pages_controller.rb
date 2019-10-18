@@ -29,4 +29,12 @@ class PagesController < ApplicationController
   def overview
   end
 
+  def download_pdf
+  send_file(
+    "#{Rails.root}/public/CUE_Syllabi Review Guide Appendix.pdf",
+    filename: "CUE_Syllabi Review Guide Appendix.pdf",
+    type: "application/pdf"
+  )
+end
+
 end
